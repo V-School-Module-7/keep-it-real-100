@@ -7,7 +7,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-
 import kpr100 from './001_UPDATE-01.png';
 
 const useStyles = makeStyles({
@@ -36,7 +35,7 @@ export default function ImgMediaCard() {
                 <CardMedia
                     className={classes.media}
                     image={kpr100}
-                    title="Keep It Real 100 Logo"
+                    alt="Keep It Real 100 Logo"
                 />
                 <CardActionArea style={{ backgroundColor: '#757DE8' }}>
                     <CardContent>
