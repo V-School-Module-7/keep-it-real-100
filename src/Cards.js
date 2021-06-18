@@ -11,7 +11,10 @@ import kpr100 from './001_UPDATE-01.png';
 
 const useStyles = makeStyles({
     root: {
+        flexGrow: 1,
         maxWidth: 345,
+        margin: '30px 15px',
+        // marginBottom: '15px'
     },
     media: {
         height: '350px',
@@ -27,9 +30,11 @@ export default function ImgMediaCard() {
     return (
         <Grid
             container
+            spacing={3}
             direction="row"
             justify="space-evenly"
-            alignItems="center"
+            alignItems="center"                     
+
         >
             <Card className={classes.root}>
                 <CardMedia
@@ -40,15 +45,14 @@ export default function ImgMediaCard() {
                 <CardActionArea style={{ backgroundColor: '#757DE8' }}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Corona Virus Emotional Rescue Game
+                            FOR THE LOVE OF JUSTICE 
                         </Typography>
                         <Typography
                             variant="body2"
                             color="textPrimary"
                             component="p"
                         >
-                            The CPR game has 100 questions. Please ENTER the
-                            game, and begin!
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         </Typography>
                         <Typography align="center">
                             <Button
@@ -72,16 +76,15 @@ export default function ImgMediaCard() {
                 <CardActionArea style={{ backgroundColor: '#757DE8' }}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            For The Love of Justice
+                            SOUL EXPRESSIONS
                         </Typography>
                         <Typography
                             variant="body2"
                             color="textPrimary"
                             component="p"
                         >
-                            For the Love of Justice is dedicated to George
-                            Floyd, Ahmaud Arbery, Breonna Taylor and Sandra
-                            Bland.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean commodo tempus nisi, eu commodo justo faucibus eu.
                         </Typography>
                         <Typography align="center">
                             <Button
@@ -105,16 +108,363 @@ export default function ImgMediaCard() {
                 <CardActionArea style={{ backgroundColor: '#757DE8' }}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Couple's Love Game
+                            RELATIONSHIPS (Self & Others)
                         </Typography>
                         <Typography
                             variant="body2"
                             color="textPrimary"
                             component="p"
                         >
-                            The CPR Couple's Love Game is designed to help
-                            couples navigate and reflect on their unique
-                            journey.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            RACE & CULTURE 
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean commodo tempus nisi, eu commodo justo faucibus eu.
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            OUR MENTAL HEALTH
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean commodo tempus nisi, eu commodo justo faucibus eu.
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            RELIGION & SPIRITUALITY
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean commodo tempus nisi, eu commodo justo faucibus eu.
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            FUN GROUP INTERACTIONS 
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            SEXUALITY & GENDER ROLES 
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            ALL IN THE FAMILY 
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean commodo tempus nisi, eu commodo justo faucibus eu.
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            LOVE EXPLORATIONS
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean commodo tempus nisi, eu commodo justo faucibus eu.
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            ADDICTION ZONE
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean commodo tempus nisi, eu commodo justo faucibus eu.
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            MUSICAL ENCOUNTERS
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean commodo tempus nisi, eu commodo justo faucibus eu.
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            WORDS FROM OUR ANCESTORS 
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        </Typography>
+                        <Typography align="center">
+                            <Button
+                                className={classes.button}
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                            >
+                                PLAY
+                            </Button>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+            <Card className={classes.root}>
+                <CardMedia
+                    className={classes.media}
+                    image={kpr100}
+                    alt="Keep It Real 100 Logo"
+                />
+                <CardActionArea style={{ backgroundColor: '#757DE8' }}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            AFFIRMATIONS  
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textPrimary"
+                            component="p"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aenean commodo tempus nisi, eu commodo justo faucibus eu.
                         </Typography>
                         <Typography align="center">
                             <Button
