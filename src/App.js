@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-// import Header from './Header';
-import Header2 from './Header2';
+import Header from './Header';
 import Cards from './Cards';
+import Social from './Social';
 
 const themeLight = createMuiTheme({
     palette: {
@@ -41,7 +41,8 @@ const App = () => {
             >
                 TOGGLE
             </Button>
-            <Header2 />
+            <Social />
+            <Header />
             <Cards />
         </MuiThemeProvider>
     );
