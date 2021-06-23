@@ -18,23 +18,27 @@ const useStyles = makeStyles((theme) => ({
         marginRight: 20,
         marginTop: 20,
         marginBottom: 20,
+        // justifySelf: 'right'
     },
     toolbar: {
         flexGrow: 1,
         // borderRadius: 50,
+        display: 'flex',
         backgroundColor: '#757DE8',
+        justifyContent: 'flex-end',
         // borderRadius: 5,
         // minHeight: 120,
-        // minWidth: 120,
+        minWidth: '720px',
         // alignItems: 'flex-end',
+        // width: 'fit-content',
         alignItems: 'center',
         paddingTop: theme.spacing(2),
-        paddingBottom: theme.spacing(2),
+        paddingBottom: theme.spacing(2)
     },
     title: {
         flexGrow: 1,
         // display: 'none',
-        marginLeft: 220,
+        // marginLeft: 220,
         marginRight: 20,
         textAlign: 'center',
         [theme.breakpoints.up('sm')]: {
@@ -43,6 +47,14 @@ const useStyles = makeStyles((theme) => ({
         // alignSelf: 'flex-end',
     },
 }));
+
+// Create a media condition that targets viewports at least 768px wide
+// const mediaQuery = window.matchMedia('(min-width: 720px)')
+// // Check if the media query is true
+// if (mediaQuery.matches) {
+//   // Then trigger an alert
+// alert('Media Query Matched!')
+// }
 
 export default function SearchAppBar() {
     const classes = useStyles();
@@ -55,7 +67,7 @@ export default function SearchAppBar() {
                         className={classes.title}
                         variant="h4"
                         color="textPrimary"
-                        // noWrap
+                        // nowrap
                     >
                         EMOTIONAL RESCUE COMMUNICATION & CONNECTION GAMES
                     </Typography>

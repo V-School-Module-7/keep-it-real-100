@@ -14,16 +14,16 @@ const useStyles = makeStyles((theme) => ({
         // display: 'flex',
         // justifyContent: "flexEnd"
     },
-    logo: {
-        width: 150,
-        height: 150,
-        marginLeft: 30,
-        marginRight: 20,
-        marginTop: 20,
-        marginBottom: 20,
-        // display: "flex",
-        // justifyContent: "flexEnd"
-    },
+    // logo: {
+    //     width: 150,
+    //     height: 150,
+    //     marginLeft: 30,
+    //     marginRight: 20,
+    //     marginTop: 20,
+    //     marginBottom: 20,
+    //     display: "flex",
+    //     justifyContent: "flexEnd"
+    // },
 }));
 
 export default function Social() {
