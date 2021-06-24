@@ -61,7 +61,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -93,7 +93,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -124,7 +124,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -156,7 +156,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -188,7 +188,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -220,7 +220,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -251,7 +251,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -282,7 +282,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -314,7 +314,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -346,7 +346,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -378,7 +378,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -410,7 +410,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -441,7 +441,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>
@@ -473,7 +473,7 @@ export default function ImgMediaCard() {
                                 variant="contained"
                                 color="primary"
                             >
-                                PLAY
+                                Select Category
                             </Button>
                         </Typography>
                     </CardContent>

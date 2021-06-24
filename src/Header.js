@@ -57,7 +57,9 @@ export default function SearchAppBar() {
                         color="textPrimary"
                         // noWrap
                     >
-                        EMOTIONAL RESCUE COMMUNICATION & CONNECTION GAMES
+                        THE OFFICIAL
+                        <br/>
+                        KEEP IT REAL 100 GAME
                     </Typography>
                     <img
                         className={classes.logo}
