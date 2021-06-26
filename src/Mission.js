@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         paddingRight: theme.spacing(11),
         paddingLeft: theme.spacing(11),
+        paddingBottom: theme.spacing(3),
     },
     toolbar: {
         flexGrow: 1,

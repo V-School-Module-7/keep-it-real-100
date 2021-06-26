@@ -3,12 +3,14 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+// import { Link } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         paddingRight: theme.spacing(11),
         paddingLeft: theme.spacing(11),
+        paddingBottom: theme.spacing(5),
     },
     logo: {
         // marginRight: theme.spacing(15),
@@ -33,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         // width: 'fit-content',
         alignItems: 'center',
         paddingTop: theme.spacing(2),
-        paddingBottom: theme.spacing(2)
+        paddingBottom: theme.spacing(2),
     },
     title: {
         flexGrow: 1,
@@ -76,6 +78,8 @@ export default function SearchAppBar() {
                         src={'./001_UPDATE-01.png'}
                         alt="Keep It Real 100 Logo"
                     />
+                    {/* <Typography>View More Games!</Typography>
+                    <Link href="#">Visit trance4mationagames.com!</Link> */}
                 </Toolbar>
             </AppBar>
         </div>
