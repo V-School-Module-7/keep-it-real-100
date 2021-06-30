@@ -1,6 +1,7 @@
 import React from 'react';
 // import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from "react-router-dom"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -8,6 +9,7 @@ import Social from './Social';
 import Header from './Header';
 import Mission from './Mission';
 import Cards from './Cards';
+import GameList from './gamePages/KeepItRealGamePage'
 
 const themeLight = createMuiTheme({
     palette: {
@@ -34,23 +36,34 @@ const themeDark = createMuiTheme({
 const App = () => {
     const [light, setLight] = React.useState(true);
     return (
-        <MuiThemeProvider theme={light ? themeLight : themeDark}>
-            <CssBaseline />
-            <Button
-                onClick={() => setLight((prev) => !prev)}
-                variant="outlined"
-            >
-                TOGGLE
-            </Button>
-            <Social />
-            <Header />
-            <Mission />
-            <Cards />
-        </MuiThemeProvider>
+        <>
+            <BrowserRouter>
+                <Switch>
+                        <Route exact path="/">
+                            <MuiThemeProvider theme={light ? themeLight : themeDark}>
+                                <CssBaseline />
+                                <Button
+                                    onClick={() => setLight((prev) => !prev)}
+                                    variant="outlined"
+                                >
+                                    TOGGLE
+                                </Button>
+                                <Social />
+                                <Header />
+                                <Mission />
+                                <Cards />
+                            </MuiThemeProvider>
+                        </Route>
+                    <Route path="/kir-game">
+                        <GameList />
+                    </Route>
+                </Switch>
+            </BrowserRouter>
+        </>
     );
 };
 
-const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+// const rootElement = document.getElementById('root');
+// ReactDOM.render(<App />, rootElement);
 
 export default App;
