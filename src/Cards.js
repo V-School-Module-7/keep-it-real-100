@@ -19,20 +19,22 @@ const cardItems = [
   { title: "AFFIRMATIONS", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu." },
 ];
 
+
 export default function ImgMediaCard() {
 
-  return (
-    <Grid
-      container
-      spacing={3}
-      direction="row"
-      justify="space-evenly"
-      alignItems="center"
-    >
-      {cardItems.map((item, index) => (
-        <CardItem key={index} title={item.title} content={item.content}/>
-      ))}
+    return (
 
-    </Grid>
+        <Grid
+            container
+            spacing={2}
+            direction="row"
+            justify="space-evenly"
+            alignItems="center"
+        >
+        {cardItems.map((item, index) => (
+            <CardItem key={index} title={item.title} content={item.content}/>
+        ))}
+
+        </Grid>
   );
 }
