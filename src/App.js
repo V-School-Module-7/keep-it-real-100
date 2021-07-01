@@ -12,10 +12,10 @@ import Cards from './Cards';
 const themeLight = createMuiTheme({
     palette: {
         background: {
-            default: '#D3D3D3',
+            default: '#9BC0FF',
         },
         text: {
-            secondary: '#000000DE',
+            primary: '#000000DE',
         },
     },
 });
@@ -23,7 +23,7 @@ const themeLight = createMuiTheme({
 const themeDark = createMuiTheme({
     palette: {
         background: {
-            default: '#002984',
+            default: '#D7A8DF',
         },
         text: {
             primary: '#FFFFFF',

@@ -50,6 +50,7 @@ export default function CardItem({ title, content }) {
               size="large"
               variant="contained"
               color="primary"
+              text="primary"
             >
               PLAY
             </Button>

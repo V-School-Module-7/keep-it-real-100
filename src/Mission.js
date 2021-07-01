@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         // borderRadius: 50,
         display: 'flex',
-        backgroundColor: '#3F51B5',
+        backgroundColor: '#757DE8',
         justifyContent: 'flex-end',
         // borderRadius: 5,
         // minHeight: 120,

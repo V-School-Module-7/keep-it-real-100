@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
         // borderRadius: 50,
         display: 'flex',
         backgroundColor: '#757DE8',
+        // backgroundColor: 'primary',
         justifyContent: 'flex-end',
         // borderRadius: 5,
         // minHeight: 120,
@@ -43,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
         // marginLeft: 220,
         marginRight: 20,
         textAlign: 'center',
+        // color: 'textPrimary',
         [theme.breakpoints.up('sm')]: {
             display: 'block',
         },

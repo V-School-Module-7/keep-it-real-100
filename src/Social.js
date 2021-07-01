@@ -26,15 +26,17 @@ const useStyles = makeStyles((theme) => ({
         // justifyContent: "flexEnd"
     },
     appBar: {
+        backgroundColor: '#757DE8',
         flexDirection: 'row',
         padding: '15px 40px 15px 40px',
         justifyContent: 'space-between',
     },
-    // toolbar: {
-    //     display: 'flex',
-    //     flexDirection: 'row',
-    //     justifyContent: 'space-between'
-    // }
+    toolbar: {
+        color: 'red',
+        // FontAwesomeIcon: {
+        //     color: 'red',
+        // },
+    },
 }));
 
 export default function Social() {
