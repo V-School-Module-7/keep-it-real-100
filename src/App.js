@@ -9,7 +9,7 @@ import Social from './Social';
 import Header from './Header';
 import Mission from './Mission';
 import Cards from './Cards';
-import GameList from './gamePage/KeepItRealGamePage'
+import GameList from './game/KeepItRealGamePage'
 
 const themeLight = createMuiTheme({
     palette: {
