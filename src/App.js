@@ -9,7 +9,7 @@ import Social from './Social';
 import Header from './Header';
 import Mission from './Mission';
 import Cards from './Cards';
-import GameList from './game/KeepItRealGamePage'
+import QuestionsPage from './QuestionsPage'
 
 const themeLight = createMuiTheme({
     palette: {
@@ -54,8 +54,8 @@ const App = () => {
                                 <Cards />
                             </MuiThemeProvider>
                         </Route>
-                    <Route path="/kir-game">
-                        <GameList />
+                    <Route path="/kir-game/:gameId">
+                        <QuestionsPage />
                     </Route>
                 </Switch>
             </BrowserRouter>
@@ -67,3 +67,4 @@ const App = () => {
 // ReactDOM.render(<App />, rootElement);
 
 export default App;
+

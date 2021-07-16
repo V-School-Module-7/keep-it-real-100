@@ -1,6 +1,8 @@
 import React from 'react'
-import Header from '../Header'
-import GameQuestions from './QuestionData'
+// import { useHistory } from 'react-router-dom'
+// import Header from '../Header'
+// import GameQuestions from './QuestionData'
+// import GameCatagories from './CatagoryData'
 import { makeStyles } from '@material-ui/core'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
@@ -27,14 +29,38 @@ const useStyles= makeStyles({
     // }
 
 })
+// console.log(GameCatagories)
 
-export default function TopicList(){
-    // console.log(GameCatagories)
+
+export default function TheQuestions(props){
     const classes = useStyles()
+    // const history = useHistory()
+    const {gameCatagory} = props
+    const { title, content, questions, id } = gameCatagory
+
+    // console.log(history.location.pathname)
+    // const specGame = history.location
+    // console.log(specGame)
+
+    const questionCompontents = questions.map(q => 
+        <ListItem 
+            button
+            key={q}
+            // onClick={() => history.push(props.gameCatagory.id)}
+            >
+            <Typography variant="h5">
+                <ListItemText 
+                    primary={q}  
+                    className={classes.root} 
+                />
+            <Divider />
+            </Typography>                                
+        </ListItem>
+        ) 
     
     return (
         <div>
-                <Header /> 
+        
             <div className={classes.root}>
                 {/* <Drawer
                     className={classes.drawer}
@@ -44,23 +70,16 @@ export default function TopicList(){
                 > */}
                         <div>
                             <Typography variant="h3">
-                                Game Page
+                                {title}
+                                <br/>
+                                Questions
                             </Typography>
                         </div>
                         
-                        {/* list of Catagories */}
-                        
+                        {/* list of Questions */}
                         <List>
-                            {GameQuestions.map(item => (
-                                <ListItem key={item.title}>
-                                    <Typography variant="h5">
-                                        <ListItemText primary={item.title}  className={classes.root} />
-                                        <Divider />
-                                    </Typography>                                
-                                </ListItem>
-                            ))}
+                            {questionCompontents}
                         </List>
-                        
                     {/* </Drawer> */}
             </div>
         </div>

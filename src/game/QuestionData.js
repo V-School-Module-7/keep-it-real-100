@@ -1,54 +1,56 @@
 const GameQuestions = [
     {   
-        title: "QUESTION ONE", 
+        question: "QUESTION ONE", 
+        // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
+        // path: 
+
+    },
+    {   
+        question: "QUESTION TWO", 
         // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: 
     },
     {   
-        title: "QUESTION TWO", 
+        question: "QUESTION THREE", 
         // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: 
     },
     {   
-        title: "QUESTION THREE", 
+        question: "QUESTION FOUR", 
         // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: 
     },
     {   
-        title: "QUESTION FOUR", 
+        question: "QUESTION FIVE", 
         // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: 
     },
     {   
-        title: "QUESTION FIVE", 
+        question: "QUESTION SIX", 
         // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: 
     },
     {   
-        title: "QUESTION SIX", 
+        question: "QUESTION SEVEN", 
         // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: 
     },
     {   
-        title: "QUESTION SEVEN", 
+        question: "QUESTION EIGHT", 
         // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: 
     },
     {   
-        title: "QUESTION EIGHT", 
+        question: "QUESTION NINE", 
         // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: 
     },
     {   
-        title: "QUESTION NINE", 
-        // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        // path: 
-    },
-    {   
-        title: "QUESTION TEN", 
+        question: "QUESTION TEN", 
         // content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: 
     }
 ]
 
-export default GameQuestions
+
+export default  GameQuestions
