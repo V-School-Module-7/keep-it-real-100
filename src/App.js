@@ -8,14 +8,28 @@ import Social from './Social';
 import Header from './Header';
 import Mission from './Mission';
 import Cards from './Cards';
+// import 'typeface-cormorant';
+// import './App.css';
 
 const themeLight = createMuiTheme({
     palette: {
-        background: {
-            default: '#9BC0FF',
+        //     background: {
+        //         default: '#9BC0FF',
+        //     },
+        //     text: {
+        //         primary: '#000000DE',
+        //     },
+        // },
+        type: 'light',
+        primary: {
+            main: '#ab47bc',
         },
-        text: {
-            primary: '#000000DE',
+        secondary: {
+            main: '#f50057',
+        },
+        background: {
+            paper: '#f3e5f5',
+            default: '#e1bee7',
         },
     },
 });
@@ -23,7 +37,8 @@ const themeLight = createMuiTheme({
 const themeDark = createMuiTheme({
     palette: {
         background: {
-            default: '#D7A8DF',
+            // default: '#D7A8DF',
+            default: 'main',
         },
         text: {
             primary: '#FFFFFF',

@@ -7,7 +7,8 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import kpr100 from "./images/001_UPDATE-01.png";
+// import kpr100 from "./images/001_UPDATE-01.png";
+import corona from "./images/corona.png";
 
 export default function CardItem({ title, content }) {
 
@@ -33,7 +34,7 @@ export default function CardItem({ title, content }) {
     <Card className={classes.root}>
       <CardMedia
         className={classes.media}
-        image={kpr100}
+        image={corona}
         alt="Keep It Real 100 Logo"
       />
       <CardActionArea style={{ backgroundColor: "#757DE8" }}>

@@ -1,7 +1,6 @@
 import React from 'react';
 import donateButtonPic from './images/donate-button-pic.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import {
     faInstagram,
     faTwitter,
@@ -26,13 +25,14 @@ const useStyles = makeStyles((theme) => ({
         // justifyContent: "flexEnd"
     },
     appBar: {
-        backgroundColor: '#757DE8',
+        // backgroundColor: '#757DE8',
+        backgroundColor: 'primary',
         flexDirection: 'row',
         padding: '15px 40px 15px 40px',
         justifyContent: 'space-between',
     },
     toolbar: {
-        color: 'red',
+        color: 'primary',
         // FontAwesomeIcon: {
         //     color: 'red',
         // },
