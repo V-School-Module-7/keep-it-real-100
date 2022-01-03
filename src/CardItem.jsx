@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import kpr100 from "./images/001_UPDATE-01.png";
 
-export default function CardItem({ title, content }) {
+export default function CardItem({ title, content, path, questions, id }) {
 
   const useStyles = makeStyles({
     root: {
@@ -25,6 +26,17 @@ export default function CardItem({ title, content }) {
   });
 
   const classes = useStyles()
+  // const history = useHistory()
+  // const params = useParams()
+
+  // function handleClick() {
+  //   // e.preventDefault()
+  //   console.log(path)
+    
+  // }
+
+  // const thisCard = GameCatagories.find(question => question.title == params.title)
+  // const title= thisCard.title
 
   return (
 
@@ -43,14 +55,18 @@ export default function CardItem({ title, content }) {
             {content}
           </Typography>
           <Typography align="center">
-            <Button
+            {/* <Button */}
+            <Link to={{
+                pathname: `/kir-game/${id}`
+            }}>PLAY</Link>
+              {/* onClick={() => {handleClick()}}
               className={classes.button}
               size="large"
               variant="contained"
               color="primary"
-            >
+            > */}
               PLAY
-            </Button>
+            {/* </Button> */}
           </Typography>
         </CardContent>
       </CardActionArea>
