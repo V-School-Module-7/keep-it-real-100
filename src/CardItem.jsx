@@ -40,14 +40,18 @@ export default function CardItem({ title, content, path, questions, id }) {
 
   return (
 
-    <Card className={classes.root}>
+    <Card className={classes.root}
+    style={{height: '550px', width: '400px'}}
+    
+    >
       <CardMedia
         className={classes.media}
         image={kpr100}
         alt="Keep It Real 100 Logo"
+        // style={{ position: 'relative'}}
       />
-      <CardActionArea style={{ backgroundColor: "#757DE8" }}>
-        <CardContent>
+      <CardActionArea style={{ backgroundColor: "#757DE8", height: '100%' }}>
+        <CardContent style={{height: '100%'}}>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>

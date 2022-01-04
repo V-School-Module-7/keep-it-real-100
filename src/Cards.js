@@ -15,10 +15,13 @@ export default function Cards() {
             spacing={2}
             direction="row"
             justify="space-evenly"
+            style={{alignItems: 'flex-start'}}
             alignItems="center"
+            
         >
         {GameCatagories.map((item, index) => (
             <CardItem 
+                item
                 key={index} 
                 title={item.title}
                 content={item.content}
@@ -27,7 +30,6 @@ export default function Cards() {
                 id={item.id}
             />
         ))}
-    console.log(cardItem)
         </Grid>
     );
 }
