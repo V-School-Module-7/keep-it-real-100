@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import TheQuestions from './game/TheQuestions'
-import GameCatagories from './game/CatagoryData'
+import GameCatagories from './game/GameCatagories'
 import { useParams } from 'react-router-dom'
 
 
@@ -14,17 +14,19 @@ export default function QuestionsPage() {
     const gameCatagory = GameCatagories.filter(game => {
         gameId = parseInt(gameId)
         return game.id === gameId
-        }
+    }
     )
-
-    console.log(gameCatagory)
+    
+    console.log(gameCatagory[0])
+    console.log(gameId)
+    
     return (
         <div>
+
             <Header />
-             {/* {console.log(gameCatagory)} */}
-            <TheQuestions 
-                gameCatagory={gameCatagory[0]}
-            />
+
+           <TheQuestions gameCatagory={gameCatagory[0]} />
+
         </div>
     )
 }

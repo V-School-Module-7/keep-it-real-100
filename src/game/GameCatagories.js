@@ -6,7 +6,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "for-the-love-of-justice",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1: here is the question', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
         id: 1
     },
@@ -15,14 +15,14 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "soul-expressions",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3: here is the question', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
         id: 2
     },
     {   
         title: "RELATIONSHIPS (Self & Others)", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "relationships",
+        // path: "relationships",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
@@ -31,7 +31,7 @@ const GameCatagories = [
     {   
         title: "RACE & CULTURE", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "race-and-culture",
+        // path: "race-and-culture",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
@@ -40,7 +40,7 @@ const GameCatagories = [
     {   
         title: "OUR MENTAL HEALTH", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "our-mental-health",
+        // path: "our-mental-health",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
@@ -58,7 +58,7 @@ const GameCatagories = [
     {   
         title: "FUN GROUP INTERACTIONS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "fun-group-interactions",
+        // path: "fun-group-interactions",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
@@ -67,7 +67,7 @@ const GameCatagories = [
     {   
         title: "SEXUALITY & GENDER ROLES", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "sexuality-and-gender-roles",
+        // path: "sexuality-and-gender-roles",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
@@ -76,7 +76,7 @@ const GameCatagories = [
     {   
         title: "ALL IN THE FAMILY", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "all-in-th-family",
+        // path: "all-in-th-family",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
@@ -85,16 +85,17 @@ const GameCatagories = [
     {   
         title: "LOVE EXPLORATIONS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "love-explorations",
+        // path: "love-explorations",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           "Q1: Have you used drugs? If yes, why have you used, or why do you continue to use them?", 
+           'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
         id: 10
     },
     {   
         title: "ADDICTION ZONE", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "addiction-zone",
+        // path: "addiction-zone",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
@@ -103,7 +104,7 @@ const GameCatagories = [
     {   
         title: "MUSICAL ENCOUNTERS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "musical-encounters",
+        // path: "musical-encounters",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
@@ -112,7 +113,7 @@ const GameCatagories = [
     {   
         title: "WORDS FROM OUR ANCESTORS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "words-from-our-ancestors",
+        // path: "words-from-our-ancestors",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],
@@ -121,7 +122,7 @@ const GameCatagories = [
     {   
         title: "AFFIRMATIONS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "affirmations",
+        // path: "affirmations",
         questions: [
            'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
         ],

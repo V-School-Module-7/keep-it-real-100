@@ -69,7 +69,7 @@ export default function CardItem({ title, content, path, questions, id }) {
               variant="contained"
               color="primary"
             > */}
-              PLAY
+              {/* PLAY */}
             {/* </Button> */}
           </Typography>
         </CardContent>
