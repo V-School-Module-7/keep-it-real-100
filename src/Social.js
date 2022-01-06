@@ -1,6 +1,8 @@
 import React from 'react';
 import donateButtonPic from './images/donate-button-pic.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+// import { Link } from '@material-ui/core';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import {
     faInstagram,
@@ -11,6 +13,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const donateBtnImg = donateButtonPic;
@@ -30,6 +33,22 @@ const useStyles = makeStyles((theme) => ({
         padding: '15px 40px 15px 40px',
         justifyContent: 'space-between',
     },
+    link: {
+        textDecoration: "none",
+        color: "white",
+        fontSize: "16px",
+        marginLeft: theme.spacing(3),
+        "&:hover": {
+          color: "yellow",
+          borderBottom: "1px solid white",
+        }
+    },      
+    navlinks: {
+        margin: theme.spacing(0),
+        display: "flex",
+        
+      },
+      
     // toolbar: {
     //     display: 'flex',
     //     flexDirection: 'row',
@@ -43,12 +62,30 @@ export default function Social() {
     return (
         <div className={classes.root}>
             <AppBar position="static" className={classes.appBar}>
-                <img
+                {/* <img
                     src={donateBtnImg}
                     alt="Donate Button"
                     width="200px"
                     height="100px"
-                />
+                /> */}
+                {/* <Button variant="outlined" href="#outlined-buttons">
+                    How to Play
+                </Button> */}
+                <div className={classes.navlinks}>
+                    <Link to="/" className={classes.link}>
+                        ABOUT US
+                    </Link>
+                    <Link to="/about" className={classes.link}>
+                        HOW TO PLAY
+                    </Link>
+                    <Link to="/contact" className={classes.link}>
+                        CREATORS
+                    </Link>
+                    <Link to="/faq" className={classes.link}>
+                        FAQ
+                    </Link>
+                </div>
+                
                 <Toolbar className={classes.toolbar}>
                     <FontAwesomeIcon icon={faInstagram} size="2x" fixedWidth />
                     <FontAwesomeIcon icon={faTwitter} size="2x" fixedWidth />

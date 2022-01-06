@@ -11,7 +11,6 @@ export default function QuestionModal(props) {
     return (
         <div>
             <h1>{ currQuestion }</h1>
-            {/* <h1>yo</h1> */}
         </div>
     )
 }

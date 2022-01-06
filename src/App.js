@@ -1,7 +1,7 @@
 import React from 'react';
 // import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route } from "react-router-dom"
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -9,7 +9,8 @@ import Social from './Social';
 import Header from './Header';
 import Mission from './Mission';
 import Cards from './Cards';
-import QuestionsPage from './QuestionsPage'
+import QuestionsPage from './pages/QuestionsPage'
+import HowToPlayPage from './pages/HowToPlayPage'
 
 const themeLight = createMuiTheme({
     palette: {
@@ -57,14 +58,15 @@ const App = () => {
                     <Route path="/kir-game/:gameId">
                         <QuestionsPage />
                     </Route>
+                    <Route path="/kir-game/howToPlay">
+                        <HowToPlayPage />
+                    </Route>
                 </Switch>
             </BrowserRouter>
         </>
     );
 };
 
-// const rootElement = document.getElementById('root');
-// ReactDOM.render(<App />, rootElement);
 
 export default App;
 

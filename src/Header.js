@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import KIRimg from './images/001_UPDATE-01.png'
 // import { Link } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -58,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
 // alert('Media Query Matched!')
 // }
 
-export default function SearchAppBar() {
+export default function Header() {
     const classes = useStyles();
 
     return (
@@ -75,7 +76,7 @@ export default function SearchAppBar() {
                     </Typography>
                     <img
                         className={classes.logo}
-                        src={'./001_UPDATE-01.png'}
+                        src={KIRimg}
                         alt="Keep It Real 100 Logo"
                     />
                     {/* <Typography>View More Games!</Typography>

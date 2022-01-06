@@ -10,6 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText'
 import Typography from '@material-ui/core/Typography'
 import Divider from '@material-ui/core/Divider'
 import QuestionModal from '../models/QuestionModal'
+import { Grid } from '@material-ui/core'
 import { Box } from '@material-ui/core'
 // import { Drawer } from '@material-ui/core'
 // const drawerWidth = "240px"
@@ -88,12 +89,16 @@ export default function TheQuestions(props){
                                 Questions
                             </Typography>
                         </div>
-                        <Box>
-                            <List>
-                                {questionCompontents}
-                            </List>
-                            {openQ && <QuestionModal currQuestion={currQuestion} id={id}/>}
-                        </Box>
+                        <Grid container spacing={4} style={{margin:'1rem',}}>
+                            <Grid item xs={4} style={{border:'1px solid black'}}>
+                                <List>
+                                    {questionCompontents}
+                                </List>
+                            </Grid>
+                            <Grid item xs={6} style={{border:'1px solid black'}}>
+                                {openQ && <QuestionModal currQuestion={currQuestion} id={id}/>}
+                            </Grid>
+                        </Grid>
                     {/* </Drawer> */}
             </div>
         </div>

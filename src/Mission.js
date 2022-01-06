@@ -62,12 +62,12 @@ export default function Mission() {
                         // nowrap
                     >
                         WELCOME TO OUR EMOTIONAL RESCUE COMMUNICATION &
-                        CONNECTION GAMES!!! During this time of social
+                        CONNECTION GAMES!!! <br/> During this time of social
                         distancing, uncertainty, harsh realities and change, we
                         are here to provide you with opportunities for Social
                         Solidarity, Connection and HEALING TOGETHER! Developed
                         by a therapist, these games will help you to process and
-                        to express your thoughts, experiences and feelings.
+                        to express your thoughts, experiences and feelings. <br/>
                         PLEASE CLICK ON ANY GAME OF YOUR CHOICE TO ACCESS THAT
                         GAME. FEEL FREE TO MOVE BACK AND FORTH BETWEEN ANY GAMES
                         THAT CAPTURE YOUR ATTENTION AND EXPERIENCE.

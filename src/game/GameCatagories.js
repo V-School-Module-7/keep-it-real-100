@@ -6,7 +6,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "for-the-love-of-justice",
         questions: [
-           'Q1: here is the question', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1: here is the question', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 1
     },
@@ -15,7 +15,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "soul-expressions",
         questions: [
-           'Q1', 'Q2', 'Q3: here is the question', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3: here is the question', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 2
     },
@@ -24,7 +24,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "relationships",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 3
     },
@@ -33,7 +33,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "race-and-culture",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 4
     },
@@ -42,7 +42,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "our-mental-health",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 5
     },
@@ -51,7 +51,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         path: "religion-spirituality",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 6
     },
@@ -60,7 +60,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "fun-group-interactions",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 7
     },
@@ -69,7 +69,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "sexuality-and-gender-roles",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 8
     },
@@ -78,7 +78,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "all-in-th-family",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 9
     },
@@ -88,7 +88,7 @@ const GameCatagories = [
         // path: "love-explorations",
         questions: [
            "Q1: Have you used drugs? If yes, why have you used, or why do you continue to use them?", 
-           'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 10
     },
@@ -97,7 +97,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "addiction-zone",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 11
     },
@@ -106,7 +106,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "musical-encounters",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 12
     },
@@ -115,7 +115,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "words-from-our-ancestors",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 13
     },
@@ -124,7 +124,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         // path: "affirmations",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11'
+           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
         ],
         id: 14
     },
