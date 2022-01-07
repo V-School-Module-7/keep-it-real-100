@@ -14,6 +14,7 @@ export default function CreatorsPage() {
             <h1>Creators Page</h1>
             <h3>Leslie</h3>
             <p>This game helps Leslie to fufill her lifes dreams of helping people! </p>
+            <h3>Laney</h3>
 
         </div>
     )

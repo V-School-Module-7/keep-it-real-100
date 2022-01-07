@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
         // borderRadius: 5,
         // minHeight: 120,
         minWidth: '720px',
+        // Width: '100%px',
         // alignItems: 'flex-end',
         // width: 'fit-content',
         alignItems: 'center',

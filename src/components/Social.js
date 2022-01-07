@@ -61,7 +61,7 @@ export default function Social() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static" className={classes.appBar}>
+            <AppBar className={classes.appBar} position="static">
                 {/* <img
                     src={donateBtnImg}
                     alt="Donate Button"
