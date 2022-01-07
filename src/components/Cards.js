@@ -2,7 +2,7 @@ import React from "react";
 // import { useParams } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import CardItem from "./CardItem";
-import GameCatagories from './game/GameCatagories';
+import GameCatagories from '../game/GameCatagories';
 
 
 export default function Cards() {

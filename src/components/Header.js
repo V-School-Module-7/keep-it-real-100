@@ -3,7 +3,10 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import KIRimg from './images/001_UPDATE-01.png'
+import KIRimg from '../images/001_UPDATE-01.png'
+import { useLocation, Link } from 'react-router-dom'
+import { Button } from '@material-ui/core';
+
 // import { Link } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -47,8 +50,24 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
             display: 'block',
         },
+        
         // alignSelf: 'flex-end',
     },
+    link: {
+        textDecoration: "none",
+        color: "white",
+        fontSize: "16px",
+        marginLeft: theme.spacing(3),
+        "&:hover": {
+          color: "yellow",
+          borderBottom: "1px solid white",
+        }
+    },      
+    navlinks: {
+        margin: theme.spacing(1),
+        display: "flex",
+        flexDirection: 'column'
+      }
 }));
 
 // Create a media condition that targets viewports at least 768px wide
@@ -61,11 +80,21 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
     const classes = useStyles();
+    const location = useLocation()
+
+
+
 
     return (
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar className={classes.toolbar}>
+                    {location.pathname !== '/' && 
+                        <Link to="/" className={classes.link}>
+                            <Button variant="outlined" href="#outlined-buttons" >
+                                HOME
+                            </Button>
+                        </Link>}
                     <Typography
                         className={classes.title}
                         variant="h4"

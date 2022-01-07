@@ -1,5 +1,5 @@
 import React from 'react';
-import donateButtonPic from './images/donate-button-pic.png';
+// import donateButtonPic from '../images/donate-button-pic.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 // import { Link } from '@material-ui/core';
@@ -16,7 +16,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-const donateBtnImg = donateButtonPic;
+// const donateBtnImg = donateButtonPic;
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -44,9 +44,9 @@ const useStyles = makeStyles((theme) => ({
         }
     },      
     navlinks: {
-        margin: theme.spacing(0),
+        margin: theme.spacing(1),
         display: "flex",
-        
+        flexDirection: 'column'
       },
       
     // toolbar: {
@@ -72,19 +72,22 @@ export default function Social() {
                     How to Play
                 </Button> */}
                 <div className={classes.navlinks}>
-                    <Link to="/" className={classes.link}>
+                    <Link to="/aboutUs" className={classes.link}>
                         ABOUT US
                     </Link>
-                    <Link to="/about" className={classes.link}>
+                    <Link to="/howToPlay" className={classes.link}>
                         HOW TO PLAY
                     </Link>
-                    <Link to="/contact" className={classes.link}>
+                    <Link to="/creators" className={classes.link}>
                         CREATORS
                     </Link>
-                    <Link to="/faq" className={classes.link}>
+                    <Link to="/faqPage" className={classes.link}>
                         FAQ
                     </Link>
                 </div>
+                {/* to={{
+                pathname: `/kir-game/${id}`
+            }} */}
                 
                 <Toolbar className={classes.toolbar}>
                     <FontAwesomeIcon icon={faInstagram} size="2x" fixedWidth />

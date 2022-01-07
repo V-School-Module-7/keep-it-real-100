@@ -1,13 +1,31 @@
 import React from 'react'
-import Header from '../Header'
+import Header from '../components/Header'
 import TheQuestions from '../game/TheQuestions'
 import GameCatagories from '../game/GameCatagories'
-import { Button } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles';
 import { useParams } from 'react-router-dom'
 
-
+// const useStyles = makeStyles((theme) => ({
+//     link: {
+//         textDecoration: "none",
+//         color: "white",
+//         fontSize: "16px",
+//         marginLeft: theme.spacing(3),
+//         "&:hover": {
+//           color: "yellow",
+//           borderBottom: "1px solid white",
+//         }
+//     },      
+//     navlinks: {
+//         margin: theme.spacing(1),
+//         display: "flex",
+//         flexDirection: 'column'
+//       },
+// }))
 
 export default function QuestionsPage() {
+    // const classes = useStyles();
+
     // const history = useHistory()
     // console.log(history)
     let { gameId } = useParams()
@@ -23,9 +41,6 @@ export default function QuestionsPage() {
     
     return (
         <div>
-            <Button variant="outlined" href="#outlined-buttons">
-                HOME
-            </Button>
             <Header />
 
            <TheQuestions gameCatagory={gameCatagory[0]} />
