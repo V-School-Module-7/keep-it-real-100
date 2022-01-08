@@ -6,7 +6,7 @@ import GameCatagories from '../game/GameCatagories';
 
 
 export default function Cards() {
-    
+    console.log('GameCatagories: ', GameCatagories)
 
     return (
 
@@ -20,9 +20,11 @@ export default function Cards() {
             
         >
         {GameCatagories.map((item, index) => (
+            console.log('logo image: ', item.logo),
             <CardItem 
                 item
-                key={index} 
+                key={index}
+                logo={item.logo} 
                 title={item.title}
                 content={item.content}
                 path={item.path}

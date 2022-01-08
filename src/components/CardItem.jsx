@@ -7,9 +7,10 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 // import Button from "@material-ui/core/Button";
-import kpr100 from "../images/001_UPDATE-01.png";
+// import kpr100 from "../images/001_UPDATE-01.png";
+// import loveExplorations from '../images/love_explorations_final.svg'
 
-export default function CardItem({ title, content, path, questions, id }) {
+export default function CardItem({ title, content, logo, path, questions, id }) {
 
   const useStyles = makeStyles({
     root: {
@@ -39,23 +40,22 @@ export default function CardItem({ title, content, path, questions, id }) {
   // const title= thisCard.title
 
   return (
-
     <Card className={classes.root}
     style={{height: '550px', width: '400px'}}
     
     >
       <CardMedia
         className={classes.media}
-        image={kpr100}
-        alt="Keep It Real 100 Logo"
-        // style={{ position: 'relative'}}
+        component='img'
+        image={logo}
+        alt="Game Logo"
       />
       <CardActionArea style={{ backgroundColor: "#757DE8", height: '100%' }}>
         <CardContent style={{height: '100%'}}>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
-          <Typography variant="body2" color="textPrimary" component="p">
+          <Typography variant="body2" color="textPrimary" component="h2">
             {content}
           </Typography>
           <Typography align="center">

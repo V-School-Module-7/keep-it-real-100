@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography'
 import Divider from '@material-ui/core/Divider'
 import QuestionModal from '../models/QuestionModal'
 import { Grid } from '@material-ui/core'
+import { CardMedia } from '@material-ui/core'
 import { Box } from '@material-ui/core'
 // import { Drawer } from '@material-ui/core'
 // const drawerWidth = "240px"
@@ -19,6 +20,10 @@ const useStyles= makeStyles({
     root:{
         display: "flex",
         flexDirection: "column"
+    },
+    media: {
+        height: "300px",
+        objectFit: 'contain'
     },
     // drawer:{
     //     width: drawerWidth,
@@ -39,7 +44,7 @@ export default function TheQuestions(props){
     const classes = useStyles()
     // const history = useHistory()
     const {gameCatagory} = props
-    const { title, content, questions, id } = gameCatagory
+    const { logo, title, content, questions, id } = gameCatagory
     // console.log(id)
     // console.log(gameCatagory)
     // console.log(history.location.pathname)
@@ -83,6 +88,12 @@ export default function TheQuestions(props){
                     classes={{paper: classes.drawerPaper}}
                 > */}
                         <div>
+                            <CardMedia
+                                className={classes.media}
+                                component='img'
+                                image={logo}
+                                alt="Game Logo"
+                            />
                             <Typography variant="h3">
                                 {title}
                                 <br/>

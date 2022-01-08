@@ -1,11 +1,16 @@
+import kirGame from "../images/001_UPDATE-01.png"
+import loveExplorations from "../images/love_explorations_final.svg"
+import lossRemembrance from "../images/loss_remembrance_final.svg"
+import groupInteractions from "../images/group_interactions_final.svg"
+import addictionZone from "../images/addiction_zone_final.svg"
 
 const GameCatagories = [
-
     {   
+        logo: kirGame,
         title: "FOR THE LOVE OF JUSTICE", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
-           'Do you feel the conscience of this nation is being shaken up? Please share your thoughts and feelings on this.', 
+           `Do you feel the conscience of this nation is being shaken up? Please share your thoughts and feelings on this.`, 
            'What changes are you personally going through at this time, due to the long overdue recognition of racism in America?', 
            'Frederick Douglass wrote, “Power concedes nothing without a demand. It never did and it never will.” Please respond to these words.', 
            'Do you feel you have been impacted by generational trauma? Please share to your comfort level.', 
@@ -24,6 +29,7 @@ const GameCatagories = [
         id: 1
     },
     {   
+        logo: kirGame,
         title: "SOUL EXPRESSIONS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
@@ -34,7 +40,7 @@ const GameCatagories = [
             'INNOCENCE: All players, draw a picture of innocence. Beginning with the person who chose this interaction, share your drawing with the other players and say as much as you feel comfortablewith about what your drawing means to you.',
             'SUPREME BEING / HIGHER POWER: All players, draw a picture of your image of God, or of your higher power. Beginning with the person who chose this interaction, share your drawing with the other players and say as much as you feel comfortable with about what your drawing means to you.',
             'PASSION: All players, draw a picture of passion. Beginning with the person who chose this interaction, share your drawing with the other players and say as much as you feel comfortable withabout what your drawing means to you.',
-            'HEART HEAL: All players, draw a heart. Then, put into your heart two or three things / words, you would like your heart to heal for you. (For example: my relationship with my father, my guilt over my mother’s death. etc.) Beginning with the person who chose this interaction, if you feel comfortable, please share on one of them.',
+            'HEART HEAL: All players, draw a heart. Then, put into your heart two or three things / words, you would like your heart to heal for you. (For example: my relationship with my father, my guilt over my mother\'s death. etc.) Beginning with the person who chose this interaction, if you feel comfortable, please share on one of them.',
             'NATURAL ELEMENT: All players, choose an element you feel you relate to. (For example: wind, earth, fire, water, hurricane, volcano, flood, stone. etc.). Beginning with the person who chose this interaction, tell us what qualities this natural element has that you relate to, and why.',
             'ANIMAL GUIDE: What animal do you most relate to? (for example: Jaguar, Bear, Dog, Elephant, Lion, Cat). Beginning with the person who chose this interaction, tell us what qualities this animal has that you relate to, and why.',
             'LETTING GO: Is there anything that you are “tortured” by that you need support in letting go of? Please draw an abstract picture of what this is. Beginning with the person who chose this interaction, each person in turn, please share your drawing and what you need to let go of, and then other players share advice on how thisplayer might be able to let go.',
@@ -46,6 +52,7 @@ const GameCatagories = [
         id: 2
     },
     {   
+        logo: kirGame,
         title: "RELATIONSHIPS (Self & Others)", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
@@ -68,30 +75,60 @@ const GameCatagories = [
         id: 3
     },
     {   
+        logo: kirGame,
         title: "RACE & CULTURE", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
+            'Do you feel you have ever been misunderstood by others based on your race and / or skin color? Please share.',
+            'Tell us a little about your culture and ethnicity. What are your favorite things about it? What don\'t you like? What do you thinkneeds changing?  (For Example: homophobia in certain cultures, colorism, exclusivity)',
+            'What do you think people outside your culture and race should know and learn about your culture?',
+            'When did you first get your hair braided, or when did you first get a “cultural hairstyle” (a style significant to your culture) and what was this experience like for you?',
+            'When did you first hear the term “natural hair”? What did that mean to you?',
+            'Does good hair exist? If so, what does that look like to you?',
+            'How do you get treated when your hair is in its natural state vs your hair straightened or wigs, weaves or braids? Why do you think this is?',
+            'Growing up were you ever ashamed or embarrassed to be Black, Hispanic, Latinx, Asian, etc? If yes, what specifically made you feel ashamed of your ethnicity or culture, and why?',
+            'How much healing do you personally feel you need to do within yourself around being BIPOC? What has helped you on your journey to self-acceptance, and appreciation?',
+            'How much healing do you feel we have to do together as a culture? How can we start, or progress healing?',
+            'How do you feel when your culture is used as an aesthetic by others, but your people are not credited for creating it?',
+            'Have you ever been teased or bullied for liking things that aren\'t “black” or accepted by your culture in general; for example; enjoying anime, rock music, goth or the punk aesthetic, etc.',
+            'If you were a different race from your own, what would you miss about being the race(s) you are?',
+            'Tell us about the most annoying stereotype of your race, ethnicity, or religion. How does this affect you?',
+            'Did your parents or caretakers ever have “the talk” with you? If yes, how old were you? What did you think and feel about it?'
         ],
         id: 4
     },
     {   
+        logo:kirGame,
         title: "OUR MENTAL HEALTH", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
+            'Have you experienced mental health issues in your life? If comfortable, please share some ways that you\'ve overcome difficult mental and emotional problems?',
+            'What are some ways that you take care of yourself physically, mentally and emotionally?',
+            'Have you experienced racial bias within the mental health system? If you are a person of color how many Counselors or Therapists of color have you had? How have you been impacted?',
+            'What do you do if you are concerned about your emotional wellness? How do you maintain your emotional wellness? What ways do you practice emotional wellness?',
+            'Have you experienced grief, loss of a loved one, friends, or of  an intimate relationship? If yes, please share how you have been impacted by your loss, to your comfort level.',
+            'What makes you feel anxious, nervous, or overwhelmed? (For example: In school, at work, at home, with your family, closed in spaces, your relationship with a significant other, etc.? How do you manage these feelings?',
+            'How have you been offered peer / emotional support? How can friends support your emotional wellness? (For example: friends, coworkers, classmates, etc.)',
+            'Have you or someone you have known experienced discriminationon the basis of disabilities; physical, mental, autism etc.? If yes, how has this impacted you or them? Please share to your comfort level.',
+            'What ways can you / do you support yourself when you have feelings of sadness, anger, and depression? How do you handle stress?',
+            'Have you ever had a feeling of wanting to fall asleep and never wake up? Have you ever felt something like wanting your existence to stop? If yes, how did or do you manage these feelings? Please share to your comfort level.',
+            'Do you remember when you first heard the word suicide? How was it explained or described to you? What did you think of it? Most people at some time in their life have thoughts of suicide? What do you think of it now?',
+            'Do you ever feel depressed, or have self-hatred?  If yes, what do you think triggers this? Do you self-harm, or cut your body on purpose? Please only share to your comfort level on this.',
+            'How do you define bullying? Have you been bullied? Have you bullied others?',
+            'What adults or someone else, if any, do you trust to go to if you are being bullied? Do you trust any adults in this type of situation?',
+            'Please choose one or two to speak on.  1) How is your relationship with food? Have you ever struggled with your relationship with food? Please share about your experience to your comfort level.  2) Have you self-medicated with drugs or alcohol to handle anxiety or other difficult feelings? What do you do to supportand maintain calmness when dealing with anxiety?'
         ],
         id: 5
     },
     {   
+        logo: kirGame,
         title: "RELIGION & SPIRITUALITY", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
-        path: "religion-spirituality",
         questions: [
             'Are you spiritual, or religious, and what does that mean to you?',
             'Is there a religious book that you agree with, disagree with, or believe only some things are written in it (For example: the Bible, Koran, etc.)? Please share.',
             'Do you feel like your spirituality is widely based on outside influences, or do you have your own beliefs that are widely based on your own experience, and / or research? Why do you believe in what you believe in Spiritually?',
-            'When you think of the word Christian, what are the first few words that you associate with that word/group of people, and why? Do you think these associations are primarily shaped by what you‚Äôve heard about that group of individuals, or through your own personal experience? What do you think the primary mission is of a Christian and with that, would you consider yourself a Christian or hope to be some day?',
+            'When you think of the word Christian, what are the first few words that you associate with that word/group of people, and why? Do you think these associations are primarily shaped by what you\'ve heard about that group of individuals, or through your own personal experience? What do you think the primary mission is of a Christian and with that, would you consider yourself a Christian or hope to be some day?',
             'What does forgiveness mean to you in the Spiritual sense of the word, and is it important for you to forgive?',
             'Do you have a safe space with safe people to practice your spiritual or religious beliefs? If not, what would the ideal place look like for you?',
             'Does your family come from a tribe in your country, and if yes, what are their spiritual practices, rituals or traditions?"',
@@ -107,14 +144,30 @@ const GameCatagories = [
         id: 6
     },
     {   
+        logo: groupInteractions,
         title: "FUN GROUP INTERACTIONS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
-           'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
+            'GROUP STORY: Whoever is the Leader of this turn, come up with the opening sentence to a story. All players, in turn, add a sentence until the story comes to a conclusion!',
+            'FUNNY FACE CONTEST: Beginning with the Leader of this turn, and then continuing to each player, make the funniest face you can. Players vote on the funniest face!',
+            'LOVE POTION: Create a love potion that works every time! Beginning with the Leader of this turn, add an ingredient to thisconcoction, and explain why it must be included. (For example:lavender oil - to relax and calm the senses, Ginger - to add some spice, etc.)',
+            'STRIKE A POSE: Beginning with the Leader of this turn, in turn, each player strike the pose you would like to be immortalized by, and tell us why.',
+            'SELF: Beginning with the Leader of this turn, in turn, each player describe your relationship with yourself with a sound, and/or a movement. Please share why you chose this expression.',
+            'SOUL SEARCH: Beginning with the Leader of this tun, each player in turn, share with us something about / describe something about the state of your Soul at this time. Begin with the words My Soul.......',
+            'ANIMAL GUIDE: What animal do you most relate to? (for example: Jaguar, Bear, Dog, Elephant, Lion, Cat). Beginning with the Leader of this turn, each player identify your animal, and tell us what qualities they have that make you feel you canrelate to them, and why.',
+            'ALIEN NATION: Beginning with the Leader of this turn, each player describe to a Martian what it is to be a human being.',
+            'BROKEN HEART: Beginning with the Leader of this turn, each player describe the feeling of having a broken heart, and tell us about the first time your heart was broken, and how you recovered!',
+            'WORDS OF WISDOM: Beginning with the Leader, each player pretend you are the oldest living person on Earth. Share with the other players your wisest words of wisdom about life.',
+            'ALL KINDS OF ADVICE: Beginning with the Leader, each player is seeking advice. Propose a question to the other players on anything you choose (real or imaginary). The other players are then to give you Good advice, Bad advice and Awfuladvice. You choose what to listen to!',
+            'SCARY STORY: Whoever is the Leader of this turn, begin with making up the first sentence to a Scary Story. Each player, in turn, add a sentence until the Scary Story comes to an end.',
+            'FUNNY VOICE CONTEST: Beginning with the Leader of this turn, and then continuing to each player, speak in the funniest voice you can. Players vote on the funniest voice!',
+            'PLEASE DON\'T LET ME BE MISUNDERSTOOD: Beginning with the Leader of this turn, each player complete this sentence - What people don\'t understand about me is.........',
+            'INVENTION: You are at work on an invention that will save the world! Whoever is the Leader of this turn, give this invention a name. Each player, then add your element to this invention that is going to save the world.'
         ],
         id: 7
     },
     {   
+        logo: kirGame,
         title: "ALL IN THE FAMILY", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
@@ -137,15 +190,30 @@ const GameCatagories = [
         id: 8
     },
     {   
+        logo: loveExplorations,
         title: "LOVE EXPLORATIONS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
-           "Q1: Have you used drugs? If yes, why have you used, or why do you continue to use them?", 
-           'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10', 'Q11', 'Q12', 'Q13', 'Q14', 'Q15'
+           '“It\'s an unexplainable feeling, an expression. It\'s a touch, it\'s a feel. Once you feel it, it\'s like no other thing in the world.”     - Snoop Dogg', 
+           '“There\'s definitely a dangerous feeling when you\'re in love...It\'s giving your heart to someone else and knowing that they have control over your feelings. I know for me, who always triesto be so tough, that\'s the dangerous thing.”     - Beyonce Knowles',
+           '“Choose people who will lift you up. Find people who will make you better.”     - Michelle Obama',
+           '“We waste time looking for the perfect lover, instead of creating the perfect love.”    - Tom Robbins',
+           '“Don\'t cry over someone who wouldn\'t cry over you.”     - Lauren Conrad',
+           '“It takes courage to love, but pain through love is the purifying fire which those who love generously know. We all know people who are so much afraid of pain that they shut themselves up like clams in a shell and, giving out nothing, receive nothing and therefore shrink until life is a mere living death.”     - Eleanor Roosevelt',
+           '“Never love anyone who treats you like you are ordinary.”   - Oscar Wilde',
+           '“Ever has it been said that love knows not its own depth until the hour of separation.”     - Kahlil Gibran',
+           'Sometimes love means letting go when you want to hold on tighter.”      - Melissa Marr',
+           '“I believe love is primarily a choice and only sometimes a feeling. If you want to feel love, choose to love and be patient.”       - Real Live Preacher',
+           '“Most people have a harder time letting themselves love than finding someone to love them.”     - Bill Russell',
+           '“When someone or something is no longer bringing you up but pulling you down - it\'s time to let go. When someone or something is no longer adding to your life but subtracting from it - it\'s time to go.”        - Mandy Hale',
+            '“Don\'t settle for a relationship that won\'t let you be yourself.”     - Oprah Winfrey',
+            '“A flower cannot blossom without sunshine and man cannot live without love.”       - Max Mueller',
+            '“Nobody has ever measured, not even poets, how much the heart can hold.”       - Zelda Fitzgerald'
         ],
         id: 9
     },
     {   
+        logo: addictionZone,
         title: "ADDICTION ZONE", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
@@ -163,11 +231,12 @@ const GameCatagories = [
            'Do you feel it is more the physical, or the emotional pulls that keep you chained to your addiction, or both? Please share on this.', 
            'Do you think that most people who become addicted use drugs to self-medicate, and to stabilize their moods? Why or why not?', 
            'Are you able to identify your red flags? If yes, what is one, or two, of them? Please share.', 
-           'If your heart could speak – what would it say to you about your addiction?'
+           'If your heart could speak -  what would it say to you about your addiction?'
         ],
         id: 10
     },
     {   
+        logo: kirGame,
         title: "MUSICAL ENCOUNTERS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
@@ -190,6 +259,7 @@ const GameCatagories = [
         id: 11
     },
     {   
+        logo: kirGame,
         title: "THE FINER THINGS", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
@@ -212,6 +282,7 @@ const GameCatagories = [
         id: 12
     },
     {   
+        logo: lossRemembrance,
         title: "LOSS AND REMEMBRANCE", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
