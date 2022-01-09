@@ -26,6 +26,7 @@ export default function Cards() {
                 key={index}
                 logo={item.logo} 
                 title={item.title}
+                editor={item.editor}
                 content={item.content}
                 path={item.path}
                 questions={item.questions}

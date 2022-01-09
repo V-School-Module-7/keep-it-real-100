@@ -8,6 +8,7 @@ const GameCatagories = [
     {   
         logo: kirGame,
         title: "FOR THE LOVE OF JUSTICE", 
+        editor: "Written by Leslie & Edited by Celia",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
            `Do you feel the conscience of this nation is being shaken up? Please share your thoughts and feelings on this.`, 
@@ -31,6 +32,7 @@ const GameCatagories = [
     {   
         logo: kirGame,
         title: "SOUL EXPRESSIONS", 
+        editor: "Written by Leslie",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'MEDITATION: One or more of the players, volunteer to lead the other players in a peaceful meditation. (For example: Have everyone close their eyes and imagine walking through gardens, waterfalls, a rainforest.) Describe in as much detail as you can. Let your imagination go!',
@@ -54,6 +56,7 @@ const GameCatagories = [
     {   
         logo: kirGame,
         title: "RELATIONSHIPS (Self & Others)", 
+        editor: "Written by Jordan (a few by Leslie)",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'How often do you think about your inner child? What would you like to say to your younger self?',
@@ -77,6 +80,7 @@ const GameCatagories = [
     {   
         logo: kirGame,
         title: "RACE & CULTURE", 
+        editor: "Written by Jordan",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'Do you feel you have ever been misunderstood by others based on your race and / or skin color? Please share.',
@@ -98,8 +102,9 @@ const GameCatagories = [
         id: 4
     },
     {   
-        logo:kirGame,
+        logo: kirGame,
         title: "OUR MENTAL HEALTH", 
+        editor: "Written by Celia & Edited by Jordan",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'Have you experienced mental health issues in your life? If comfortable, please share some ways that you\'ve overcome difficult mental and emotional problems?',
@@ -123,6 +128,7 @@ const GameCatagories = [
     {   
         logo: kirGame,
         title: "RELIGION & SPIRITUALITY", 
+        editor: "Written by ",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'Are you spiritual, or religious, and what does that mean to you?',
@@ -145,7 +151,8 @@ const GameCatagories = [
     },
     {   
         logo: groupInteractions,
-        title: "FUN GROUP INTERACTIONS", 
+        title: "FUN GROUP INTERACTIONS",
+        editor: "Written by Leslie", 
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'GROUP STORY: Whoever is the Leader of this turn, come up with the opening sentence to a story. All players, in turn, add a sentence until the story comes to a conclusion!',
@@ -169,6 +176,7 @@ const GameCatagories = [
     {   
         logo: kirGame,
         title: "ALL IN THE FAMILY", 
+        editor: "Written by Leslie (a few by Jordan)",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'Are you from first gen immigrant parents? Second gen? Third gen? Please share on how you feel you have been impacted by your immigrant status.',
@@ -191,7 +199,8 @@ const GameCatagories = [
     },
     {   
         logo: loveExplorations,
-        title: "LOVE EXPLORATIONS", 
+        title: "LOVE EXPLORATIONS (Discussion Quotes)", 
+        editor: "Written by Leslie",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
            '“It\'s an unexplainable feeling, an expression. It\'s a touch, it\'s a feel. Once you feel it, it\'s like no other thing in the world.”     - Snoop Dogg', 
@@ -215,6 +224,7 @@ const GameCatagories = [
     {   
         logo: addictionZone,
         title: "ADDICTION ZONE", 
+        editor: "Written by Leslie",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
            'Have you used drugs? If yes, why have you used, or why do you continue to use them?', 
@@ -238,6 +248,7 @@ const GameCatagories = [
     {   
         logo: kirGame,
         title: "MUSICAL ENCOUNTERS", 
+        editor: "Written by Jabran & Kevin",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             '1. “Don\'t let the struggle make your heart harder Sip the truth, spit the truth That\'s the smart water”  - Daniels Bloom by Mick Jenkins',
@@ -261,6 +272,7 @@ const GameCatagories = [
     {   
         logo: kirGame,
         title: "THE FINER THINGS", 
+        editor: "Written by Jordan",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'As Black or BIPOC people, do you believe we are financially oppressed? If yes, name two ways we are financially oppressed by society, and two ways we financially oppress ourselves.',
@@ -284,6 +296,7 @@ const GameCatagories = [
     {   
         logo: lossRemembrance,
         title: "LOSS AND REMEMBRANCE", 
+        editor: "Written by Leslie",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'What is one of your fondest or most cherished memories with the person you lost?',
