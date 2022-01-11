@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../components/Header'
 import { Box } from '@material-ui/core'
+import Social from '../components/Social'
 
 
 export default function FaqPage() {
@@ -9,7 +9,7 @@ export default function FaqPage() {
     return (
 
         <Box>
-            <Header />
+            <Social />
             <h1>Facts Page</h1>
         </Box>
 

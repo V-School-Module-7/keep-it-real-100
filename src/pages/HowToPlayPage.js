@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+import Social from '../components/Social'
 
 
 
@@ -8,7 +8,7 @@ export default function HowToPlay() {
 
     return (
         <div>
-            <Header />
+            <Social />
 
             <h1>how to play page</h1>
             <p>Game Instructions
