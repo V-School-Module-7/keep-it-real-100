@@ -1,9 +1,10 @@
 import React from 'react';
 // import donateButtonPic from '../images/donate-button-pic.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-
+import { useLocation, Link } from 'react-router-dom';
+import KIRimg from '../images/001_UPDATE-01.png'
 // import { Link } from '@material-ui/core';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -61,11 +62,26 @@ const useStyles = makeStyles((theme) => ({
         position: 'absolute',
         right: 0,
         fontSize: "12px"
-    }
+    },
+    logo: {
+        // marginRight: theme.spacing(15),
+        width: 150,
+        height: 150,
+        marginLeft: 15,
+        // marginRight: 20,
+        // marginTop: 20,
+        marginBottom: 20,
+        position: 'absolute',
+        left: '0',
+        top: '5px',
+        // justifySelf: 'right'
+    },
 }));
 
 export default function Social() {
-    const classes = useStyles();
+    const classes = useStyles()
+    const location = useLocation()
+
 
     return (
         <div className={classes.root}>
@@ -76,9 +92,13 @@ export default function Social() {
                     width="200px"
                     height="100px"
                 /> */}
-                {/* <Button variant="outlined" href="#outlined-buttons">
-                    How to Play
-                </Button> */}
+                {location.pathname !== '/' && 
+                    <img
+                        className={classes.logo}
+                        src={KIRimg}
+                        alt="Keep It Real 100 Logo"
+                    />
+                }
                 <div className={classes.navlinks}>
                     <Link to="/aboutUs" className={classes.link}>
                         ABOUT US
@@ -92,6 +112,11 @@ export default function Social() {
                     <Link to="/faqPage" className={classes.link}>
                         FAQ
                     </Link>
+                    {location.pathname !== '/' && 
+                        <Link to="/" className={classes.link}>
+                            HOME
+                        </Link>
+                    }
                 </div>
                     <Toolbar className={classes.toolbar}>
                         <FontAwesomeIcon icon={faInstagram} size="2x" fixedWidth />

@@ -119,12 +119,7 @@ export default function Header() {
                     >
                         EMOTIONAL RESCUE COMMUNICATION & CONNECTION GAMES
                     </Typography>
-                    {location.pathname !== '/' && 
-                        <Link to="/" className={classes.homeLink}>
-                            <Button variant="outlined" href="#outlined-buttons" >
-                                HOME
-                            </Button>
-                        </Link>}
+                    
                     {/* <Typography>View More Games!</Typography>
                     <Link href="#">Visit trance4mationagames.com!</Link> */}
                 </Toolbar>

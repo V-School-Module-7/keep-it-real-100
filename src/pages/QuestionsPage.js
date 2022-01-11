@@ -5,6 +5,7 @@ import GameCatagories from '../game/GameCatagories'
 import { makeStyles } from '@material-ui/core/styles';
 import { useParams } from 'react-router-dom'
 import CssBaseline from '@material-ui/core/CssBaseline'
+import Social from '../components/Social';
 
 
 // const useStyles = makeStyles((theme) => ({
@@ -43,8 +44,9 @@ export default function QuestionsPage() {
     
     return (
         <div>
+            <Social />
             <CssBaseline />
-            <Header />
+            {/* <Header /> */}
 
            <TheQuestions gameCatagory={gameCatagory[0]} />
 
