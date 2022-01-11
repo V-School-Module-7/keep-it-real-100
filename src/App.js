@@ -15,6 +15,7 @@ import AboutUsPage from './pages/AboutUsPage'
 import CreatorsPage from './pages/CreatorsPage'
 import Footer from './components/Footer';
 import FaqPage from './pages/FaqPage';
+import { ClassNames } from '@emotion/react';
 
 const themeLight = createMuiTheme({
     palette: {
@@ -39,6 +40,7 @@ const themeDark = createMuiTheme({
 });
 
 const App = () => {
+
     const [light, setLight] = React.useState(true);
     return (
         <>
@@ -47,13 +49,13 @@ const App = () => {
                         <Route exact path="/">
                             <MuiThemeProvider theme={light ? themeLight : themeDark}>
                                 <CssBaseline />
-                                <Button
+                                {/* <Button
                                     onClick={() => setLight((prev) => !prev)}
                                     variant="outlined"
                                 >
                                     TOGGLE
-                                </Button>
-                                <Social />
+                                </Button> */}
+                                {/* <Social /> */}
                                 <Header />
                                 <Mission />
                                 <Cards />

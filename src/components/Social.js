@@ -2,6 +2,8 @@ import React from 'react';
 // import donateButtonPic from '../images/donate-button-pic.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
 // import { Link } from '@material-ui/core';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -21,39 +23,45 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        paddingRight: theme.spacing(11),
-        paddingLeft: theme.spacing(11),
-        paddingBottom: theme.spacing(5),
-        display: 'flex',
+        // paddingRight: theme.spacing(11),
+        // paddingLeft: theme.spacing(11),
+        // paddingBottom: theme.spacing(5),
         // display: 'flex',
-        // justifyContent: "flexEnd"
+        // position: 'relative'
     },
-    appBar: {
+    appBarSocial: {
         flexDirection: 'row',
-        padding: '15px 40px 15px 40px',
-        justifyContent: 'space-between',
+        padding: '20px 40px 20px 40px',
+        justifyContent: 'center',
+        alignItems: 'center',
+        boxShadow: 'none',
     },
     link: {
         textDecoration: "none",
         color: "white",
-        fontSize: "16px",
-        marginLeft: theme.spacing(3),
+        fontSize: "14px",
+        marginRight: theme.spacing(2),
         "&:hover": {
           color: "yellow",
           borderBottom: "1px solid white",
         }
     },      
     navlinks: {
-        margin: theme.spacing(1),
+        // marginRight: theme.spacing(8),
         display: "flex",
-        flexDirection: 'column'
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+        // fontWeight: '400',
+        fontFamily: 'sans-serif',
+        fontWeight: 'lighter',
       },
-      
-    // toolbar: {
-    //     display: 'flex',
-    //     flexDirection: 'row',
-    //     justifyContent: 'space-between'
-    // }
+    toolbar: {
+        position: 'absolute',
+        right: 0,
+        fontSize: "12px"
+    }
 }));
 
 export default function Social() {
@@ -61,7 +69,7 @@ export default function Social() {
 
     return (
         <div className={classes.root}>
-            <AppBar className={classes.appBar} position="static">
+            <AppBar className={classes.appBarSocial} position="static">
                 {/* <img
                     src={donateBtnImg}
                     alt="Donate Button"
@@ -85,17 +93,13 @@ export default function Social() {
                         FAQ
                     </Link>
                 </div>
-                {/* to={{
-                pathname: `/kir-game/${id}`
-            }} */}
-                
-                <Toolbar className={classes.toolbar}>
-                    <FontAwesomeIcon icon={faInstagram} size="2x" fixedWidth />
-                    <FontAwesomeIcon icon={faTwitter} size="2x" fixedWidth />
-                    <FontAwesomeIcon icon={faYoutube} size="2x" fixedWidth />
-                    <FontAwesomeIcon icon={faTiktok} size="2x" fixedWidth />
-                    <FontAwesomeIcon icon={faFacebook} size="2x" fixedWidth />
-                </Toolbar>
+                    <Toolbar className={classes.toolbar}>
+                        <FontAwesomeIcon icon={faInstagram} size="2x" fixedWidth />
+                        <FontAwesomeIcon icon={faTwitter} size="2x" fixedWidth />
+                        <FontAwesomeIcon icon={faYoutube} size="2x" fixedWidth />
+                        <FontAwesomeIcon icon={faTiktok} size="2x" fixedWidth />
+                        <FontAwesomeIcon icon={faFacebook} size="2x" fixedWidth />
+                    </Toolbar>
             </AppBar>
         </div>
     );

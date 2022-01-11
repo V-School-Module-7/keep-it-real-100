@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         // borderRadius: 50,
         display: 'flex',
-        backgroundColor: '#3F51B5',
+        // backgroundColor: '#3F51B5',
         justifyContent: 'flex-end',
         // borderRadius: 5,
         // minHeight: 120,
@@ -53,7 +53,7 @@ export default function Mission() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            {/* <AppBar position="static"> */}
                 <Toolbar className={classes.toolbar}>
                     <Typography
                         className={classes.title}
@@ -73,7 +73,7 @@ export default function Mission() {
                         THAT CAPTURE YOUR ATTENTION AND EXPERIENCE.
                     </Typography>
                 </Toolbar>
-            </AppBar>
+            {/* </AppBar> */}
         </div>
     );
 }

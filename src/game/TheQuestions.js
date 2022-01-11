@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
-// import { useHistory } from 'react-router-dom'
-// import Header from '../Header'
-// import GameQuestions from './QuestionData'
-import GameCatagories from './GameCatagories'
-import { Fab, makeStyles } from '@material-ui/core'
+import React, { useState } from 'react'
+// // import { useHistory } from 'react-router-dom'
+// // import Header from '../Header'
+// // import GameQuestions from './QuestionData'
+// import GameCatagories from './GameCatagories'
+import { Box, Fab, makeStyles } from '@material-ui/core'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
@@ -12,7 +12,7 @@ import Divider from '@material-ui/core/Divider'
 import QuestionModal from '../models/QuestionModal'
 import { Grid } from '@material-ui/core'
 import { CardMedia } from '@material-ui/core'
-import { Box } from '@material-ui/core'
+// import { Box } from '@material-ui/core'
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded'
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded'
 
@@ -22,11 +22,30 @@ import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded'
 const useStyles= makeStyles({
     root:{
         display: "flex",
-        flexDirection: "column"
+        flexDirection: "column",
+        // color: 'white'
     },
     media: {
         height: "300px",
         objectFit: 'contain'
+    },
+    rightModal: {
+        marginLeft: '1rem',
+        borderRadius: '10px',
+        backgroundColor: '#3F51B5'
+    },
+    leftList: {
+        marginRight: '1rem',
+        borderRadius: '10px',
+        backgroundColor: '#3F51B5'
+    },
+    qTitleBox: {
+        backgroundColor: '#54268F',
+        width: '100%',
+        textAlign: 'center'
+    },
+    qTitle: {
+
     },
     // drawer:{
     //     width: drawerWidth,
@@ -52,53 +71,41 @@ export default function TheQuestions(props){
     // console.log(history.location.pathname)
     // const specGame = history.location
     const [ openQ, setOpenQ ] = useState(false)
-    const [ currQuestion, setCurrQuestion ] = useState('')
+    const [ currQuestion, setCurrQuestion ] = useState(0)
     const [ questionState, setQuestionState ] = useState(questions)
-    const [ questionIndex, setQuestionIndex ] = useState(0)
+    // const [ questionIndex, setQuestionIndex ] = useState(0)
     
-    // console.log(' Questions:', questions[4])
-    
-    let count = useRef(questions.indexOf(questionIndex));
-        
-        const handleIncClick = (prev) => {
-            count.current = count.current+1
-            console.log("clicked")
-            console.log('count:', count)
-            setQuestionState(count)
-            setQuestionIndex(count)
-            console.log('QS: ', questionState)
-            console.log('QIndex: ', questionIndex)
-        }
-        const handleDecClick = (prev) => {
-            count.current = count.current-1
-            console.log("clicked")
-            console.log('count:', count)
-            setQuestionState(count)
-            setQuestionIndex(count)
-            console.log('QS: ', questionState)
-            console.log('QIndex: ', questionIndex)
-        }
-        
-
-
+    // setCurrQuestion(0) then on click, update currQuestion to the index of the question clicked
+    // 
+  
     const questionCompontents = questions.map((q, index) => 
         <ListItem 
             button
             key={index}
-            onClick={() => ((setCurrQuestion(q), setOpenQ(true) ))}
+            onClick={() => ((setCurrQuestion(index), setOpenQ(true) ))}
+            // onClick={() => ((setCurrQuestion(q), setOpenQ(true) ))}
             // onClick={() => history.push(id)}
         >
-            <Typography variant="h5">
-                <ListItemText 
-                    primary={q}  
-                    className={classes.root} 
-            />
-            <Divider />
-            </Typography>                                
-        </ListItem>
+                <Typography variant="h5">
+                    <ListItemText 
+                        primary={q}  
+                        className={classes.root} 
+                        />
+                <Divider />
+                </Typography>                                
+            </ListItem>
     )
 
-    console.log(currQuestion)
+    const handleIncClick = () => {
+        // count.current = count.current + 1/
+        setCurrQuestion(prevState => prevState += 1)
+    }
+
+    const handleDecClick = () => {
+        setCurrQuestion(prevState => prevState -= 1)
+    }
+    
+    console.log('CurrQuestion:', currQuestion)
     
     return (
         <div>
@@ -124,18 +131,34 @@ export default function TheQuestions(props){
                             </Typography>
                         </div>
                         <Grid container spacing={4} className={classes.gridContainer} style={{margin:'1rem',}}>
-                            <Grid item xs={4} className={classes.leftList} style={{border:'1px solid black'}}>
+                            <Grid container spacing={0} item xs={4} className={classes.leftList} style={{border:'1px solid black'}}>
+                                <Box className={classes.qTitleBox}>
+                                <Typography variant="h4" className={classes.qTitle}>
+                                    Questions
+                                </Typography>
+                                </Box>
+                                
                                 <List>
                                     {questionCompontents}
                                 </List>
                             </Grid>
-                            <Grid item xs={6} className={classes.rightModal} style={{border:'1px solid black'}}>
-                                {openQ && <QuestionModal 
-                                currQuestion={currQuestion} 
-                                id={id} 
-                                questionState={questionState} 
-                                setQuestionState={setQuestionState
-                                }/>}
+                            <Grid container spacing={0} item xs={6} className={classes.rightModal} style={{border:'1px solid black'}}>
+                           
+                                {openQ ? 
+                                    (
+                                        <QuestionModal 
+                                            currQuestion={currQuestion} 
+                                            // id={id} 
+                                            questions={questions}
+                                        />
+                                    )
+                                    :
+                                    ( 
+                                        <Typography variant="h4">
+                                            Select a question.
+                                        </Typography>
+                                    )
+                                }
                             <Fab onClick={handleDecClick}><ArrowBackIosRoundedIcon/></Fab>
                             <Fab onClick={handleIncClick}><ArrowForwardIosRoundedIcon/></Fab>
                             </Grid>
