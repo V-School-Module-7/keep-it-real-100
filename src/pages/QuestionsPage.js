@@ -1,37 +1,27 @@
 import React from 'react'
-import Header from '../components/Header'
 import TheQuestions from '../game/TheQuestions'
 import GameCatagories from '../game/GameCatagories'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles'
 import { useParams } from 'react-router-dom'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import Social from '../components/Social';
-import { CardMedia, Typography } from '@material-ui/core';
-import Footer from '../components/Footer';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import Social from '../components/Social'
+import { CardMedia, Typography } from '@material-ui/core'
+import Footer from '../components/Footer'
 
 
 
 const useStyles = makeStyles((theme) => ({
     media: {
         height: "300px",
-        objectFit: 'contain'
+        objectFit: 'contain',
+        marginTop: '4rem'
     },
-    // link: {
-    //     textDecoration: "none",
-    //     color: "white",
-    //     fontSize: "16px",
-    //     marginLeft: theme.spacing(3),
-    //     "&:hover": {
-    //       color: "yellow",
-    //       borderBottom: "1px solid white",
-    //     }
-    // },      
-    // navlinks: {
-    //     margin: theme.spacing(1),
-    //     display: "flex",
-    //     flexDirection: 'column'
-    //   },
+    outerDiv: {
+       textAlign: 'center'
+    },
+    titleContainer: {
+        margin: '4rem'
+    }
 }))
 
 
@@ -54,13 +44,14 @@ export default function QuestionsPage(props) {
         <div>
             <Social />
             <CssBaseline />
-            <div>
-                <CardMedia 
-                    className={classes.media}
-                    component='img'
-                    image={gameCatagory[0].logo}
-                    alt="Game Logo"
-                />
+        <div className={classes.outerDiv}>
+            <CardMedia 
+                className={classes.media}
+                component='img'
+                image={gameCatagory[0].logo}
+                alt="Game Logo"
+            />
+            <div className={classes.titleContainer}>
                 <Typography variant="h2">
                     {gameCatagory[0].title}
                 </Typography>
@@ -68,9 +59,10 @@ export default function QuestionsPage(props) {
                     {gameCatagory[0].editor}
                 </Typography>
             </div>
+        </div>
 
             <TheQuestions gameCatagory={gameCatagory[0]} />
-            <Footer />
+            <Footer/>
         </div>
     )
 }

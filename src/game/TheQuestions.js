@@ -21,14 +21,17 @@ import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded'
 
 const useStyles= makeStyles({
     root:{
-        display: "flex",
-        flexDirection: "column",
-        color: 'white'
+        color: 'white',
     },
     // media: {
     //     height: "300px",
     //     objectFit: 'contain'
     // },
+    gridContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignSelf: 'center',
+    },
     rightModal: {
         marginLeft: '1rem',
         borderRadius: '10px',
@@ -41,7 +44,7 @@ const useStyles= makeStyles({
     },
     qTitleBox: {
         backgroundColor: '#54268F',
-        width: '100%',
+        // width: '100%',
         textAlign: 'center'
     },
     qTitle: {
@@ -98,25 +101,22 @@ export default function TheQuestions({gameCatagory} ){
     return (
         <div>
             <div className={classes.root}>
-                        <Grid container spacing={4} className={classes.gridContainer} style={{margin:'1rem',}}>
-                            <Grid container spacing={0} item xs={4} className={classes.leftList} style={{border:'1px solid black'}}>
-                                <Box className={classes.qTitleBox}>
-                                    <Typography variant="h4" className={classes.qTitle}>
-                                        Questions
-                                    </Typography>
-                                </Box>
-                                
+                        <Grid container spacing={2} className={classes.gridContainer} style={{margin:'1rem',}}>
+                            {/* <Box className={classes.qTitleBox}>
+                                <Typography variant="h4" className={classes.qTitle}>
+                                    Questions
+                                </Typography>
+                            </Box> */}
+                            <Grid item xs={4} className={classes.leftList} style={{border:'1px solid black'}}>
                                 <List>
                                     {questionCompontents}
                                 </List>
                             </Grid>
-                            <Grid container spacing={0} item xs={6} className={classes.rightModal} style={{border:'1px solid black'}}>
-                           
+                            <Grid item xs={6} className={classes.rightModal} style={{border:'1px solid black'}}>  
                                 {openQ ? 
                                     (
                                         <QuestionModal 
                                             currQuestion={currQuestion} 
-                                            // id={id} 
                                             questions={questions}
                                         />
                                     )

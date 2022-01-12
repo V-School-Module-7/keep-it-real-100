@@ -59,6 +59,7 @@ const App = () => {
                                 <Header />
                                 <Mission />
                                 <Cards />
+                                <Footer />
                         </Route>
                     <Route path="/kir-game/:gameId">
                         <QuestionsPage />
@@ -76,7 +77,6 @@ const App = () => {
                         <FaqPage />
                     </Route>
                 </Switch>
-                    <Footer/>
             </BrowserRouter>
             </MuiThemeProvider> 
         </>

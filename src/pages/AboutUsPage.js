@@ -15,7 +15,6 @@ export default function AboutUsPage() {
             <Social />
 
             <h1>About Us Page</h1>
-            {/* <Footer /> */}
         </div>
     )
 }
