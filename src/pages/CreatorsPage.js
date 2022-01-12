@@ -1,3 +1,4 @@
+import { CssBaseline } from '@material-ui/core'
 import React from 'react'
 import Social from '../components/Social'
 
@@ -10,6 +11,8 @@ export default function CreatorsPage() {
 
     return (
         <div>
+            <CssBaseline />
+
             <Social />
             <h1>Creators Page</h1>
             <h3>Leslie</h3>

@@ -3,10 +3,15 @@ import loveExplorations from "../images/love_explorations_final.svg"
 import lossRemembrance from "../images/loss_remembrance_final.svg"
 import groupInteractions from "../images/group_interactions_final.svg"
 import addictionZone from "../images/addiction_zone_final.svg"
+import loveOfJustice from "../images/love_of_justice_final.svg"
+import musicalEncounters from "../images/musical_encounters_final.svg"
+import ourMentalHealth from "../images/our_mental_health_final.svg"
+import religionAndSpirituality from "../images/religion_spirituality_final.svg"
+import theFinerThings from "../images/the_finer_things_final.svg"
 
 const GameCatagories = [
     {   
-        logo: kirGame,
+        logo: loveOfJustice,
         title: "FOR THE LOVE OF JUSTICE", 
         editor: "Written by Leslie & Edited by Celia",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
@@ -102,7 +107,7 @@ const GameCatagories = [
         id: 4
     },
     {   
-        logo: kirGame,
+        logo: ourMentalHealth,
         title: "OUR MENTAL HEALTH", 
         editor: "Written by Celia & Edited by Jordan",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
@@ -126,7 +131,7 @@ const GameCatagories = [
         id: 5
     },
     {   
-        logo: kirGame,
+        logo: religionAndSpirituality,
         title: "RELIGION & SPIRITUALITY", 
         editor: "Written by ",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
@@ -246,7 +251,7 @@ const GameCatagories = [
         id: 10
     },
     {   
-        logo: kirGame,
+        logo: musicalEncounters,
         title: "MUSICAL ENCOUNTERS", 
         editor: "Written by Jabran & Kevin",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
@@ -270,7 +275,7 @@ const GameCatagories = [
         id: 11
     },
     {   
-        logo: kirGame,
+        logo: theFinerThings,
         title: "THE FINER THINGS", 
         editor: "Written by Jordan",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",

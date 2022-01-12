@@ -8,6 +8,8 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import Social from '../components/Social';
 import { CardMedia, Typography } from '@material-ui/core';
 import Footer from '../components/Footer';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -32,9 +34,9 @@ const useStyles = makeStyles((theme) => ({
     //   },
 }))
 
-export default function QuestionsPage() {
-    const classes = useStyles();
 
+export default function QuestionsPage(props) {
+    const classes = useStyles();
     // const history = useHistory()
     // console.log(history)
     let { gameId } = useParams()

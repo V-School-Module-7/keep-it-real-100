@@ -44,10 +44,10 @@ const App = () => {
     const [light, setLight] = React.useState(true);
     return (
         <>
+            <MuiThemeProvider theme={light ? themeLight : themeDark}>
             <BrowserRouter>
                 <Switch>
                         <Route exact path="/">
-                            <MuiThemeProvider theme={light ? themeLight : themeDark}>
                                 <CssBaseline />
                                 {/* <Button
                                     onClick={() => setLight((prev) => !prev)}
@@ -59,7 +59,6 @@ const App = () => {
                                 <Header />
                                 <Mission />
                                 <Cards />
-                            </MuiThemeProvider> 
                         </Route>
                     <Route path="/kir-game/:gameId">
                         <QuestionsPage />
@@ -79,6 +78,7 @@ const App = () => {
                 </Switch>
                     <Footer/>
             </BrowserRouter>
+            </MuiThemeProvider> 
         </>
     );
 };

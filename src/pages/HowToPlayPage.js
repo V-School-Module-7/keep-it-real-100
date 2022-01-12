@@ -1,3 +1,4 @@
+import { CssBaseline } from '@material-ui/core'
 import React from 'react'
 import Social from '../components/Social'
 
@@ -8,6 +9,8 @@ export default function HowToPlay() {
 
     return (
         <div>
+            <CssBaseline />
+
             <Social />
 
             <h1>how to play page</h1>

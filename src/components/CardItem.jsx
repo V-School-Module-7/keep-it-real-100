@@ -24,6 +24,16 @@ export default function CardItem({ title, content, logo, path, questions, id }) 
     button: {
       marginTop: "20px",
     },
+    playLink: {
+      textDecoration: "none",
+      color: "white"
+    },
+    typography: {
+      position: 'absolute',
+      top: 0,
+      marginTop: '10rem',
+      width: '90%'
+    },
   });
 
   const classes = useStyles()
@@ -58,20 +68,13 @@ export default function CardItem({ title, content, logo, path, questions, id }) 
           <Typography variant="body2" color="textPrimary" component="h2">
             {content}
           </Typography>
-          <Typography align="center">
-            {/* <Button */}
-            <Link to={{
+
+          <Typography className={classes.typography} align="center">
+            <Link className={classes.playLink} to={{
                 pathname: `/kir-game/${id}`
             }}>PLAY</Link>
-              {/* onClick={() => {handleClick()}}
-              className={classes.button}
-              size="large"
-              variant="contained"
-              color="primary"
-            > */}
-              {/* PLAY */}
-            {/* </Button> */}
           </Typography>
+          
         </CardContent>
       </CardActionArea>
     </Card>
