@@ -52,7 +52,6 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         paddingTop: theme.spacing(6),
         paddingBottom: theme.spacing(10),
-
     },
     title: {
         flexGrow: 1,

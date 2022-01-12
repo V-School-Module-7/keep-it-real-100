@@ -59,7 +59,7 @@ const App = () => {
                                 <Header />
                                 <Mission />
                                 <Cards />
-                            </MuiThemeProvider>
+                            </MuiThemeProvider> 
                         </Route>
                     <Route path="/kir-game/:gameId">
                         <QuestionsPage />
