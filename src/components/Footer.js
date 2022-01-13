@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         fontSize: '28px',
         fontWeight: 'bolder',
+        padding: '0 0 1rem 0',
         marginRight: 20,
         textAlign: 'center',
         [theme.breakpoints.up('sm')]: {
@@ -37,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '20px',
         // display: 'none',
         // marginLeft: 220,
+        padding: '0 1rem 1rem 1rem',
         marginRight: 20,
         textAlign: 'center',
         [theme.breakpoints.up('sm')]: {
