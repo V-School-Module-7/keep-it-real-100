@@ -11,12 +11,13 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded'
 import ListSubHeader from '../components/ListSubheader'
 
-const purp = '#54268F'
+// const purp = '#54268F'
 
 const useStyles = makeStyles({
 	root: {
 		color: 'white',
-	},
+        // maxHeight: '70rem'
+	}, 
 	gridContainer: {
 		display: 'flex',
 		justifyContent: 'center',
@@ -32,10 +33,10 @@ const useStyles = makeStyles({
 		borderRadius: '10px',
 		backgroundColor: '#3F51B5',
 	},
-	qTitleBox: {
-		backgroundColor: purp,
-		textAlign: 'center',
-	},
+	// qTitleBox: {
+	// 	backgroundColor: purp,
+	// 	textAlign: 'center',
+	// },
 })
 
 export default function TheQuestions({ gameCatagory }) {
@@ -110,7 +111,6 @@ export default function TheQuestions({ gameCatagory }) {
 						</Fab>
 					</Grid>
 				</Grid>
-				{/* </Drawer> */}
 			</div>
 		</div>
 	)
