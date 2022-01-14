@@ -55,9 +55,9 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
-        // fontWeight: 'bold',
+        fontWeight: 'bold',
         // display: 'none',
-        fontSize: '26px',
+        fontSize: '40px',
         // marginLeft: 220,
         // marginRight: 20,
         paddingLeft: '40px',
