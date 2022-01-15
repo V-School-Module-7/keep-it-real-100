@@ -72,28 +72,6 @@ export default function AboutUsPage() {
 							ever since the 1500s, when an unknown printer took a galley of
 						</Typography>
 					</Paper>
-					<Paper elevation24 className={classes.paper} variant="outlined">
-						<div style={{display: 'grid', placeItems: 'center'}}>
-							<Avatar variant="circular" className={classes.avatar} />
-                            <Typography>this is under</Typography>
-						</div>
-						<Typography className={classes.boldBodyText}>
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a galley of
-						</Typography>
-					</Paper>
-					<Paper elevation24 className={classes.paper} variant="outlined">
-						<div style={{display: 'grid', placeItems: 'center'}}>
-							<Avatar variant="circular" className={classes.avatar} />
-                            <Typography>this is under</Typography>
-						</div>
-						<Typography className={classes.boldBodyText}>
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a galley of
-						</Typography>
-					</Paper>
 				</Box>
 			</Container>
 		</div>
