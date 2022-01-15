@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CreatorsPage({bio, proTitle, personName}) {
+export default function CreatorBio({bio, proTitle, personName}) {
   const classes = useStyles();
 
   return (
@@ -27,7 +27,7 @@ export default function CreatorsPage({bio, proTitle, personName}) {
         <Box
           component="span"
           sx={{
-            mb: 3,
+            mb: 2,
             mt:5,
             ml:5,
             mr:5,
@@ -38,7 +38,7 @@ export default function CreatorsPage({bio, proTitle, personName}) {
           }}
         >
           <Grid container columnSpacing={2}>
-            <Grid item xs={12} md={4} lg={2} textAlign={"center"}>
+            <Grid item xs={12} md={4} lg={3} textAlign={"center"}>
               <Box
                 sx={{
                   m: "auto",
@@ -52,9 +52,9 @@ export default function CreatorsPage({bio, proTitle, personName}) {
               <Typography className={classes.boldBodyText}>
                 {personName}
               </Typography>
-              <Typography variant="subtitle">{proTitle}</Typography>
+              <Typography variant="subtitle2">{proTitle}</Typography>
             </Grid>
-            <Grid item xs={12} md={8}>
+            <Grid item xs={12} md={8} mt={2}>
               <Typography variant="body1">
                 {bio}
               </Typography>
