@@ -40,7 +40,7 @@ export default function CreatorBio({profileImg, bio, proTitle, personName}) {
         >
           <Grid container columnSpacing={2}>
             <Grid item xs={12} md={4} lg={3} textAlign={"center"}>
-              <Avatar alt={personName} src={`static/media/profile_pics/${profileImg}.png`}  sx={{
+              <Avatar alt={personName} src={profileImg} sx={{
                   m: "auto",
                   mb: 2,
                   width: 150,
