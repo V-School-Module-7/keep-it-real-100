@@ -2,6 +2,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import Avatar from '@mui/material/Avatar';
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -13,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CreatorBio({bio, proTitle, personName}) {
+export default function CreatorBio({profileImg, bio, proTitle, personName}) {
   const classes = useStyles();
 
   return (
@@ -39,16 +40,11 @@ export default function CreatorBio({bio, proTitle, personName}) {
         >
           <Grid container columnSpacing={2}>
             <Grid item xs={12} md={4} lg={3} textAlign={"center"}>
-              <Box
-                sx={{
+              <Avatar alt={personName} src={profileImg} sx={{
                   m: "auto",
                   mb: 2,
-                  borderRadius: 20,
                   width: 150,
-                  height: 150,
-                  backgroundColor: "#ccc",
-                }}
-              ></Box>
+                  height: 150 }}/>
               <Typography className={classes.boldBodyText}>
                 {personName}
               </Typography>
