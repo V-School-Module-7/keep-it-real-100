@@ -59,11 +59,11 @@ export default function AboutUsPage() {
 				className={classes.container}
 			>
 				<Social />
-				<Typography variant='h2' style={{ display: 'flex' , justifyContent: 'center', padding: '16px', margin: '16 0 16 0'}}>About Us Page</Typography>
+				<Typography  align='center' variant='h1' >About Us Page</Typography>
 				<Box className={classes.box}>
-					<Paper elevation24 className={classes.paper} variant="outlined">
+					<Paper elevation={30} className={classes.paper} variant="outlined">
 						<div style={{display: 'grid', placeItems: 'center'}}>
-							<Avatar variant="circular" className={classes.avatar} />
+							<Avatar  variant="circular" className={classes.avatar} />
                             <Typography>this is under</Typography>
 						</div>
 						<Typography className={classes.boldBodyText}>
