@@ -13,31 +13,41 @@ import ListSubHeader from '../components/ListSubheader'
 
 // const purp = '#54268F'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
 	root: {
 		color: 'white',
-        // maxHeight: '70rem'
 	}, 
 	gridContainer: {
+		// flexGrow: 1,
 		display: 'flex',
 		justifyContent: 'center',
 		alignSelf: 'center',
+		// maxHeight: '100vh',
+		// height: '300px',
 	},
 	rightModal: {
+		height: '750px',
+		overflowY: 'hidden',
 		marginLeft: '1rem',
 		borderRadius: '10px',
 		backgroundColor: '#3F51B5',
 	},
 	leftList: {
+		height: '750px',
+		overflowY: 'scroll',
 		marginRight: '1rem',
 		borderRadius: '10px',
 		backgroundColor: '#3F51B5',
 	},
+	Arrow: {
+		// color: 'red',
+		backgroundColor: 'white'
+	}
 	// qTitleBox: {
 	// 	backgroundColor: purp,
 	// 	textAlign: 'center',
 	// },
-})
+}))
 
 export default function TheQuestions({ gameCatagory }) {
 	const classes = useStyles()
@@ -93,7 +103,7 @@ export default function TheQuestions({ gameCatagory }) {
 						item
 						xs={6}
 						className={classes.rightModal}
-						style={{ border: '1px solid black' }}
+						style={{ border:'1px solid black', paddingBottom:'100px' }}
 					>
 						{openQ ? (
 							<QuestionModal
@@ -103,10 +113,10 @@ export default function TheQuestions({ gameCatagory }) {
 						) : (
 							<Typography variant="h4">Select a question.</Typography>
 						)}
-						<Fab onClick={handleDecClick}>
+						<Fab className={classes.Arrow} onClick={handleDecClick}>
 							<ArrowBackIosRoundedIcon />
 						</Fab>
-						<Fab onClick={handleIncClick}>
+						<Fab className={classes.Arrow} onClick={handleIncClick}>
 							<ArrowForwardIosRoundedIcon />
 						</Fab>
 					</Grid>

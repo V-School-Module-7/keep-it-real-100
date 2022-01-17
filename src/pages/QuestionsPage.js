@@ -22,10 +22,9 @@ const useStyles = makeStyles((theme) => ({
     titleContainer: {
         margin: '4rem'
     },
-    // qContainer: {
-    //     maxHeight: '70rem'
-
-    // },
+    qContainer: {
+        // flexGrow: 1
+    },
 }))
 
 
@@ -64,9 +63,9 @@ export default function QuestionsPage(props) {
                 </Typography>
             </div>
         </div>
-        {/* <div className={classes.qContainer}>  */}
+        <div className={classes.qContainer}> 
             <TheQuestions gameCatagory={gameCatagory[0]} />
-        {/* </div> */}
+        </div>
             <Footer/>
         </div>
     )
