@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	rightModal: {
 		height: '750px',
-		overflowY: 'hidden',
+		// overflowY: 'scroll',
 		marginLeft: '1rem',
 		borderRadius: '10px',
 		backgroundColor: '#3F51B5',
@@ -39,8 +39,18 @@ const useStyles = makeStyles((theme) => ({
 		borderRadius: '10px',
 		backgroundColor: '#3F51B5',
 	},
-	Arrow: {
+	leftArrow: {
 		// color: 'red',
+		// position: 'absolute',
+		// bottom:'0px',
+		// right:'50px',
+		backgroundColor: 'white'
+	},
+	rightArrow: {
+		// color: 'red',
+		// position: 'absolute',
+		// bottom:'0px',
+		// right:'50px',
 		backgroundColor: 'white'
 	}
 	// qTitleBox: {
@@ -103,7 +113,7 @@ export default function TheQuestions({ gameCatagory }) {
 						item
 						xs={6}
 						className={classes.rightModal}
-						style={{ border:'1px solid black', paddingBottom:'100px' }}
+						style={{ border:'1px solid black', paddingBottom:'125px'}}
 					>
 						{openQ ? (
 							<QuestionModal
@@ -113,12 +123,15 @@ export default function TheQuestions({ gameCatagory }) {
 						) : (
 							<Typography variant="h4">Select a question.</Typography>
 						)}
-						<Fab className={classes.Arrow} onClick={handleDecClick}>
+					<div style={{display:'flex', justifyContent:'space-between', alignSelf:'flex-end'}}>
+						<Fab className={classes.leftArrow} onClick={handleDecClick}>
 							<ArrowBackIosRoundedIcon />
 						</Fab>
-						<Fab className={classes.Arrow} onClick={handleIncClick}>
+						<Fab className={classes.rightArrow} onClick={handleIncClick}>
 							<ArrowForwardIosRoundedIcon />
 						</Fab>
+					</div>
+					
 					</Grid>
 				</Grid>
 			</div>

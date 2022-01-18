@@ -209,7 +209,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
            '“It\'s an unexplainable feeling, an expression. It\'s a touch, it\'s a feel. Once you feel it, it\'s like no other thing in the world.”     - Snoop Dogg', 
-           '“There\'s definitely a dangerous feeling when you\'re in love...It\'s giving your heart to someone else and knowing that they have control over your feelings. I know for me, who always triesto be so tough, that\'s the dangerous thing.”     - Beyonce Knowles',
+           '“There\'s definitely a dangerous feeling when you\'re in love...It\'s giving your heart to someone else and knowing that they have control over your feelings. I know for me, who always triesto be so tough, that\'s the dangerous thing."     - Beyonce Knowles',
            '“Choose people who will lift you up. Find people who will make you better.”     - Michelle Obama',
            '“We waste time looking for the perfect lover, instead of creating the perfect love.”    - Tom Robbins',
            '“Don\'t cry over someone who wouldn\'t cry over you.”     - Lauren Conrad',

@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
         margin: '4rem'
     },
     qContainer: {
+        marginBottom: '6rem'
         // flexGrow: 1
     },
 }))
