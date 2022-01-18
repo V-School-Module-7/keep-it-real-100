@@ -31,10 +31,10 @@ export default function QuestionModal(props) {
                  component="div"
                  sx={{
                    mb: 2,
-                   mt:5,
-                   ml:5,
-                   mr:5,
-                   p: 6,
+                   mt:2.5,
+                   ml:2.5,
+                   mr:2.5,
+                   p: 2,
                    border: "1px solid black",
                    borderRadius: "10px",
                    backgroundColor: "#747EE8",
@@ -43,7 +43,7 @@ export default function QuestionModal(props) {
                 //    width:'auto'
                 //    maxHeight:'fit-content',
                 //    display: 'flex',
-                //    overflowY: 'scroll',
+                   overflowY: 'auto',
                 //    overflow: 'hidden',
                 }}>
                 <Typography variant='h4'>{ questions[currQuestion] }</Typography>

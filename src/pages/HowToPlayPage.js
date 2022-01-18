@@ -23,15 +23,18 @@ export default function HowToPlay() {
     return (
         <div>
             <CssBaseline />
-
             <Social />
+
+            <div>
             <Grid
                 container
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
+                height="100vh"
+                
             >           
-            <Box sx={{ mt:5,typography: 'h4', fontWeight: 700}}>
+            <Box sx={{ mt:5, typography: 'h4', fontWeight: 700 }}>
                     HOW TO PLAY
             </Box>
             <Box component="span" sx={{ m:5, p: 5, border: "1px solid black", borderRadius:"10px", backgroundColor:"#747EE8" }} >
@@ -48,7 +51,8 @@ export default function HowToPlay() {
                 </Typography>
             </Box>
             </Grid>
-            <Footer/>
+            </div>
+            <Footer />
         </div>
     )
 }

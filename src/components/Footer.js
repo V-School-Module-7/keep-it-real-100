@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
+        // flexGrow: 1,
         // paddingRight: theme.spacing(11),
         // paddingLeft: theme.spacing(11),
         // paddingBottom: theme.spacing(0),
@@ -54,10 +54,8 @@ export default function Footer() {
 
 
     return (
-        <div>
             <div className={classes.root}>
-            <AppBar position="static">
-            {/* {location.pathname === '/' &&  */}
+            <AppBar position="static" >
                 <Toolbar className={classes.toolbar}>
                     <Typography
                         className={classes.title}
@@ -78,9 +76,7 @@ export default function Footer() {
                         If you are feeling overwhelmed by the ongoing pandemic or any life situation, please seek immediate professional assistance.
                     </Typography>
                 </Toolbar>
-            {/* }  */}
             </AppBar>
-        </div>
         </div>
     )
 }
