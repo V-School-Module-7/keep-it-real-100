@@ -390,7 +390,7 @@ const GameCatagories = [
             'What parts of femininity do you think are good, and what parts do you think are toxic? Why?',
             'Do you believe men can, or should be in touch with their feminine side? Why or why not? (Vice versa for women)',
             '(Safe space reminder) How many of you have been, or are uncomfortable with homosexuality? What in particular made, or makes you uncomfortable? Please speak to your comfort level.',
-            'Gender identity can correlate with a person’s assigned sex at birth, or can differ from it. Have you ever felt that you have gender characteristics of the opposite sex? If yes, how did/ does this make you feel? What is your experience?'
+            'Gender identity can correlate with a person\'s assigned sex at birth, or can differ from it. Have you ever felt that you have gender characteristics of the opposite sex? If yes, how did/ does this make you feel? What is your experience?'
         ],
         id: 16
     },
