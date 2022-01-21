@@ -1,6 +1,5 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -11,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: theme.spacing(11),
         paddingBottom: theme.spacing(3),
     },
-    toolbar: {
+    Typogr: {
         flexGrow: 1,
         // borderRadius: 50,
         display: 'flex',
@@ -54,25 +53,58 @@ export default function Mission() {
     return (
         <div className={classes.root}>
             {/* <AppBar position="static"> */}
-                <Toolbar className={classes.toolbar}>
+                {/* <Typography className={classes.Typogr}> */}
                     <Typography
                         className={classes.title}
                         variant="h4"
                         color="textPrimary"
                         // nowrap
                     >
-                        WELCOME TO OUR EMOTIONAL RESCUE COMMUNICATION &
-                        CONNECTION GAMES!!! <br/> During this time of social
-                        distancing, uncertainty, harsh realities and change, we
-                        are here to provide you with opportunities for Social
-                        Solidarity, Connection and HEALING TOGETHER! Developed
-                        by a therapist, these games will help you to process and
-                        to express your thoughts, experiences and feelings. <br/>
-                        PLEASE CLICK ON ANY GAME OF YOUR CHOICE TO ACCESS THAT
-                        GAME. FEEL FREE TO MOVE BACK AND FORTH BETWEEN ANY GAMES
-                        THAT CAPTURE YOUR ATTENTION AND EXPERIENCE.
-                    </Typography>
-                </Toolbar>
+                        WELCOME to Keep It Real 100 for BIPOC Youth, Adults &amp; Allies. We are so glad
+                        you are here! We have created this Restorative Communication game of 16
+                        Categories, just for YOU!! Due to the racism, oppression and historical trauma
+                        which has impacted people of color for generations - we are deeply aware of the
+                        dire need for a Home for “emotional dwelling” a place of compassionate and
+                        empathetic inquiry, a sacred place of respect and understanding, a place to put
+                        language to our, at times, unformulated experiences and feelings, and to enjoy
+                        one another through intimate, transformative and amazing conversations!
+                </Typography>
+                <br/>
+                <Typography
+                        className={classes.title}
+                        variant="h4"
+                        color="textPrimary"
+                        // nowrap
+                    >
+                        The Keep It Real 100 Communication Game, designed for BIPOC Youth, Adults and
+                        Allies provides a safe, structured space for the BIPOC community, and allies to
+                        connect deeply, to have gentle, intentional, bold conversations, and to discover
+                        authentic truths about issues that have a profound impact on our lives.
+                </Typography>
+                <br/>
+                <Typography
+                        className={classes.title}
+                        variant="h4"
+                        color="textPrimary"
+                        // nowrap
+                    >
+                        Keep It Real 100 provides us with a tangible resource through which to uplift,
+                        empower and support one another, while liberating ourselves from societally
+                        imposed narratives and internalized oppression. It empowers a space where we
+                        unapologetically and unashamedly see ourselves and one another in our totality,
+                        with unconditional acceptance.
+                </Typography>
+                <br/>
+                <Typography
+                        className={classes.title}
+                        variant="h4"
+                        color="textPrimary"
+                        // nowrap
+                    >
+                        Let us engage and enlighten one another with LOVE, heal and replenish our
+                        spirits, and re-imagine and co-create a new world in which we rise up together,
+                        with and because of one another!!
+                </Typography>
             {/* </AppBar> */}
         </div>
     );
