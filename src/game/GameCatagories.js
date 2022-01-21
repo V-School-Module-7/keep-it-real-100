@@ -8,6 +8,10 @@ import musicalEncounters from "../images/musical_encounters_final.svg"
 import ourMentalHealth from "../images/our_mental_health_final.svg"
 import religionAndSpirituality from "../images/religion_spirituality_final.svg"
 import theFinerThings from "../images/the_finer_things_final.svg"
+import soulExpressions from "../images/soul_expressions_final.svg"
+import sexuality from "../images/soul_expressions_final.svg"
+import raceAndCulture from "../images/race_and_culture_final.svg"
+import beingBipoc from "../images/being_bipoc_final.svg"
 
 const GameCatagories = [
     {   
@@ -35,7 +39,7 @@ const GameCatagories = [
         id: 1
     },
     {   
-        logo: kirGame,
+        logo: soulExpressions,
         title: "SOUL EXPRESSIONS", 
         editor: "Written by Leslie",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
@@ -83,7 +87,7 @@ const GameCatagories = [
         id: 3
     },
     {   
-        logo: kirGame,
+        logo: raceAndCulture,
         title: "RACE & CULTURE", 
         editor: "Written by Jordan",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
@@ -323,7 +327,7 @@ const GameCatagories = [
         id: 13
     },
     {   
-        logo: kirGame,
+        logo: beingBipoc,
         title: "BEING BIPOC", 
         editor: " ",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
@@ -371,7 +375,7 @@ const GameCatagories = [
         id: 15
     },
     {   
-        logo: kirGame,
+        logo: sexuality,
         title: "SEXUALITY & GENDER ROLES", 
         editor: " ",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
