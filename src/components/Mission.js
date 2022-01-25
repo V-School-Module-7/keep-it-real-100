@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
@@ -28,8 +29,10 @@ const useStyles = makeStyles((theme) => ({
 	},
 }))
 
+
 export default function Mission() {
 	const classes = useStyles()
+
 
 	return (
 		<div className={classes.root}>
@@ -80,4 +83,5 @@ export default function Mission() {
 			</Toolbar>
 		</div>
 	)
+
 }

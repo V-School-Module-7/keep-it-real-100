@@ -8,6 +8,10 @@ import musicalEncounters from "../images/musical_encounters_final.svg"
 import ourMentalHealth from "../images/our_mental_health_final.svg"
 import religionAndSpirituality from "../images/religion_spirituality_final.svg"
 import theFinerThings from "../images/the_finer_things_final.svg"
+import soulExpressions from "../images/soul_expressions_final.svg"
+import sexuality from "../images/soul_expressions_final.svg"
+import raceAndCulture from "../images/race_and_culture_final.svg"
+import beingBipoc from "../images/being_bipoc_final.svg"
 
 const GameCatagories = [
     {   
@@ -35,7 +39,7 @@ const GameCatagories = [
         id: 1
     },
     {   
-        logo: kirGame,
+        logo: soulExpressions,
         title: "SOUL EXPRESSIONS", 
         editor: "Written by Leslie",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
@@ -83,7 +87,7 @@ const GameCatagories = [
         id: 3
     },
     {   
-        logo: kirGame,
+        logo: raceAndCulture,
         title: "RACE & CULTURE", 
         editor: "Written by Jordan",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
@@ -209,7 +213,7 @@ const GameCatagories = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
            '“It\'s an unexplainable feeling, an expression. It\'s a touch, it\'s a feel. Once you feel it, it\'s like no other thing in the world.”     - Snoop Dogg', 
-           '“There\'s definitely a dangerous feeling when you\'re in love...It\'s giving your heart to someone else and knowing that they have control over your feelings. I know for me, who always triesto be so tough, that\'s the dangerous thing.”     - Beyonce Knowles',
+           '“There\'s definitely a dangerous feeling when you\'re in love...It\'s giving your heart to someone else and knowing that they have control over your feelings. I know for me, who always triesto be so tough, that\'s the dangerous thing."     - Beyonce Knowles',
            '“Choose people who will lift you up. Find people who will make you better.”     - Michelle Obama',
            '“We waste time looking for the perfect lover, instead of creating the perfect love.”    - Tom Robbins',
            '“Don\'t cry over someone who wouldn\'t cry over you.”     - Lauren Conrad',
@@ -321,6 +325,78 @@ const GameCatagories = [
             'Do you have any material things of theirs (a card, piece of jewelry, gift, etc.) that you cherish, and will keep with you forever? Please share what this means to you and how this can help to nurture you.'
         ],
         id: 13
+    },
+    {   
+        logo: beingBipoc,
+        title: "BEING BIPOC", 
+        editor: " ",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
+        questions: [
+            'What are two main reasons you love being who you are based on your race(s), and name two main reasons you are not thrilled that you are who you are in this world, based on your race(s). Do these things ignite buried emotions, or anything else? Please sh',
+            'What is the most memorable experience you have had; if any, that made you realize for the first time the importance of your race(s) or culture. Was ispositive or negative, or both? Please share. ',
+            'Have you experienced any level of trauma due to your race(s) or culture? If so, what have you done to heal from your pain?',
+            'Do you have any difficult emotions you have repressed and have not yet dealt with regarding the experience of being a person of color? Please share to your comfort level.',
+            'Do you believe that colorism exists in every culture, especially in the BIPOC community? Please share your thoughts on this.',
+            'What are happy memories or experiences you have had, specific to your race(s) or culture?',
+            'What are the stereotypes of your race(s) or culture that you would like to debunk and address? And are there stereotypes that you find to be quite funny and believe about yourself?',
+            'Do you believe that you are prejudiced towards others because of any unforgiveness in your heart, and do you think that you can ever truly forgive others for the pain they have caused you due to your race(s) or culture?',
+            'Do you believe that being a person of color has a positive or a negative impact on your sense of self-worth / mental health? Or both positive and negative? Please share your thoughts on this.',
+            'How has being a person of color impacted the way you show up in your personal or professional life, if you feel it has?',
+            'Has anything in your personal and/or professional life changed to respond to or to accommodate the overall recent acknowledgement of the societal challenges face?',
+            'What is your feeling about the mental health impact of navigating oppression, racism and racial violence? We know this is difficult to put into words, so the group might want to discuss this question together, rather than answer one by one.',
+            'Do you feel there is a good deal of interracial prejudice between different groups of people of color, as well as colorism within the same race? If yes, how would you define interracial prejudice, and why do you think these divides have developed?',
+            'How can you find inner peace, and resilience during these trying times?',
+            'Do you feel like some white people are getting it more now? What are your thoughts and feelings on this? How far do you think we are going to go in dismantling structural and systemic racism?'
+        ],
+        id: 14
+    },
+    {   
+        logo: kirGame,
+        title: "LGBTQIA +", 
+        editor: " ",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
+        questions: [
+            'If you are non-binary or transgender, what are some things you would like people to know about your experience being non-binary or transgender?',
+            'Members of the LGBTQIA+ community, what are some things you would like cisgender/ and straight people to know about your community? What are some misconceptions that you\'d like to clear up? What types of supports do you live with and/or need in your life? Please answer whichever question appeals to you.',
+            'It is commonly known that lesbian, gay and bisexual and trans people may experience feelings of guilt, isolation, depression, suicidal feelings, and low self-esteem. How do you respond to this? If you agree with it, why do you think this is the case? If not, why not?',
+            'In our current state of affairs in the world, do you feel safe in self-disclosing about your sexual orientation and gender identity? Do you fear retribution? (e.g., abuse physically, sexually, violence)?',
+            'When did you come out? How was that? Joyous? Not? Did you have supports? What was your experience?',
+            'What do you think might be issues that LGBTQIA+ couples face that straight couples do not have to consider? How might these difficulties be managed and dealt with best?',
+            'Would you intervene if you saw homophobic/transphobic bullying taking place? Why or why not?',
+            'How do stressors you may experience due to being LGBTQIA+ also affect the intersection of other parts of your identity such as race, culture, age and disability?',
+            'Do you have friends, family, peers or teachers that accept your sexual orientation and/or gender identity? Is this helpful for you? Please share your experience.',
+            'Do you know any families that are struggling with accepting that their child is Lesbian, Gay, Bisexual, or Transgender? If so, tell us about what is going on with that family? If you feel comfortable sharing, whatwas your journey with your family?',
+            'There is much disagreement about the Bible condemning LGBTQ people. Many religious scholars argue that the Biblical passages which are said to refer to same-gender sexuality have been misinterpreted. Have you experienced any religious exclusion or discrimination based on your sexuality? Please share.',
+            'Have you ever experienced any form of violence from your peers, family, community concerning your Gender Identity?  How have experiences of discrimination regarding your sexual orientation and/or gender identity impacted your well-being? Please share to your comfort level.',
+            'Research shows that the average age of coming out as gay is now 13 years old, whereas a decade or so ago it was in the 20\'s. What do you think of the implications of this for families? What age were you when you came out? Why do you think you decided to come out at that specific age?',
+            'Tell us something positive you have learned about life,  and / or something positive you have experienced due to being LGBTQIA+.',
+            'How do you think / feel being LGBTQIA+ has impacted your relationship with yourself, in either a positive or a negative way, or both? '
+        ],
+        id: 15
+    },
+    {   
+        logo: sexuality,
+        title: "SEXUALITY & GENDER ROLES", 
+        editor: " ",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
+        questions: [
+            'If you feel like sharing, how do you self-identify? Is saying your pronouns to others comfortable or uncomfortable for you? Do you feel bad or uncomfortable for correcting others about your pronouns? Why or Why not?',
+            'When were you first introduced to the idea of gender identity, how did you feel about it?',
+            'How do you describe and relate to the concept of male / female gender Identity definitions (as ascribed by the broader, white, male hierarchical patriarchy?)',
+            'How do you feel when you\'re judged because of who and what you are? Your meaning, your truths? How do you handle it?',
+            'What are some confusions you have about gender identity? (Remind everyone this is a safe space to educate each other)',
+            'Have traditional gender roles impacted you in any way? How do you feel about your own sexual identity? Are you comfortable with yourself? Please share to your comfort level.',
+            'Would you ever date a bisexual or pansexual person? Why or why not?',
+            'Do bisexual and pansexual men seem less masculine to you? Why or why not?',
+            'What is masculinity? If you are a man, is it important to you to be “masculine”?',
+            'What is femininity? If you are a woman, is it important to you to be “feminine”?',
+            'What parts of masculinity do you think are good, and what parts do you think are toxic? Why?',
+            'What parts of femininity do you think are good, and what parts do you think are toxic? Why?',
+            'Do you believe men can, or should be in touch with their feminine side? Why or why not? (Vice versa for women)',
+            '(Safe space reminder) How many of you have been, or are uncomfortable with homosexuality? What in particular made, or makes you uncomfortable? Please speak to your comfort level.',
+            'Gender identity can correlate with a person\'s assigned sex at birth, or can differ from it. Have you ever felt that you have gender characteristics of the opposite sex? If yes, how did/ does this make you feel? What is your experience?'
+        ],
+        id: 16
     },
 ]
 
