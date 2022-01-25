@@ -6,11 +6,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-// import Button from "@material-ui/core/Button";
-// import kpr100 from "../images/001_UPDATE-01.png";
-// import loveExplorations from '../images/love_explorations_final.svg'
 
-export default function CardItem({ title, content, logo, path, questions, id }) {
+export default function CardItem({ title, logo, id }) {
 
   const useStyles = makeStyles({
     root: {
@@ -37,17 +34,6 @@ export default function CardItem({ title, content, logo, path, questions, id }) 
   });
 
   const classes = useStyles()
-  // const history = useHistory()
-  // const params = useParams()
-
-  // function handleClick() {
-  //   // e.preventDefault()
-  //   console.log(path)
-    
-  // }
-
-  // const thisCard = GameCatagories.find(question => question.title == params.title)
-  // const title= thisCard.title
 
   return (
     <Card className={classes.root}
@@ -64,9 +50,6 @@ export default function CardItem({ title, content, logo, path, questions, id }) 
         <CardContent style={{height: '100%'}}>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
-          </Typography>
-          <Typography variant="body2" color="textPrimary" component="h2">
-            {content}
           </Typography>
 
           <Typography className={classes.typography} align="center">

@@ -12,13 +12,15 @@ import soulExpressions from "../images/soul_expressions_final.svg"
 import sexuality from "../images/soul_expressions_final.svg"
 import raceAndCulture from "../images/race_and_culture_final.svg"
 import beingBipoc from "../images/being_bipoc_final.svg"
+import relationships from "../images/relationships_final.svg"
+import lgbtqia from "../images/LGBTQIA_final.svg"
+import allInTheFamily from "../images/all_in_the_family_final.svg"
 
 const GameCatagories = [
     {   
         logo: loveOfJustice,
         title: "FOR THE LOVE OF JUSTICE", 
         editor: "Written by Leslie & Edited by Celia",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
            `Do you feel the conscience of this nation is being shaken up? Please share your thoughts and feelings on this.`, 
            'What changes are you personally going through at this time, due to the long overdue recognition of racism in America?', 
@@ -42,7 +44,6 @@ const GameCatagories = [
         logo: soulExpressions,
         title: "SOUL EXPRESSIONS", 
         editor: "Written by Leslie",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'MEDITATION: One or more of the players, volunteer to lead the other players in a peaceful meditation. (For example: Have everyone close their eyes and imagine walking through gardens, waterfalls, a rainforest.) Describe in as much detail as you can. Let your imagination go!',
             'SOUL SEARCH: All players, draw an abstract picture of the state of your soul. Beginning with the person who chose this interaction, share your drawing with the other players, and say as much as you feel comfortable with about what your drawing means to you.',
@@ -63,10 +64,9 @@ const GameCatagories = [
         id: 2
     },
     {   
-        logo: kirGame,
+        logo: relationships,
         title: "RELATIONSHIPS (Self & Others)", 
         editor: "Written by Jordan (a few by Leslie)",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'How often do you think about your inner child? What would you like to say to your younger self?',
             'What is your “ideal self” the self you try to achieve every day? Is your ideal self realistic? (For example: someone\'s ideal self may have a mansion at a certain age, or be in an idolized profession)',
@@ -90,7 +90,6 @@ const GameCatagories = [
         logo: raceAndCulture,
         title: "RACE & CULTURE", 
         editor: "Written by Jordan",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'Do you feel you have ever been misunderstood by others based on your race and / or skin color? Please share.',
             'Tell us a little about your culture and ethnicity. What are your favorite things about it? What don\'t you like? What do you thinkneeds changing?  (For Example: homophobia in certain cultures, colorism, exclusivity)',
@@ -114,7 +113,6 @@ const GameCatagories = [
         logo: ourMentalHealth,
         title: "OUR MENTAL HEALTH", 
         editor: "Written by Celia & Edited by Jordan",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'Have you experienced mental health issues in your life? If comfortable, please share some ways that you\'ve overcome difficult mental and emotional problems?',
             'What are some ways that you take care of yourself physically, mentally and emotionally?',
@@ -138,7 +136,6 @@ const GameCatagories = [
         logo: religionAndSpirituality,
         title: "RELIGION & SPIRITUALITY", 
         editor: "Written by ",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'Are you spiritual, or religious, and what does that mean to you?',
             'Is there a religious book that you agree with, disagree with, or believe only some things are written in it (For example: the Bible, Koran, etc.)? Please share.',
@@ -162,7 +159,6 @@ const GameCatagories = [
         logo: groupInteractions,
         title: "FUN GROUP INTERACTIONS",
         editor: "Written by Leslie", 
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'GROUP STORY: Whoever is the Leader of this turn, come up with the opening sentence to a story. All players, in turn, add a sentence until the story comes to a conclusion!',
             'FUNNY FACE CONTEST: Beginning with the Leader of this turn, and then continuing to each player, make the funniest face you can. Players vote on the funniest face!',
@@ -183,10 +179,9 @@ const GameCatagories = [
         id: 7
     },
     {   
-        logo: kirGame,
+        logo: allInTheFamily,
         title: "ALL IN THE FAMILY", 
         editor: "Written by Leslie (a few by Jordan)",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'Are you from first gen immigrant parents? Second gen? Third gen? Please share on how you feel you have been impacted by your immigrant status.',
             'Is there anything you\'d like to do career wise, that your family would disagree with or be unsupportive of? (For example: Pursue music, become a YouTuber, etc.). How important is it to you to have family support?',
@@ -210,7 +205,6 @@ const GameCatagories = [
         logo: loveExplorations,
         title: "LOVE EXPLORATIONS (Discussion Quotes)", 
         editor: "Written by Leslie",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
            '“It\'s an unexplainable feeling, an expression. It\'s a touch, it\'s a feel. Once you feel it, it\'s like no other thing in the world.”     - Snoop Dogg', 
            '“There\'s definitely a dangerous feeling when you\'re in love...It\'s giving your heart to someone else and knowing that they have control over your feelings. I know for me, who always triesto be so tough, that\'s the dangerous thing."     - Beyonce Knowles',
@@ -234,7 +228,6 @@ const GameCatagories = [
         logo: addictionZone,
         title: "ADDICTION ZONE", 
         editor: "Written by Leslie",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
            'Have you used drugs? If yes, why have you used, or why do you continue to use them?', 
            'What does / did, using drugs do for you?', 
@@ -258,7 +251,6 @@ const GameCatagories = [
         logo: musicalEncounters,
         title: "MUSICAL ENCOUNTERS", 
         editor: "Written by Jabran & Kevin",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             '1. “Don\'t let the struggle make your heart harder Sip the truth, spit the truth That\'s the smart water”  - Daniels Bloom by Mick Jenkins',
             '2. “Cause it makes me that much stronger Makes me work a little bit harderMakes me that much wiserSo thanks for making me a fighterMade me learn a little bit fasterMade my skin a little bit thickerMakes me that much smarterSo thanks for making me a fighter”  - Fighter by Christina Aguilera',
@@ -282,7 +274,6 @@ const GameCatagories = [
         logo: theFinerThings,
         title: "THE FINER THINGS", 
         editor: "Written by Jordan",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'As Black or BIPOC people, do you believe we are financially oppressed? If yes, name two ways we are financially oppressed by society, and two ways we financially oppress ourselves.',
             'Have you seriously thought about why we have a negative or nonchalant way of looking at Black owned business? (For example: Obsession with designer clothing, and subconscious thinking that our stuff is corny?) What are your thoughts on this?',
@@ -306,7 +297,6 @@ const GameCatagories = [
         logo: lossRemembrance,
         title: "LOSS AND REMEMBRANCE", 
         editor: "Written by Leslie",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'What is one of your fondest or most cherished memories with the person you lost?',
             'What is something you will miss about this person?',
@@ -330,7 +320,6 @@ const GameCatagories = [
         logo: beingBipoc,
         title: "BEING BIPOC", 
         editor: " ",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'What are two main reasons you love being who you are based on your race(s), and name two main reasons you are not thrilled that you are who you are in this world, based on your race(s). Do these things ignite buried emotions, or anything else? Please sh',
             'What is the most memorable experience you have had; if any, that made you realize for the first time the importance of your race(s) or culture. Was ispositive or negative, or both? Please share. ',
@@ -351,10 +340,9 @@ const GameCatagories = [
         id: 14
     },
     {   
-        logo: kirGame,
+        logo: lgbtqia,
         title: "LGBTQIA +", 
         editor: " ",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'If you are non-binary or transgender, what are some things you would like people to know about your experience being non-binary or transgender?',
             'Members of the LGBTQIA+ community, what are some things you would like cisgender/ and straight people to know about your community? What are some misconceptions that you\'d like to clear up? What types of supports do you live with and/or need in your life? Please answer whichever question appeals to you.',
@@ -378,7 +366,6 @@ const GameCatagories = [
         logo: sexuality,
         title: "SEXUALITY & GENDER ROLES", 
         editor: " ",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus nisi justo faucibus eu.",
         questions: [
             'If you feel like sharing, how do you self-identify? Is saying your pronouns to others comfortable or uncomfortable for you? Do you feel bad or uncomfortable for correcting others about your pronouns? Why or Why not?',
             'When were you first introduced to the idea of gender identity, how did you feel about it?',
