@@ -36,10 +36,7 @@ export default function CardItem({ title, logo, id }) {
   const classes = useStyles()
 
   return (
-    <Card className={classes.root}
-    style={{height: '550px', width: '400px'}}
-    
-    >
+    <Card className={classes.root} style={{height: '550px', width: '400px'}}>
       <CardMedia
         className={classes.media}
         component='img'

@@ -16,7 +16,9 @@ import relationships from "../images/relationships_final.svg"
 import lgbtqia from "../images/LGBTQIA_final.svg"
 import allInTheFamily from "../images/all_in_the_family_final.svg"
 
-const GameCatagories = [
+
+const gameCatagories = [
+
     {   
         logo: loveOfJustice,
         title: "FOR THE LOVE OF JUSTICE", 
@@ -387,4 +389,4 @@ const GameCatagories = [
     },
 ]
 
-export default GameCatagories
+export default gameCatagories
