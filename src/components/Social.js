@@ -90,6 +90,9 @@ export default function Social() {
                     <Link to="/faqPage" className={classes.link}>
                         FAQ
                     </Link>
+                    <Link to="/contactPage" className={classes.link}>
+                        CONTACT US
+                    </Link>
                     {location.pathname !== '/' && 
                         <Link to="/" className={classes.link}>
                             HOME

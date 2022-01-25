@@ -7,6 +7,7 @@ import Mission from './components/Mission';
 import Cards from './components/Cards';
 import QuestionsPage from './pages/QuestionsPage'
 import HowToPlayPage from './pages/HowToPlayPage'
+import ContactPage from './pages/ContactPage'
 import CreatorsPage from './pages/CreatorsPage'
 import Footer from './components/Footer';
 import FaqPage from './pages/FaqPage';
@@ -42,6 +43,9 @@ const App = () => {
                     </Route>
                     <Route path="/howToPlay">
                         <HowToPlayPage />
+                    </Route>
+                    <Route path="/contactPage">
+                        <ContactPage />
                     </Route>
                     <Route path="/creators">
                         <CreatorsPage />
