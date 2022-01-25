@@ -14,16 +14,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CreatorBio({profileImg, bio, proTitle, personName}) {
+// export default function CreatorBio({profileImg, bio, proTitle, personName}) {
+export default function CreatorBio({profileImg, personName, proTitle, bio, id }) {
   const classes = useStyles();
 
   return (
     <div>
 
-<Grid
+      <Grid
         container
         direction="row"
-
       >
         <Box
           component="span"
@@ -56,9 +56,8 @@ export default function CreatorBio({profileImg, bio, proTitle, personName}) {
               </Typography>
             </Grid>
             </Grid>
-            </Box>
+            </Box> 
             </Grid>
-
     </div>
   );
 }
