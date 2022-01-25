@@ -100,9 +100,6 @@ export default function Social() {
                     />
                 }
                 <div className={classes.navlinks}>
-                    <Link to="/aboutUs" className={classes.link}>
-                        ABOUT US
-                    </Link>
                     <Link to="/howToPlay" className={classes.link}>
                         HOW TO PLAY
                     </Link>
@@ -111,6 +108,9 @@ export default function Social() {
                     </Link>
                     <Link to="/faqPage" className={classes.link}>
                         FAQ
+                    </Link>
+                    <Link to="/contactPage" className={classes.link}>
+                        CONTACT US
                     </Link>
                     {location.pathname !== '/' && 
                         <Link to="/" className={classes.link}>

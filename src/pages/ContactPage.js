@@ -3,14 +3,12 @@ import {
 	Container,
 	CssBaseline,
 	makeStyles,
-	Card,
 	Paper,
 	Typography,
 	Avatar,
 } from '@material-ui/core'
 import { grey, indigo, pink } from '@material-ui/core/colors'
 import React from 'react'
-import Footer from '../components/Footer'
 import Social from '../components/Social'
 
 const useStyles = makeStyles({
@@ -48,7 +46,7 @@ const useStyles = makeStyles({
 	},
 })
 
-export default function AboutUsPage() {
+export default function ContactPage() {
 	const classes = useStyles()
 	return (
 		<div>
@@ -59,7 +57,7 @@ export default function AboutUsPage() {
 				className={classes.container}
 			>
 				<Social />
-				<Typography variant='h2' style={{ display: 'flex' , justifyContent: 'center', padding: '16px', margin: '16 0 16 0'}}>About Us Page</Typography>
+				<Typography variant='h2' style={{ display: 'flex' , justifyContent: 'center', padding: '16px', margin: '16 0 16 0'}}>Contact Page</Typography>
 				<Box className={classes.box}>
 					<Paper elevation24 className={classes.paper} variant="outlined">
 						<div style={{display: 'grid', placeItems: 'center'}}>

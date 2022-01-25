@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: theme.spacing(11),
         paddingBottom: theme.spacing(3),
     },
-    Typogr: {
+    Typography: {
         flexGrow: 1,
         // borderRadius: 50,
         display: 'flex',
