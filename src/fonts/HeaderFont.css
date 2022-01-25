@@ -1,0 +1,16 @@
+
+@font-face{
+    font-family: 'Brolachess';
+    src: local('Aurarain'), url('./fonts/Brolachess.ttf') format('truetype');
+    font-style: normal
+ 
+}
+@font-face{
+    font-family: 'grifon';
+    src: local('grifon'), url('./fonts/grifon.ttf') format('truetype');
+    font-style: normal
+}
+@font-face{
+    font-family: 'Belgietta';
+    src: local('Belgietta'), url(./fonts/Belgietta.ttf) format('truetype');
+}

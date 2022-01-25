@@ -1,24 +1,22 @@
-import { ClassNames } from '@emotion/react'
 import { CssBaseline } from '@material-ui/core'
 import { Typography } from '@material-ui/core'
 import React from 'react'
 import Footer from '../components/Footer'
 import Social from '../components/Social'
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import { makeStyles } from "@material-ui/core/styles";
+import Grid from '@mui/material/Grid'
+import Box from '@mui/material/Box'
+import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
-    boldBodyText: {
-        fontWeight: "bolder",
-        fontSize: "large",
-        textAlign: "center"
-      }
-   }));
+	boldBodyText: {
+		fontWeight: 'bolder',
+		fontSize: 'large',
+		textAlign: 'center',
+	},
+}))
 
 export default function HowToPlay() {
-
-       const classes = useStyles();
+	const classes = useStyles()
 
     return (
         <div>
@@ -56,3 +54,4 @@ export default function HowToPlay() {
         </div>
     )
 }
+

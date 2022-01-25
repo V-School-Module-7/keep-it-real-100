@@ -20,7 +20,6 @@ export default function Cards() {
             
         >
         {GameCatagories.map((item, index) => (
-            console.log('logo image: ', item.logo),
             <CardItem 
                 item
                 key={index}
