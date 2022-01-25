@@ -12,21 +12,9 @@ export default function QuestionModal(props) {
         questions, 
     } = props
 
-    const useStyles = makeStyles({
-        // root: {
-        //   flexGrow: 1,
-        // //   maxWidth: 345,
-        //   maxHeight: 750,
-        //   padding: '3rem',
-        // //   margin: "30px 15px",
-        // },
-      });
-
-      const classes = useStyles()
 
     return (
 
-        // <div className={classes.root} style={{backgroundColor:'yellow', height:'600px' }}>
             <Box
                  component="div"
                  sx={{
@@ -40,15 +28,10 @@ export default function QuestionModal(props) {
                    backgroundColor: "#747EE8",
                    contain: 'content',
                    height:'100%', 
-                //    width:'auto'
-                //    maxHeight:'fit-content',
-                //    display: 'flex',
                    overflowY: 'auto',
-                //    overflow: 'hidden',
                 }}>
                 <Typography variant='h4'>{ questions[currQuestion] }</Typography>
             </Box>
-
-    //     </div>
     )
 }
+

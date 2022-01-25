@@ -22,17 +22,12 @@ const useStyles = makeStyles((theme) => ({
     titleContainer: {
         margin: '4rem'
     },
-    qContainer: {
-        marginBottom: '6rem'
-        // flexGrow: 1
-    },
+
 }))
 
 
 export default function QuestionsPage(props) {
     const classes = useStyles();
-    // const history = useHistory()
-    // console.log(history)
     let { gameId } = useParams()
 
     const gameCatagory = GameCatagories.filter(game => {
@@ -59,14 +54,9 @@ export default function QuestionsPage(props) {
                 <Typography variant="h2">
                     {gameCatagory[0].title}
                 </Typography>
-                <Typography variant="h4">
-                    {gameCatagory[0].editor}
-                </Typography>
             </div>
         </div>
-        <div className={classes.qContainer}> 
             <TheQuestions gameCatagory={gameCatagory[0]} />
-        </div>
             <Footer/>
         </div>
     )
