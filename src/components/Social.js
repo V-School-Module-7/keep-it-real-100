@@ -1,12 +1,7 @@
 import React from 'react';
-// import donateButtonPic from '../images/donate-button-pic.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { Link } from 'react-router-dom';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { useLocation, Link } from 'react-router-dom';
 import KIRimg from '../images/001_UPDATE-01.png'
-// import { Link } from '@material-ui/core';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import {
     faInstagram,
     faTwitter,
@@ -16,19 +11,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-// const donateBtnImg = donateButtonPic;
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        // paddingRight: theme.spacing(11),
-        // paddingLeft: theme.spacing(11),
-        // paddingBottom: theme.spacing(5),
-        // display: 'flex',
-        // position: 'relative'
     },
     appBarSocial: {
         flexDirection: 'row',
@@ -48,13 +36,10 @@ const useStyles = makeStyles((theme) => ({
         }
     },      
     navlinks: {
-        // marginRight: theme.spacing(8),
         display: "flex",
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-        // fontWeight: '400',
         fontFamily: 'sans-serif',
         fontWeight: 'lighter',
       },
@@ -64,17 +49,13 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "12px"
     },
     logo: {
-        // marginRight: theme.spacing(15),
         width: 150,
         height: 150,
         marginLeft: 15,
-        // marginRight: 20,
-        // marginTop: 20,
         marginBottom: 20,
         position: 'absolute',
         left: '0',
         top: '5px',
-        // justifySelf: 'right'
     },
 }));
 
@@ -100,9 +81,6 @@ export default function Social() {
                     />
                 }
                 <div className={classes.navlinks}>
-                    <Link to="/aboutUs" className={classes.link}>
-                        ABOUT US
-                    </Link>
                     <Link to="/howToPlay" className={classes.link}>
                         HOW TO PLAY
                     </Link>
