@@ -37,7 +37,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		flexGrow: 1,
-		fontFamily: 'Brolachess',
+		fontFamily: `'Chicle', cursive`,
+		fontWeight: 700,
+
 		paddingTop: '2vw',
 		textAlign: 'center',
 		[theme.breakpoints.up('sm')]: {
@@ -71,14 +73,21 @@ export default function Header() {
 					/>
 					<Typography
 						className={classes.title}
-						style={{ fontWeight: 'bold', fontSize: '7rem' }}
+						style={{
+							fontWeight: 'Bold 700 ',
+							fontSize: '7rem',
+							lineHeight: '1.43',
+							letterSpacing: '0.01071em',
+							fontStretch: 'ultra-condensed', 
+							fontFeatureSettings: "liga",
+						}}
 					>
 						Keep It Real 100 Game
 					</Typography>
 					<Typography
 						className={classes.title}
 						color="textPrimary"
-						style={{ paddingTop: 0 , fontWeight: 'bold', fontSize: '3rem'}}
+						style={{ paddingTop: 0, fontWeight: 'bold', fontSize: '3rem' }}
 					>
 						for BIPOC Youth, Adults, & Allies
 					</Typography>
