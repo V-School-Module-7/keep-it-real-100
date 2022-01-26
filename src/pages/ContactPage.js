@@ -7,7 +7,7 @@ import {
 	Typography,
 	Avatar,
 } from '@material-ui/core'
-import { grey, indigo, pink } from '@material-ui/core/colors'
+import { grey, indigo } from '@material-ui/core/colors'
 import React from 'react'
 import Social from '../components/Social'
 
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 	box: {
 		display: 'grid',
 		placeItems: 'center',
-        gap: '24px'
+		gap: '24px',
 	},
 	avatar: {
 		// fontSize: '80px',
@@ -57,12 +57,22 @@ export default function ContactPage() {
 				className={classes.container}
 			>
 				<Social />
-				<Typography variant='h2' style={{ display: 'flex' , justifyContent: 'center', padding: '16px', margin: '16 0 16 0'}}>Contact Page</Typography>
+				<Typography
+					variant="h2"
+					style={{
+						display: 'flex',
+						justifyContent: 'center',
+						padding: '16px',
+						margin: '16 0 16 0',
+					}}
+				>
+					Contact Page
+				</Typography>
 				<Box className={classes.box}>
 					<Paper elevation24 className={classes.paper} variant="outlined">
-						<div style={{display: 'grid', placeItems: 'center'}}>
+						<div style={{ display: 'grid', placeItems: 'center' }}>
 							<Avatar variant="circular" className={classes.avatar} />
-                            <Typography>this is under</Typography>
+							<Typography>this is under</Typography>
 						</div>
 						<Typography className={classes.boldBodyText}>
 							Lorem Ipsum is simply dummy text of the printing and typesetting

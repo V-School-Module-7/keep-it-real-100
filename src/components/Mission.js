@@ -1,12 +1,11 @@
-
 import React from 'react'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box } from '@material-ui/core'
+import { red } from '@material-ui/core/colors'
 
 const useStyles = makeStyles((theme) => ({
-
 	root: {
 		flexGrow: 1,
 		display: 'flex',
@@ -22,15 +21,14 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		flexGrow: 1,
-		fontFamily: 'Brolachess',
+		fontFamily: `'Source Code Pro', monospace`,
+		fontWeight: '422',
 		fontSize: '20px',
 	},
 }))
 
-
 export default function Mission() {
 	const classes = useStyles()
-
 
 	return (
 		<div className={classes.root}>
@@ -40,21 +38,40 @@ export default function Mission() {
 					className={classes.title}
 					style={{
 						paddingBottom: '1rem',
-						fontSize: '9rem',
+						fontSize: '5.7rem',
 						textAlign: 'center',
-						lineHeight: '9rem',
+						lineHeight: '5rem',
 					}}
 				>
-					{`Welcome to our emotional rescue communication`}
+					<h1
+						style={{
+							fontFamily: `'Chicle', cursive`,
+							fontSize: '26.7rem',
+							paddingTop: '0px',
+							width: '90vw',
+							marginBottom: '0px',
+							marginTop: '122px',
+							height: '37vh',
+							color: red[800],
+						}}
+					>
+						{`Welcome`}
+					</h1>
+					<Typography variant="div">
+						<h3
+							style={{
+								fontFamily: `'Chicle', cursive`,
+								marginBottom: '0px',
+								marginTop: '0px',
+								lineHeight: '63px',
+								fontSize: '40px',
+							}}
+						>{`to our`}</h3>
+						<b
+							style={{ fontSize: '8vw', fontFamily: `'Chicle', cursive` }}
+						>{`emotional rescue communication & connection games!!!`}</b>
+					</Typography>
 				</Typography>
-				<Typography
-					className={classes.title}
-					style={{
-						fontSize: '7rem',
-						padding: ' 0 8rem 8rem',
-						lineHeight: '9rem',
-					}}
-				>{`& connection games!!!`}</Typography>
 				<Box>
 					<Typography
 						color="textPrimary"
@@ -62,13 +79,14 @@ export default function Mission() {
 							margin: '0 10vw',
 							fontSize: '3rem',
 							textAlign: 'left',
-							fontFamily: 'Belgietta',
+							fontFamily: `'Space Mono', monospace`,
+							fontWeight: 700,
 						}}
 					>
 						{`During this time of social distancing, uncertainty, harsh realities
 						and change, we are here to provide you with opportunities for Social
 						Solidarity, Connection and `}
-						<b style={{fontSize: '3rem'}}>{` Healing Together! `}</b>
+						<b style={{ fontSize: '3rem' }}>{` Healing Together! `}</b>
 						{`Developed by a therapist, these games will help you to process and to express your
 						thoughts, experiences and feelings.`}
 					</Typography>
@@ -76,10 +94,9 @@ export default function Mission() {
 				<Typography>
 					{`PLEASE CLICK ON ANY GAME OF YOUR CHOICE TO ACCESS THAT GAME. FEEL FREE
 					TO MOVE BACK AND FORTH BETWEEN ANY GAMES THAT CAPTURE YOUR ATTENTION
-					AND EXPERIENCE.`}
+					AND EXPERIENCE.`.toLowerCase()}
 				</Typography>
 			</Toolbar>
 		</div>
 	)
-
 }

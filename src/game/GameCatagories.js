@@ -1,4 +1,3 @@
-import kirGame from "../images/001_UPDATE-01.png"
 import loveExplorations from "../images/love_explorations_final.svg"
 import lossRemembrance from "../images/loss_remembrance_final.svg"
 import groupInteractions from "../images/group_interactions_final.svg"
