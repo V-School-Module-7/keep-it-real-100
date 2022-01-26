@@ -57,7 +57,6 @@ export default function CardItem({ title, logo, id }) {
 					>
 						{title}
 					</Typography>
-
 					<Typography className={classes.typography} align="center">
 						<Link
 							className={classes.playLink}

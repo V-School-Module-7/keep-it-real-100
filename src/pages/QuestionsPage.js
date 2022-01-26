@@ -1,6 +1,6 @@
 import React from 'react'
 import TheQuestions from '../game/TheQuestions'
-import GameCatagories from '../game/GameCatagories'
+import gameCatagories from '../game/gameCatagories'
 import { makeStyles } from '@material-ui/core/styles'
 import { useParams } from 'react-router-dom'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -30,7 +30,7 @@ export default function QuestionsPage(props) {
     const classes = useStyles();
     let { gameId } = useParams()
 
-    const gameCatagory = GameCatagories.filter(game => {
+    const gameCatagory = gameCatagories.filter(game => {
         gameId = parseInt(gameId)
         return game.id === gameId
     }

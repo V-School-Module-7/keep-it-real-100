@@ -2,11 +2,11 @@ import React from "react";
 // import { useParams } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import CardItem from "./CardItem";
-import GameCatagories from '../game/GameCatagories';
+import gameCatagories from '../game/gameCatagories';
 
 
 export default function Cards() {
-    console.log('GameCatagories: ', GameCatagories)
+    console.log('gameCatagories: ', gameCatagories)
 
     return (
 
@@ -19,7 +19,7 @@ export default function Cards() {
             alignItems="center"
             
         >
-        {GameCatagories.map((item, index) => (
+        {gameCatagories.map((item, index) => (
             <CardItem 
                 item
                 key={index}
