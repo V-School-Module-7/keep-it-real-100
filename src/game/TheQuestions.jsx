@@ -11,23 +11,18 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded'
 import ListSubHeader from '../components/ListSubheader'
 
-// const purp = '#54268F'
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		color: 'white',
 	}, 
 	gridContainer: {
-		// flexGrow: 1,
 		display: 'flex',
 		justifyContent: 'center',
 		alignSelf: 'center',
-		// maxHeight: '100vh',
-		// height: '300px',
 	},
 	rightModal: {
 		height: '750px',
-		// overflowY: 'scroll',
 		marginLeft: '1rem',
 		borderRadius: '10px',
 		backgroundColor: '#3F51B5',
@@ -40,23 +35,11 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: '#3F51B5',
 	},
 	leftArrow: {
-		// color: 'red',
-		// position: 'absolute',
-		// bottom:'0px',
-		// right:'50px',
 		backgroundColor: 'white'
 	},
 	rightArrow: {
-		// color: 'red',
-		// position: 'absolute',
-		// bottom:'0px',
-		// right:'50px',
 		backgroundColor: 'white'
 	}
-	// qTitleBox: {
-	// 	backgroundColor: purp,
-	// 	textAlign: 'center',
-	// },
 }))
 
 export default function TheQuestions({ gameCatagory }) {
@@ -123,7 +106,7 @@ export default function TheQuestions({ gameCatagory }) {
 								questions={questions}
 							/>
 						) : (
-							<Typography variant="h4">Select a question.</Typography>
+							<Typography variant="h4" style={{textAlign:'center'}}>Please select a question</Typography>
 						)}
 					<div style={{display:'flex', justifyContent:'space-between', alignSelf:'flex-end'}}>
 						<Fab className={classes.leftArrow} onClick={handleDecClick}>

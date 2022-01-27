@@ -23,12 +23,17 @@ export default function CardItem({ title, logo, id }) {
 		playLink: {
 			textDecoration: 'none',
 			color: 'white',
+			fontSize:'28px',
+			'&:hover': {
+				color: 'red'
+			}
 		},
 		typography: {
 			position: 'absolute',
 			top: 0,
 			marginTop: '10rem',
 			width: '90%',
+			top:'-4rem',
 		},
 	})
 
