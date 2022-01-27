@@ -32,12 +32,12 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
             display: 'block',
         },
+        display: 'block',
+
     },
     text: {
         flexGrow: 1,
         fontSize: '20px',
-        // display: 'none',
-        // marginLeft: 220,
         padding: '0 1rem 1rem 1rem',
         marginRight: 20,
         textAlign: 'center',

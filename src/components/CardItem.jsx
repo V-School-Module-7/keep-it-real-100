@@ -23,17 +23,22 @@ export default function CardItem({ title, logo, id }) {
 		playLink: {
 			textDecoration: 'none',
 			color: 'white',
-			fontSize:'28px',
+			fontSize: '28px',
 			'&:hover': {
-				color: 'red'
-			}
+				color: 'purple',
+			},
+			display: 'grid',
+			justifyContent: 'center',
+			alignContent: 'center',
+			alignItems: 'baseline',
+			position: 'relative',
+			top: '50px',
 		},
 		typography: {
 			position: 'absolute',
-			top: 0,
 			marginTop: '10rem',
 			width: '90%',
-			top:'-4rem',
+			top: '-4rem',
 		},
 	})
 
@@ -54,7 +59,9 @@ export default function CardItem({ title, logo, id }) {
 						variant="h5"
 						component="h2"
 						style={{
-							fontFamily: `'Chicle', cursive`,
+							fontFamily: `'Poppins', sans-serif`,
+							fontWeight: '900',
+							fontSize: '2rem',
 							lineHeight: '1.334',
 							letterSpacing: '-1px',
 							textAlign: 'center',

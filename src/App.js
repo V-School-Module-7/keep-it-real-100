@@ -19,6 +19,7 @@ const themeLight = createMuiTheme({
         },
         text: {
             secondary: '#000000DE',
+            fontFamily: `'Poppins', sans-serif'`
         },
     },
 });
