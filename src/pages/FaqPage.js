@@ -27,7 +27,16 @@ export default function FaqPage() {
 				justifyContent="center"
 				alignItems="center"
 			>
-				<Box sx={{ mt: 5, typography: 'h4', fontWeight: 700 }}>FAQ</Box>
+				<Box
+					sx={{
+						mt: 5,
+						typography: 'h1',
+						fontWeight: 700,
+						fontFamily: `'Chicle', cursive`,
+					}}
+				>
+					FAQ
+				</Box>
 				<Box
 					component="span"
 					sx={{

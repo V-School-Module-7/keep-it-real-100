@@ -58,12 +58,13 @@ export default function ContactPage() {
 			>
 				<Social />
 				<Typography
-					variant="h2"
+					variant="h1"
 					style={{
 						display: 'flex',
 						justifyContent: 'center',
 						padding: '16px',
 						margin: '16 0 16 0',
+						fontFamily: `'Chicle', cursive`
 					}}
 				>
 					Contact Page

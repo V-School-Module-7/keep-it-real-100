@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     link: {
         textDecoration: "none",
         color: "white",
-        fontSize: "14px",
+        fontSize: "2rem",
         marginRight: theme.spacing(2),
         "&:hover": {
           color: "yellow",
@@ -36,17 +36,18 @@ const useStyles = makeStyles((theme) => ({
         }
     },      
     navlinks: {
-        display: "flex",
-        flexDirection: 'row',
-        justifyContent: 'center',
+        display: "grid",
+        gridAutoFlow: 'column',
+        justifyContent: 'space between',
         alignItems: 'center',
-        fontFamily: 'sans-serif',
-        fontWeight: 'lighter',
+        fontFamily: `'Chicle', cursive`,
+        fontSize: "3rem", 
+        columnGap: '40px'
+
       },
     toolbar: {
         position: 'absolute',
         right: 0,
-        fontSize: "12px"
     },
     logo: {
         width: 150,
@@ -67,12 +68,6 @@ export default function Social() {
     return (
         <div className={classes.root}>
             <AppBar className={classes.appBarSocial} position="static">
-                {/* <img
-                    src={donateBtnImg}
-                    alt="Donate Button"
-                    width="200px"
-                    height="100px"
-                /> */}
                 {location.pathname !== '/' && 
                     <img
                         className={classes.logo}
@@ -81,7 +76,7 @@ export default function Social() {
                     />
                 }
                 <div className={classes.navlinks}>
-                    <Link to="/howToPlay" className={classes.link}>
+                    <Link to="/howToPlay" className={classes.link} >
                         HOW TO PLAY
                     </Link>
                     <Link to="/creators" className={classes.link}>
