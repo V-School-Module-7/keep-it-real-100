@@ -46,8 +46,8 @@ export default function CardItem({ title, logo, id }) {
 				<CardContent style={{ height: '100%' }}>
 					<Typography
 						gutterBottom
-						variant="h5"
-						component="h2"
+						variant="h3"
+						// component="h2"
 						style={{
 							fontFamily: `'Chicle', cursive`,
 							lineHeight: '1.334',

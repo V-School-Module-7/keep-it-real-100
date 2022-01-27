@@ -3,7 +3,6 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box } from '@material-ui/core'
-import { red } from '@material-ui/core/colors'
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -52,7 +51,8 @@ export default function Mission() {
 							marginBottom: '0px',
 							marginTop: '122px',
 							height: '37vh',
-							color: red[800],
+							color: '#3E449C',
+							paddingLeft: '40px',
 						}}
 					>
 						{`Welcome`}
@@ -68,7 +68,11 @@ export default function Mission() {
 							}}
 						>{`to our`}</h3>
 						<b
-							style={{ fontSize: '8vw', fontFamily: `'Chicle', cursive` }}
+							style={{
+								fontSize: '8vw',
+								fontFamily: `'Chicle', cursive`,
+								color: '#757DE8',
+							}}
 						>{`emotional rescue communication & connection games!!!`}</b>
 					</Typography>
 				</Typography>
@@ -76,17 +80,20 @@ export default function Mission() {
 					<Typography
 						color="textPrimary"
 						style={{
+							paddingTop: '80px',
 							margin: '0 10vw',
 							fontSize: '3rem',
 							textAlign: 'left',
-							fontFamily: `'Space Mono', monospace`,
-							fontWeight: 700,
+							fontFamily: `'Roboto', sans-serif`,
+							fontWeight: 400,
 						}}
 					>
 						{`During this time of social distancing, uncertainty, harsh realities
 						and change, we are here to provide you with opportunities for Social
 						Solidarity, Connection and `}
-						<b style={{ fontSize: '3rem' }}>{` Healing Together! `}</b>
+						<b
+							style={{ fontSize: '3rem', color: '#757DE8', fontWeight: '700' }}
+						>{` Healing Together! `}</b>
 						{`Developed by a therapist, these games will help you to process and to express your
 						thoughts, experiences and feelings.`}
 					</Typography>
