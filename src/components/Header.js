@@ -77,9 +77,7 @@ export default function Header() {
 							fontWeight: 'Bold 700 ',
 							fontSize: '7rem',
 							lineHeight: '1.43',
-							letterSpacing: '0.01071em',
-							fontStretch: 'ultra-condensed', 
-							fontFeatureSettings: "liga",
+							letterSpacing: '0.01041em',
 						}}
 					>
 						Keep It Real 100 Game

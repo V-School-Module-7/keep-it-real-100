@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {  Fab, makeStyles } from '@material-ui/core'
+import { Fab, makeStyles } from '@material-ui/core'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
@@ -11,11 +11,10 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded'
 import ListSubHeader from '../components/ListSubheader'
 
-
 const useStyles = makeStyles((theme) => ({
 	root: {
 		color: 'white',
-	}, 
+	},
 	gridContainer: {
 		display: 'flex',
 		justifyContent: 'center',
@@ -35,11 +34,11 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: '#3F51B5',
 	},
 	leftArrow: {
-		backgroundColor: 'white'
+		backgroundColor: 'white',
 	},
 	rightArrow: {
-		backgroundColor: 'white'
-	}
+		backgroundColor: 'white',
+	},
 }))
 
 export default function TheQuestions({ gameCatagory }) {
@@ -52,8 +51,13 @@ export default function TheQuestions({ gameCatagory }) {
 		<ListItem
 			button
 			key={index}
-			onClick={() => ((setCurrQuestion(index), setOpenQ(true)))}
-			style={{backgroundColor: index === currQuestion ? '#ffffff30' : '', borderBottom:'.5px solid #4f4f4f'}} 
+			onClick={() => (setCurrQuestion(index), setOpenQ(true))}
+			style={{
+				backgroundColor: index === currQuestion ? '#ffffff30' : '',
+				borderBottom: '.5px solid #4f4f4f',
+				fontFamily: `'Poppins', sans-serif`,
+				fontWeight: '700',
+			}}
 		>
 			<Typography>
 				<ListItemText primary={q} className={classes.root} />
@@ -63,13 +67,13 @@ export default function TheQuestions({ gameCatagory }) {
 	))
 
 	const handleIncClick = () => {
-		if(currQuestion < questions.length -1) {
+		if (currQuestion < questions.length - 1) {
 			setCurrQuestion((prevState) => (prevState += 1))
 		}
 	}
 
 	const handleDecClick = () => {
-		if(currQuestion > 0) {
+		if (currQuestion > 0) {
 			setCurrQuestion((prevState) => (prevState -= 1))
 		}
 	}
@@ -90,7 +94,7 @@ export default function TheQuestions({ gameCatagory }) {
 						style={{ border: '1px solid black' }}
 					>
 						<List>
-							<ListSubHeader/>
+							<ListSubHeader />
 							{questionCompontents}
 						</List>
 					</Grid>
@@ -98,7 +102,11 @@ export default function TheQuestions({ gameCatagory }) {
 						item
 						xs={6}
 						className={classes.rightModal}
-						style={{ border:'1px solid black', paddingBottom:'125px'}}
+						style={{
+							border: '1px solid black',
+							paddingBottom: '125px',
+							fontFamily: `'Poppins', sans-serif`,
+						}}
 					>
 						{openQ ? (
 							<QuestionModal
@@ -106,17 +114,31 @@ export default function TheQuestions({ gameCatagory }) {
 								questions={questions}
 							/>
 						) : (
-							<Typography variant="h4" style={{textAlign:'center'}}>Please select a question</Typography>
+							<Typography
+								variant="h4"
+								style={{
+									textAlign: 'center',
+									fontFamily: `'Poppins', sans-serif`,
+									fontWeight: '700',
+								}}
+							>
+								Please select a question
+							</Typography>
 						)}
-					<div style={{display:'flex', justifyContent:'space-between', alignSelf:'flex-end'}}>
-						<Fab className={classes.leftArrow} onClick={handleDecClick}>
-							<ArrowBackIosRoundedIcon />
-						</Fab>
-						<Fab className={classes.rightArrow} onClick={handleIncClick}>
-							<ArrowForwardIosRoundedIcon />
-						</Fab>
-					</div>
-					
+						<div
+							style={{
+								display: 'flex',
+								justifyContent: 'space-between',
+								alignSelf: 'flex-end',
+							}}
+						>
+							<Fab className={classes.leftArrow} onClick={handleDecClick}>
+								<ArrowBackIosRoundedIcon />
+							</Fab>
+							<Fab className={classes.rightArrow} onClick={handleIncClick}>
+								<ArrowForwardIosRoundedIcon />
+							</Fab>
+						</div>
 					</Grid>
 				</Grid>
 			</div>

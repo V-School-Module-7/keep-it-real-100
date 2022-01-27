@@ -3,21 +3,18 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import { Box } from '@material-ui/core'
-import { red } from '@material-ui/core/colors'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	root: {
 		flexGrow: 1,
 		display: 'flex',
 		justifyContent: 'center',
+		fontFamily: `'Poppins', sans-serif`,
 	},
 	toolbar: {
 		flexGrow: 1,
 		display: 'flex',
 		flexFlow: 'column wrap',
-		justifyContent: 'flex-end',
-		paddingTop: theme.spacing(2),
-		paddingBottom: theme.spacing(2),
 	},
 	title: {
 		flexGrow: 1,
@@ -40,35 +37,42 @@ export default function Mission() {
 						paddingBottom: '1rem',
 						fontSize: '5.7rem',
 						textAlign: 'center',
-						lineHeight: '5rem',
+						display: 'grid',
+						placeItems: 'center',
+						gridTemplateRows: '20vw 1vw 10vw',
 					}}
 				>
 					<h1
 						style={{
 							fontFamily: `'Poppins', sans-serif`,
+							fontWeight: '800',
 							fontSize: '10rem',
-							paddingTop: '0px',
 							width: '90vw',
-							marginBottom: '0px',
 							marginTop: '122px',
-							height: '37vh',
-							color: red[800],
+							color: '#757DE8',
 						}}
 					>
 						{`Welcome`}
 					</h1>
-					<Typography variant="div">
-						<h3
-							style={{
-								fontFamily: `'Poppins', sans-serif`,
-								marginBottom: '0px',
-								marginTop: '0px',
-								lineHeight: '63px',
-								fontSize: '40px',
-							}}
-						>{`to our`}</h3>
+					<h3
+						style={{
+							fontFamily: `'Poppins', sans-serif`,
+							margin: '0px',
+							fontSize: '40px',
+							fontWeight: '400',
+						}}
+					>{`to our`}</h3>
+
+					<Typography variant="div" style={{ placeItems: 'baseline' }}>
 						<b
-							style={{ fontSize: '8vw', fontFamily: `'Poppins', sans-serif` }}
+							style={{
+								fontSize: '2rem',
+								lineHeight: '1em',
+								fontWeight: '300',
+								placeItems: 'self-start',
+								placeSelf: 'center',
+								alignSelf: 'self-end',
+							}}
 						>{`emotional rescue communication & connection games!!!`}</b>
 					</Typography>
 				</Typography>
@@ -76,11 +80,11 @@ export default function Mission() {
 					<Typography
 						color="textPrimary"
 						style={{
-							margin: '0 10vw',
-							fontSize: '3rem',
+							margin: '10vh 7vw',
+							fontSize: '2rem',
 							textAlign: 'left',
-							fontFamily: `'Space Mono', monospace`,
-							fontWeight: 700,
+							fontFamily: `'Poppins', sans-serif`,
+							fontWeight: 500,
 						}}
 					>
 						{`During this time of social distancing, uncertainty, harsh realities
@@ -91,7 +95,7 @@ export default function Mission() {
 						thoughts, experiences and feelings.`}
 					</Typography>
 				</Box>
-				<Typography>
+				<Typography style={{ fontFamily: `'Poppins', sans-serif` }}>
 					{`PLEASE CLICK ON ANY GAME OF YOUR CHOICE TO ACCESS THAT GAME. FEEL FREE
 					TO MOVE BACK AND FORTH BETWEEN ANY GAMES THAT CAPTURE YOUR ATTENTION
 					AND EXPERIENCE.`.toLowerCase()}

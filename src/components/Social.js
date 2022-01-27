@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     link: {
         textDecoration: "none",
         color: "white",
-        fontSize: "14px",
+        fontSize: "2em",
         marginRight: theme.spacing(2),
         "&:hover": {
           color: "yellow",
@@ -38,10 +38,11 @@ const useStyles = makeStyles((theme) => ({
     navlinks: {
         display: "grid",
         gridAutoFlow: 'column',
+        gridColumnGap: '10px',
         justifyContent: 'center',
         alignItems: 'center',
         fontFamily: `'Poppins', sans-serif`,
-        fontWeight: '500',
+        fontWeight: '700',
       },
     toolbar: {
         position: 'absolute',
