@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		flexGrow: 1,
-		fontFamily: `'Chicle', cursive`,
+		fontFamily: `'Poppins', sans-serif`,
 		fontWeight: 700,
 
 		paddingTop: '2vw',

@@ -1,6 +1,6 @@
 import React from 'react'
 import TheQuestions from '../game/TheQuestions'
-import gameCatagories from '../game/gameCatagories'
+import gameCatagories from '../game/GameCatagories'
 import { makeStyles } from '@material-ui/core/styles'
 import { useParams } from 'react-router-dom'
 import CssBaseline from '@material-ui/core/CssBaseline'

@@ -204,7 +204,7 @@ const gameCatagories = [
     },
     {   
         logo: loveExplorations,
-        title: "LOVE EXPLORATIONS (Discussion Quotes)", 
+        title: `LOVE EXPLORATIONS`, 
         editor: "Written by Leslie",
         questions: [
            '“It\'s an unexplainable feeling, an expression. It\'s a touch, it\'s a feel. Once you feel it, it\'s like no other thing in the world.”     - Snoop Dogg', 

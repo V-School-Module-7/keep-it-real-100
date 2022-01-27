@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		flexGrow: 1,
-		fontFamily: `'Source Code Pro', monospace`,
-		fontWeight: '422',
+		fontFamily: `'Poppins', sans-serif`,
+		fontWeight: '400',
 		fontSize: '20px',
 	},
 }))
@@ -45,8 +45,8 @@ export default function Mission() {
 				>
 					<h1
 						style={{
-							fontFamily: `'Chicle', cursive`,
-							fontSize: '26.7rem',
+							fontFamily: `'Poppins', sans-serif`,
+							fontSize: '10rem',
 							paddingTop: '0px',
 							width: '90vw',
 							marginBottom: '0px',
@@ -60,7 +60,7 @@ export default function Mission() {
 					<Typography variant="div">
 						<h3
 							style={{
-								fontFamily: `'Chicle', cursive`,
+								fontFamily: `'Poppins', sans-serif`,
 								marginBottom: '0px',
 								marginTop: '0px',
 								lineHeight: '63px',
@@ -68,7 +68,7 @@ export default function Mission() {
 							}}
 						>{`to our`}</h3>
 						<b
-							style={{ fontSize: '8vw', fontFamily: `'Chicle', cursive` }}
+							style={{ fontSize: '8vw', fontFamily: `'Poppins', sans-serif` }}
 						>{`emotional rescue communication & connection games!!!`}</b>
 					</Typography>
 				</Typography>

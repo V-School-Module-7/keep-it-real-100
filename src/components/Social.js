@@ -36,12 +36,12 @@ const useStyles = makeStyles((theme) => ({
         }
     },      
     navlinks: {
-        display: "flex",
-        flexDirection: 'row',
+        display: "grid",
+        gridAutoFlow: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        fontFamily: 'sans-serif',
-        fontWeight: 'lighter',
+        fontFamily: `'Poppins', sans-serif`,
+        fontWeight: '500',
       },
     toolbar: {
         position: 'absolute',
@@ -67,12 +67,6 @@ export default function Social() {
     return (
         <div className={classes.root}>
             <AppBar className={classes.appBarSocial} position="static">
-                {/* <img
-                    src={donateBtnImg}
-                    alt="Donate Button"
-                    width="200px"
-                    height="100px"
-                /> */}
                 {location.pathname !== '/' && 
                     <img
                         className={classes.logo}
