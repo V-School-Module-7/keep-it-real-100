@@ -12,16 +12,19 @@ export default function QuestionModal(props) {
 				mt: 2.5,
 				ml: 2.5,
 				mr: 2.5,
-				p: 2,
+				p: 4,
 				border: '1px solid black',
 				borderRadius: '10px',
 				backgroundColor: '#747EE8',
 				contain: 'content',
 				height: '100%',
 				overflowY: 'auto',
+				display:'flex',
+				justifyContent:'center',
+				alignItems:'center'
 			}}
 		>
-			<Typography variant="h4">{questions[currQuestion]}</Typography>
+			<Typography variant="h4" style={{textAlign:'center', lineHeight:'150%', fontWeight:'bold'}}>{questions[currQuestion]}</Typography>
 		</Box>
 	)
 }

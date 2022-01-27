@@ -1,4 +1,3 @@
-
 import profilePic from "../images/profile-placeholder.png";
 import profileLeslie from '../images/leslie_profile_img.jpg'
 import profileCelia from '../images/celia_profile_img.jpg'
@@ -9,7 +8,7 @@ import profileJordan from '../images/jordan_profile_img.jpg'
 import profileLaney from "../images/profile_laney.jpg";
 import profileXavier from "../images/profile_xavier.jpeg";
 import profileEmily from "../images/profile_emily.png";
-
+import profileCatherine from "../images/catherine_profile_img.jpg"
 
 export const bioFiller = () => {
     return (
@@ -113,6 +112,20 @@ export const bioEmily = () => {
     )
 }
 
+export const bioCatherine = () => {
+    return (
+        <>
+            {<p>
+                Catherine Mangosing is a Sr. Art Director in Toronto for the past 10 years following a 12 year career in design in New York City 
+                and Brooklyn. She helps create thoughtfully considered visual communications, illustration, icon design, infographics and brand 
+                identities that traverse disciplines, mediums and channels. She has extensive multidisciplinary experience to draw from. She has 
+                been enriched by the many places she has called home: Manila, Southern California, Vancouver, New York/Brooklyn, and Toronto. 
+                Great design is essential in a world that's evermore connected. GREAT DESIGN IS BORDERLESS.
+            </p>}
+        </>
+    )
+}
+
 export const creatorProfiles = [
     
     {
@@ -156,35 +169,42 @@ export const creatorProfiles = [
         personName: "Kevin Waller",
         proTitle: "Professional Title",
         bio: bioKevin(),
-        id:5
+        id:6
     },
     {
         profileImg: profileLaney,
         personName: "Laney",
         proTitle: "Professional Title",
         bio: bioFiller(),
-        id:5
+        id:7
     },
     {
         profileImg: profileEmily,
         personName: "Emily",
-        proTitle: "Professional Title",
+        proTitle: "Web Developer",
         bio: bioEmily(),
-        id:3
+        id:8
     },
     {
         profileImg: profilePic,
         personName: "Rixio",
         proTitle: "Professional Title",
         bio: bioFiller(),
-        id:4
+        id:9
     },
     {
         profileImg: profileXavier,
         personName: "Xavier",
-        proTitle: "Professional Title",
+        proTitle: "Web Developer",
         bio: bioFiller(),
-        id:5
+        id:10
+    },
+    {
+        profileImg: profileCatherine,
+        personName: "Catherine Mangosing",
+        proTitle: "Icon Design",
+        bio: bioCatherine(),
+        id:11
     },
 ]
 
