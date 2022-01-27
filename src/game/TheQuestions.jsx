@@ -70,24 +70,26 @@ export default function TheQuestions({ gameCatagory }) {
 			button
 			key={index}
 			onClick={() => ((setCurrQuestion(index), setOpenQ(true)))}
+			style={{backgroundColor: index === currQuestion ? '#ffffff30' : '', borderBottom:'.5px solid #4f4f4f'}} 
 		>
-			<Typography variant="h5">
+			<Typography>
 				<ListItemText primary={q} className={classes.root} />
-				<Divider />
 			</Typography>
+			<Divider />
 		</ListItem>
 	))
 
 	const handleIncClick = () => {
-		// count.current = count.current + 1/
-		setCurrQuestion((prevState) => (prevState += 1))
+		if(currQuestion < questions.length -1) {
+			setCurrQuestion((prevState) => (prevState += 1))
+		}
 	}
 
 	const handleDecClick = () => {
-		setCurrQuestion((prevState) => (prevState -= 1))
+		if(currQuestion > 0) {
+			setCurrQuestion((prevState) => (prevState -= 1))
+		}
 	}
-
-	console.log('CurrQuestion:', currQuestion)
 
 	return (
 		<div>
