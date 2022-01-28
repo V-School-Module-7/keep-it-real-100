@@ -8,6 +8,7 @@ import gameCatagories from '../game/GameCatagories';
 export default function Cards() {
     console.log('gameCatagories: ', gameCatagories)
 
+
     return (
 
         <Grid
@@ -17,7 +18,6 @@ export default function Cards() {
             justify="space-evenly"
             style={{alignItems: 'flex-start'}}
             alignItems="center"
-            
         >
         {gameCatagories.map((item, index) => (
             <CardItem 

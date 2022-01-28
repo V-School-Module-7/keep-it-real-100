@@ -22,6 +22,9 @@ const themeLight = createMuiTheme({
             fontFamily: `'Poppins', sans-serif'`
         },
     },
+    typography: {
+        fontFamily: `'Poppins', sans-serif`, 
+    }
 });
 
 
@@ -29,7 +32,7 @@ const App = () => {
 
     return (
         <>
-            <MuiThemeProvider theme={ themeLight}>
+            <MuiThemeProvider theme={themeLight}>
             <BrowserRouter>
                 <Switch>
                         <Route exact path="/">

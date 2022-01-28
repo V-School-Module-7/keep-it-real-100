@@ -64,7 +64,6 @@ export default function ContactPage() {
 						justifyContent: 'center',
 						padding: '16px',
 						margin: '16 0 16 0',
-						fontFamily: `'Poppins', sans-serif`,
 						fontWeight: '500'
 					}}
 				>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Fab, makeStyles } from '@material-ui/core'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
@@ -47,6 +47,18 @@ export default function TheQuestions({ gameCatagory }) {
 	const [openQ, setOpenQ] = useState(false)
 	const [currQuestion, setCurrQuestion] = useState(0)
 
+	// const messageEl = useRef(null);
+  
+    // useEffect(() => {
+    //   if (messageEl) {
+    //     messageEl.current.addEventListener('DOMNodeInserted', event => {
+    //       const { currentTarget: target } = event;
+    //       target.scroll({ top: target.scrollHeight, behavior: 'smooth' });
+    //     });
+    //   }
+    // }, [])
+
+
 	const questionCompontents = questions.map((q, index) => (
 		<ListItem
 			button
@@ -55,11 +67,10 @@ export default function TheQuestions({ gameCatagory }) {
 			style={{
 				backgroundColor: index === currQuestion ? '#ffffff30' : '',
 				borderBottom: '.5px solid #4f4f4f',
-				fontFamily: `'Poppins', sans-serif`,
 				fontWeight: '700',
 			}}
 		>
-			<Typography>
+			<Typography >
 				<ListItemText primary={q} className={classes.root} />
 			</Typography>
 			<Divider />
@@ -93,7 +104,7 @@ export default function TheQuestions({ gameCatagory }) {
 						className={classes.leftList}
 						style={{ border: '1px solid black' }}
 					>
-						<List>
+						<List >
 							<ListSubHeader />
 							{questionCompontents}
 						</List>
@@ -105,7 +116,6 @@ export default function TheQuestions({ gameCatagory }) {
 						style={{
 							border: '1px solid black',
 							paddingBottom: '125px',
-							fontFamily: `'Poppins', sans-serif`,
 						}}
 					>
 						{openQ ? (
@@ -118,8 +128,8 @@ export default function TheQuestions({ gameCatagory }) {
 								variant="h4"
 								style={{
 									textAlign: 'center',
-									fontFamily: `'Poppins', sans-serif`,
 									fontWeight: '700',
+									fontSize:'2rem'
 								}}
 							>
 								Please select a question

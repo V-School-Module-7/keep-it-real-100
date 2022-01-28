@@ -1,6 +1,6 @@
 import React from 'react'
 import CreatorBio from './CreatorBio'
-import {creatorProfiles, bioLeslie} from '../game/creatorProfiles'
+import {creatorProfiles} from '../game/creatorProfiles'
 
 
 

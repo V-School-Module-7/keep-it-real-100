@@ -59,7 +59,6 @@ export default function CardItem({ title, logo, id }) {
 						variant="h5"
 						component="h2"
 						style={{
-							fontFamily: `'Poppins', sans-serif`,
 							fontWeight: '900',
 							fontSize: '2rem',
 							lineHeight: '1.334',

@@ -13,8 +13,7 @@ const useStyles = makeStyles({
 		borderRadius: '10px 10px 0 0',
 		textAlign: 'center',
 		color: 'white',
-		fontSize: 'large',
-		fontFamily: `'Poppins', sans-serif`,
+		fontSize: '2rem',
 		fontWeight: '700',
 	},
 })

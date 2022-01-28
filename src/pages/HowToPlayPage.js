@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
 		fontWeight: '800',
 		fontSize: 'large',
 		textAlign: 'center',
-		fontFamily: `'Poppins', sans-serif`,
 	},
 }))
 
@@ -35,7 +34,6 @@ export default function HowToPlay() {
 						mt: 5,
 						typography: 'h2',
 						fontWeight: 700,
-						fontFamily: `'Poppins', sans-serif`,
 					}}
 				>
 					HOW TO PLAY
