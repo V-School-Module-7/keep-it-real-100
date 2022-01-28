@@ -41,7 +41,6 @@ const useStyles = makeStyles((theme) => ({
         gridColumnGap: '10px',
         justifyContent: 'center',
         alignItems: 'center',
-        fontFamily: `'Poppins', sans-serif`,
         fontWeight: '700',
       },
     toolbar: {

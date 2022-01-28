@@ -23,7 +23,6 @@ export default function CreatorsPage() {
 						typography: 'h2',
 						fontWeight: 700,
 						textAlign: 'center',
-						fontFamily: `'Poppins', sans-serif`,
 					}}
 				>
 					{`CREATORS`}

@@ -47,7 +47,7 @@ export default function CreatorBio({ profileImg, personName, proTitle, bio }) {
 							/>
 							<Typography
 								className={classes.boldBodyText}
-								style={{ fontWeight: 700, fontFamily: `'Poppins', sans-serif` }}
+								style={{ fontWeight: 700 }}
 							>
 								{personName}
 							</Typography>
@@ -56,7 +56,7 @@ export default function CreatorBio({ profileImg, personName, proTitle, bio }) {
 						<Grid item xs={12} md={8} mt={2}>
 							<Typography
 								variant="body1"
-								style={{ fontWeight: 500, fontFamily: `'Poppins', sans-serif` }}
+								style={{ fontWeight: 500 }}
 							>
 								{bio}
 							</Typography>

@@ -48,7 +48,7 @@ export default function QuestionsPage(props) {
 				<div className={classes.titleContainer}>
 					<Typography
 						variant="h2"
-						style={{ fontFamily: `'Poppins', sans-serif` , fontWeight: '700'}}
+						style={{fontWeight: '700'}}
 					>
 						{gameCatagory[0].title}
 					</Typography>

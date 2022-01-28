@@ -9,7 +9,6 @@ const useStyles = makeStyles(() => ({
 		flexGrow: 1,
 		display: 'flex',
 		justifyContent: 'center',
-		fontFamily: `'Poppins', sans-serif`,
 	},
 	toolbar: {
 		flexGrow: 1,
@@ -18,7 +17,6 @@ const useStyles = makeStyles(() => ({
 	},
 	title: {
 		flexGrow: 1,
-		fontFamily: `'Poppins', sans-serif`,
 		fontWeight: '400',
 		fontSize: '20px',
 	},
@@ -39,12 +37,11 @@ export default function Mission() {
 						textAlign: 'center',
 						display: 'grid',
 						placeItems: 'center',
-						gridTemplateRows: '20vw 1vw 10vw',
+						gridTemplateRows: '10vw 1vw 10vw',
 					}}
 				>
 					<h1
 						style={{
-							fontFamily: `'Poppins', sans-serif`,
 							fontWeight: '800',
 							fontSize: '10rem',
 							width: '90vw',
@@ -56,12 +53,12 @@ export default function Mission() {
 					</h1>
 					<h3
 						style={{
-							fontFamily: `'Poppins', sans-serif`,
 							margin: '0px',
 							fontSize: '40px',
 							fontWeight: '400',
+							paddingTop: '75px'
 						}}
-					>{`to our`}</h3>
+					>{`to`}</h3>
 
 					<Typography variant="div" style={{ placeItems: 'baseline' }}>
 						<b
@@ -73,32 +70,58 @@ export default function Mission() {
 								placeSelf: 'center',
 								alignSelf: 'self-end',
 							}}
-						>{`emotional rescue communication & connection games!!!`}</b>
+						>{`Keep It Real 100 for BIPOC Youth, Adults & Allies.`}</b>
 					</Typography>
 				</Typography>
 				<Box>
 					<Typography
 						color="textPrimary"
 						style={{
-							margin: '10vh 7vw',
+							margin: '7vh 7vw',
 							fontSize: '2rem',
 							textAlign: 'left',
-							fontFamily: `'Poppins', sans-serif`,
 							fontWeight: 500,
 						}}
 					>
-						{`During this time of social distancing, uncertainty, harsh realities
-						and change, we are here to provide you with opportunities for Social
-						Solidarity, Connection and `}
-						<b style={{ fontSize: '3rem' }}>{` Healing Together! `}</b>
-						{`Developed by a therapist, these games will help you to process and to express your
-						thoughts, experiences and feelings.`}
+						{`
+							We are so glad
+							you are here! We have created this Restorative Communication game of 16
+							Categories, just for 
+						`} <b style={{ fontSize: '2rem' }}>{` YOU!! `}</b> 
+						{`Due to the racism, oppression and historical trauma
+							which has impacted people of color for generations - we are deeply aware of the
+							dire need for a Home for 
+						`} <b style={{ fontSize: '2rem' }}>{` "emotional dwelling" `}</b>
+						{` 
+							a place of compassionate and empathetic inquiry, a sacred place of respect and understanding, a place to put
+							language to our, at times, unformulated experiences and feelings, and to enjoy
+							one another through intimate, transformative and amazing conversations!
+						`} 
+						<br/>
+						<br/>
+						{`
+							The Keep It Real 100 Communication Game, designed for BIPOC Youth, Adults and
+							Allies provides a safe, structured space for the BIPOC community, and allies to
+							connect deeply, to have gentle, intentional, bold conversations, and to discover
+							authentic truths about issues that have a profound impact on our lives.`
+						}
+						<br/>
+						<br/>
+						{`
+							Keep It Real 100 provides us with a tangible resource through which to uplift,
+							empower and support one another, while liberating ourselves from societally
+							imposed narratives and internalized oppression. It empowers a space where we
+							unapologetically and unashamedly see ourselves and one another in our totality,
+							with unconditional acceptance.
+						`}
 					</Typography>
 				</Box>
-				<Typography style={{ fontFamily: `'Poppins', sans-serif` }}>
-					{`PLEASE CLICK ON ANY GAME OF YOUR CHOICE TO ACCESS THAT GAME. FEEL FREE
-					TO MOVE BACK AND FORTH BETWEEN ANY GAMES THAT CAPTURE YOUR ATTENTION
-					AND EXPERIENCE.`.toLowerCase()}
+				<Typography style={{fontWeight:'700', fontSize:'42px', color:'#3F51B5', paddingBottom:'5rem', margin: '7vh 7vw'}}>
+					{`
+						Let us engage and enlighten one another with LOVE, heal and replenish our
+						spirits, and re-imagine and co-create a new world in which we rise up together,
+						with and because of one another!!
+					`}
 				</Typography>
 			</Toolbar>
 		</div>

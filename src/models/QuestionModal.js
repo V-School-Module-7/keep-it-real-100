@@ -30,7 +30,6 @@ export default function QuestionModal(props) {
 					textAlign: 'center',
 					lineHeight: '150%',
 					fontWeight: '400',
-					fontFamily: `'Poppins', sans-serif`,
 				}}
 			>
 				{questions[currQuestion]}

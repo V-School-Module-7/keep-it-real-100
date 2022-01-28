@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
 		fontWeight: '500',
 		fontSize: 'large',
 		textAlign: 'center',
-		fontFamily: `'Poppins', sans-serif`,
 	},
 }))
 
@@ -32,7 +31,6 @@ export default function FaqPage() {
 						mt: 5,
 						typography: 'h2',
 						fontWeight: 700,
-						fontFamily: `'Poppins', sans-serif`,
 					}}
 				>{`FAQ`}</Box>
 				<Box
