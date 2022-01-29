@@ -47,21 +47,21 @@ export default function TheQuestions({ gameCatagory }) {
 	const [openQ, setOpenQ] = useState(false)
 	const [currQuestion, setCurrQuestion] = useState(0)
 
-	// const messageEl = useRef(null);
+	const messageEl = useRef(null);
   
-    // useEffect(() => {
-    //   if (messageEl) {
-    //     messageEl.current.addEventListener('DOMNodeInserted', event => {
-    //       const { currentTarget: target } = event;
-    //       target.scroll({ top: target.scrollHeight, behavior: 'smooth' });
-    //     });
-    //   }
-    // }, [])
+    useEffect(() => {
+      if (messageEl) {
+        messageEl.current.addEventListener('DOMNodeInserted', event => {
+          const { currentTarget: target } = event;
+          target.scroll({ top: target.scrollHeight, behavior: 'smooth' });
+        });
+      }
+    }, [])
 
 
 	const questionCompontents = questions.map((q, index) => (
 		<ListItem
-			button
+			button 
 			key={index}
 			onClick={() => (setCurrQuestion(index), setOpenQ(true))}
 			style={{
@@ -71,7 +71,7 @@ export default function TheQuestions({ gameCatagory }) {
 			}}
 		>
 			<Typography >
-				<ListItemText primary={q} className={classes.root} />
+				<ListItemText primary={q} className={classes.root} ref={messageEl}/>
 			</Typography>
 			<Divider />
 		</ListItem>
@@ -104,7 +104,7 @@ export default function TheQuestions({ gameCatagory }) {
 						className={classes.leftList}
 						style={{ border: '1px solid black' }}
 					>
-						<List >
+						<List>
 							<ListSubHeader />
 							{questionCompontents}
 						</List>

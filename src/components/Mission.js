@@ -28,7 +28,7 @@ export default function Mission() {
 	return (
 		<div className={classes.root}>
 			<Toolbar className={classes.toolbar}>
-				<Typography
+				{/* <Typography
 					component="div"
 					className={classes.title}
 					style={{
@@ -72,30 +72,25 @@ export default function Mission() {
 							}}
 						>{`Keep It Real 100 for BIPOC Youth, Adults & Allies.`}</b>
 					</Typography>
-				</Typography>
+				</Typography> */}
 				<Box>
 					<Typography
 						color="textPrimary"
 						style={{
-							margin: '7vh 7vw',
+							margin: '4vh 7vw',
 							fontSize: '2rem',
 							textAlign: 'left',
 							fontWeight: 500,
 						}}
 					>
 						{`
-							We are so glad
+							WELCOME to Keep It Real 100 for BIPOC Youth, Adults & Allies. We are so glad
 							you are here! We have created this Restorative Communication game of 16
-							Categories, just for 
-						`} <b style={{ fontSize: '2rem' }}>{` YOU!! `}</b> 
-						{`Due to the racism, oppression and historical trauma
+							Categories, just for YOU!! Due to the racism, oppression and historical trauma
 							which has impacted people of color for generations - we are deeply aware of the
-							dire need for a Home for 
-						`} <b style={{ fontSize: '2rem' }}>{` "emotional dwelling" `}</b>
-						{` 
-							a place of compassionate and empathetic inquiry, a sacred place of respect and understanding, a place to put
-							language to our, at times, unformulated experiences and feelings, and to enjoy
-							one another through intimate, transformative and amazing conversations!
+							dire need for a Home for "emotional dwelling" a place of compassionate and empathetic inquiry, 
+							a sacred place of respect and understanding, a place to put language to our, at times, 
+							unformulated experiences and feelings, and to enjoy one another through intimate, transformative and amazing conversations!
 						`} 
 						<br/>
 						<br/>
@@ -116,7 +111,7 @@ export default function Mission() {
 						`}
 					</Typography>
 				</Box>
-				<Typography style={{fontWeight:'700', fontSize:'42px', color:'#3F51B5', paddingBottom:'5rem', margin: '7vh 7vw'}}>
+				<Typography style={{fontWeight:'700', fontSize:'42px', color:'#3F51B5', margin: '0 7vh 0 7vw'}}>
 					{`
 						Let us engage and enlighten one another with LOVE, heal and replenish our
 						spirits, and re-imagine and co-create a new world in which we rise up together,

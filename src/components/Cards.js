@@ -13,24 +13,30 @@ export default function Cards() {
 
         <Grid
             container
-            spacing={2}
+            spacing={4}
+            // rowSpacing={4} 
+            // columnSpacing={{ xs: 2}}
             direction="row"
             justify="space-evenly"
-            style={{alignItems: 'flex-start'}}
+            style={{alignItems:'flex-start', padding:'40px'}}
             alignItems="center"
         >
+            
         {gameCatagories.map((item, index) => (
-            <CardItem 
-                item
-                key={index}
-                logo={item.logo} 
-                title={item.title}
-                editor={item.editor}
-                content={item.content}
-                path={item.path}
-                questions={item.questions}
-                id={item.id}
-            />
+            <Grid item >
+                <CardItem 
+                    item
+                    xs={3}
+                    key={index}
+                    logo={item.logo} 
+                    title={item.title}
+                    editor={item.editor}
+                    content={item.content}
+                    path={item.path}
+                    questions={item.questions}
+                    id={item.id}
+                />
+            </Grid>
         ))}
         </Grid>
     );

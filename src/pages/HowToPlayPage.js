@@ -9,8 +9,8 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
 	boldBodyText: {
-		fontWeight: '800',
-		fontSize: 'large',
+		fontWeight: '500',
+		fontSize: '2rem',
 		textAlign: 'center',
 	},
 }))
