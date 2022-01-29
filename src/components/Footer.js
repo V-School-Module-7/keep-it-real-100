@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
-        fontSize: '28px',
+        fontSize: '2rem',
         fontWeight: 'bolder',
         padding: '0 0 1rem 0',
         marginRight: 20,
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         flexGrow: 1,
-        fontSize: '20px',
+        fontSize: '2rem',
         padding: '0 1rem 1rem 1rem',
         marginRight: 20,
         textAlign: 'center',

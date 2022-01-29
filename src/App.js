@@ -24,6 +24,7 @@ const themeLight = createMuiTheme({
     },
     typography: {
         fontFamily: `'Poppins', sans-serif`, 
+        fontSize: '2rem'
     }
 });
 

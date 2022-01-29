@@ -8,7 +8,7 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme) => ({
 	boldBodyText: {
 		fontWeight: 'bolder',
-		fontSize: 'large',
+		fontSize: '2rem',
 		textAlign: 'center',
 	},
 }))
@@ -34,7 +34,7 @@ export default function CreatorBio({ profileImg, personName, proTitle, bio }) {
 					}}
 				>
 					<Grid container columnSpacing={2}>
-						<Grid item xs={12} md={4} lg={3} textAlign={'center'}>
+						<Grid item xs={12} md={4} lg={3} textAlign={'center'} sx={{alignSelf:'center'}}>
 							<Avatar
 								alt={personName}
 								src={profileImg}
@@ -56,7 +56,7 @@ export default function CreatorBio({ profileImg, personName, proTitle, bio }) {
 						<Grid item xs={12} md={8} mt={2}>
 							<Typography
 								variant="body1"
-								style={{ fontWeight: 500 }}
+								style={{ fontWeight: 500, fontSize:'1.3rem' }}
 							>
 								{bio}
 							</Typography>

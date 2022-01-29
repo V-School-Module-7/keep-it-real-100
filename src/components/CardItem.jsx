@@ -11,41 +11,51 @@ export default function CardItem({ title, logo, id }) {
 	const useStyles = makeStyles({
 		root: {
 			flexGrow: 1,
-			maxWidth: 345,
-			margin: '30px 15px',
+			maxWidth: 450,
+			minWidth: 450,
+			// margin: '30px 15px',
+			maxHeight: 650
 		},
 		media: {
 			height: '350px',
+			objectFit: 'contain',
+			margin: '1rem 0 1rem 0'
 		},
 		button: {
 			marginTop: '20px',
 		},
 		playLink: {
 			textDecoration: 'none',
+			width: 'fit-content',
+			backgroundColor: '#ffffff30',
+			borderRadius: '10px',
+			padding: '1rem',
 			color: 'white',
 			fontSize: '28px',
+			fontWeight: 'bold',
+			letterSpacing: '3px',
 			'&:hover': {
-				color: 'purple',
+				color: '#D2282A',
 			},
 			display: 'grid',
-			justifyContent: 'center',
-			alignContent: 'center',
-			alignItems: 'baseline',
+			// justifyContent: 'center',
+			// alignContent: 'center',
+			// alignItems: 'baseline',
 			position: 'relative',
-			top: '50px',
+			top: '150px',
 		},
 		typography: {
 			position: 'absolute',
-			marginTop: '10rem',
-			width: '90%',
-			top: '-4rem',
+			top: '0',
+			align: 'center',
+			right: '175px'
 		},
 	})
 
 	const classes = useStyles()
 
 	return (
-		<Card className={classes.root} style={{ height: '550px', width: '400px' }}>
+		<Card className={classes.root} style={{ height: '650px' }}>
 			<CardMedia
 				className={classes.media}
 				component="img"
@@ -59,16 +69,17 @@ export default function CardItem({ title, logo, id }) {
 						variant="h5"
 						component="h2"
 						style={{
-							fontWeight: '900',
+							fontWeight: '600',
 							fontSize: '2rem',
 							lineHeight: '1.334',
 							letterSpacing: '-1px',
 							textAlign: 'center',
+							marginTop: '2rem'
 						}}
 					>
 						{title}
 					</Typography>
-					<Typography className={classes.typography} align="center">
+					<Typography className={classes.typography} >
 						<Link
 							className={classes.playLink}
 							to={{

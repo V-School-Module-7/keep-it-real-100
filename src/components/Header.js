@@ -19,6 +19,22 @@ const useStyles = makeStyles((theme) => ({
 		position: 'absolute',
 		left: '0',
 		top: '-45px',
+		// [theme.breakpoints.up('sm')]: {
+		// 	width: 175,
+		// 	height: 175,
+		// },
+		// [theme.breakpoints.up('md')]: {
+		// 	width: 220,
+		// 	height: 220,
+		// },
+		// [theme.breakpoints.up('lg')]: {
+		// 	width: 250,
+		// 	height: 250,
+		// },
+		// [theme.breakpoints.up('xl')]: {
+		// 	width: 250,
+		// 	height: 250,
+		// },
 	},
 	appBarNav: {
 		position: 'static',
