@@ -33,7 +33,14 @@ const useStyles = makeStyles((theme) => ({
         "&:hover": {
           color: "yellow",
           borderBottom: "1px solid white",
-        }
+        },
+        [theme.breakpoints.down('sm')]: {
+			fontSize: "1.3rem",
+            marginRight: theme.spacing(1)
+		},
+        [theme.breakpoints.up('md')]: {
+			fontSize: "1.3rem",
+		},
     },      
     navlinks: {
         display: "grid",
@@ -42,20 +49,34 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         fontWeight: '700',
+        [theme.breakpoints.down('sm')]: {
+            gridAutoFlow: 'row',
+		},
       },
     toolbar: {
         position: 'absolute',
         right: 0,
-        fontSize: "12px"
+        fontSize: "12px",
     },
     logo: {
-        width: 150,
-        height: 150,
+        width: 175,
+        height: 175,
         marginLeft: 15,
         marginBottom: 20,
         position: 'absolute',
         left: '0',
         top: '5px',
+        [theme.breakpoints.down('sm')]: {
+            width: 150,
+            height: 150,
+		},
+		// [theme.breakpoints.up('md')]: {
+		// 	// top: '-75px'
+		// },
+		[theme.breakpoints.up('lg')]: {
+			width: 250,
+			height: 250,
+		},
     },
 }));
 

@@ -12,25 +12,27 @@ const useStyles = makeStyles((theme) => ({
 		paddingBottom: theme.spacing(5),
 	},
 	logo: {
-		width: 150,
-		height: 150,
+		width: 175,
+		height: 175,
 		marginLeft: 15,
 		marginBottom: 20,
 		position: 'absolute',
 		left: '0',
 		top: '-45px',
-		// [theme.breakpoints.up('sm')]: {
-		// 	width: 175,
-		// 	height: 175,
-		// },
-		// [theme.breakpoints.up('md')]: {
-		// 	width: 220,
-		// 	height: 220,
-		// },
-		// [theme.breakpoints.up('lg')]: {
-		// 	width: 250,
-		// 	height: 250,
-		// },
+		[theme.breakpoints.down('sm')]: {
+			left: '40%',
+			top: '5px',
+			marginBottom: 0,
+			marginLeft: 0,
+			marginTop: '1rem'
+		},
+		[theme.breakpoints.up('md')]: {
+			top: '-75px'
+		},
+		[theme.breakpoints.up('lg')]: {
+			width: 250,
+			height: 250,
+		},
 		// [theme.breakpoints.up('xl')]: {
 		// 	width: 250,
 		// 	height: 250,
@@ -38,12 +40,12 @@ const useStyles = makeStyles((theme) => ({
 	},
 	appBarNav: {
 		position: 'static',
+		display: 'flex',
 		boxShadow: '10px 1px -1px #121212',
 	},
 	toolbar: {
 		flexGrow: 1,
 		position: 'relative',
-		display: 'flex',
 		flexDirection: 'column',
 		backgroundColor: '#757DE8',
 		justifyContent: 'flex-end',
@@ -56,8 +58,9 @@ const useStyles = makeStyles((theme) => ({
 		fontWeight: 700,
 		paddingTop: '2vw',
 		textAlign: 'center',
-		[theme.breakpoints.up('sm')]: {
+		[theme.breakpoints.down('sm')]: {
 			display: 'block',
+			marginTop: '8rem'
 		},
 	},
 	homeLink: {
@@ -66,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '16px',
 		marginTop: theme.spacing(2),
 		'&:hover': {
-			color: 'yellow',
+			color: '#FFF9A3',
 			borderBottom: '1px solid white',
 		},
 	},
@@ -89,7 +92,7 @@ export default function Header() {
 						className={classes.title}
 						style={{
 							fontWeight: 'Bold 700 ',
-							fontSize: '7rem',
+							fontSize: '6rem',
 							lineHeight: '1.43',
 							letterSpacing: '0.01041em',
 						}}
