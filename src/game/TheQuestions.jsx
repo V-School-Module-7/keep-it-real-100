@@ -41,54 +41,51 @@ const useStyles = makeStyles((theme) => ({
 	},
 }))
 
+
 export default function TheQuestions({ gameCatagory }) {
 	const classes = useStyles()
 	const { questions } = gameCatagory
 	const [openQ, setOpenQ] = useState(false)
 	const [currQuestion, setCurrQuestion] = useState(0)
 
-	const messageEl = useRef(null);
-  
-    useEffect(() => {
-      if (messageEl) {
-        messageEl.current.addEventListener('DOMNodeInserted', event => {
-          const { currentTarget: target } = event;
-          target.scroll({ top: target.scrollHeight, behavior: 'smooth' });
-        });
-      }
-    }, [])
 
+	useEffect(() => {
+		const currentQ = document.getElementById(currQuestion)
+		currentQ.scrollIntoView(true, { behavior: "smooth" })
+	}, [currQuestion])
 
-	const questionCompontents = questions.map((q, index) => (
+	const questionCompontents = questions.map((q, index, value) => (
 		<ListItem
-			button 
-			key={index}
+			button
+			key={index}	
 			onClick={() => (setCurrQuestion(index), setOpenQ(true))}
+			id={index}
 			style={{
 				backgroundColor: index === currQuestion ? '#ffffff30' : '',
 				borderBottom: '.5px solid #4f4f4f',
 				fontWeight: '700',
-			}}
+		}}
 		>
 			<Typography >
-				<ListItemText primary={q} className={classes.root} ref={messageEl}/>
+				<ListItemText primary={q}  className={classes.root} />
 			</Typography>
 			<Divider />
 		</ListItem>
 	))
-
+	
+				
 	const handleIncClick = () => {
 		if (currQuestion < questions.length - 1) {
 			setCurrQuestion((prevState) => (prevState += 1))
 		}
 	}
-
+	
 	const handleDecClick = () => {
 		if (currQuestion > 0) {
 			setCurrQuestion((prevState) => (prevState -= 1))
 		}
 	}
-
+	
 	return (
 		<div>
 			<div className={classes.root}>
@@ -106,7 +103,7 @@ export default function TheQuestions({ gameCatagory }) {
 					>
 						<List>
 							<ListSubHeader />
-							{questionCompontents}
+							<div id='listContainer'>{questionCompontents}</div>
 						</List>
 					</Grid>
 					<Grid
@@ -137,6 +134,7 @@ export default function TheQuestions({ gameCatagory }) {
 						)}
 						<div
 							style={{
+								position:'relative',
 								display: 'flex',
 								justifyContent: 'space-between',
 								alignSelf: 'flex-end',

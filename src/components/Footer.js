@@ -7,10 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        // flexGrow: 1,
-        // paddingRight: theme.spacing(11),
-        // paddingLeft: theme.spacing(11),
-        // paddingBottom: theme.spacing(0),
+        marginTop:'5rem',
     },
     toolbar: {
         flexGrow: 1,
@@ -24,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
+        color: 'white',
         fontSize: '2rem',
         fontWeight: 'bolder',
         padding: '0 0 1rem 0',
@@ -37,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
     text: {
         flexGrow: 1,
+        color: 'white',
         fontSize: '2rem',
         padding: '0 1rem 1rem 1rem',
         marginRight: 20,
