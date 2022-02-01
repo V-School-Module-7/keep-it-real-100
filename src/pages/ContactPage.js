@@ -1,3 +1,4 @@
+import React from 'react'
 import {
 	Box,
 	Container,
@@ -5,10 +6,10 @@ import {
 	makeStyles,
 	Paper,
 	Typography,
-	Avatar,
+	Grid,
+	Link,
 } from '@material-ui/core'
 import { grey, indigo } from '@material-ui/core/colors'
-import React from 'react'
 import Social from '../components/Social'
 
 const useStyles = makeStyles({
@@ -16,28 +17,10 @@ const useStyles = makeStyles({
 		height: '100vh',
 		backgroundColor: grey,
 	},
-
-	paper: {
-		height: 'auto',
-		width: '60vw',
-		display: 'grid',
-		gridAutoFlow: 'column',
-		gap: '16px',
-		placeItems: 'center',
-		backgroundColor: indigo[500],
-		color: indigo[50],
-		padding: '10px',
-	},
-
-	box: {
-		display: 'grid',
-		placeItems: 'center',
-		gap: '24px',
-	},
-	avatar: {
-		// fontSize: '80px',
-		height: '60px',
-		width: '60px',
+	boldBodyText: {
+		fontWeight: '500',
+		fontSize: '2rem',
+		textAlign: 'center',
 	},
 	boldBodyText: {
 		fontWeight: 'bolder',
@@ -58,30 +41,40 @@ export default function ContactPage() {
 			>
 				<Social />
 				<Typography
-					variant="h2"
+					variant="h1"
 					style={{
 						display: 'flex',
 						justifyContent: 'center',
 						padding: '16px',
 						margin: '16 0 16 0',
+						fontSize: '4rem',
 						fontWeight: '500'
 					}}
 				>
-					{`Contact Page`}
+					Contact Page
 				</Typography>
-				<Box className={classes.box}>
-					<Paper elevation24 className={classes.paper} variant="outlined">
-						<div style={{ display: 'grid', placeItems: 'center' }}>
-							<Avatar variant="circular" className={classes.avatar} />
-							<Typography>this is under</Typography>
-						</div>
-						<Typography className={classes.boldBodyText}>
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a galley of
-						</Typography>
-					</Paper>
-				</Box>
+				
+				<Grid container spacing={2} container
+					direction="column"
+					justifyContent="center"
+					alignItems="center"
+					height="100vh">
+						<Grid item xs={4}>
+							<Link href="#" underline="hover" target="_blank">
+								{'LINK ONE'}
+							</Link>
+						</Grid>
+						<Grid item xs={4}>
+							<Link href="#" underline="hover" target="_blank">
+								{'LINK TWO'}
+							</Link>
+						</Grid>
+						<Grid item xs={4}>
+							<Link href="#" underline="hover" target="_blank">
+								{'LINK THREE'}
+							</Link>
+						</Grid>
+				</Grid>
 			</Container>
 		</div>
 	)

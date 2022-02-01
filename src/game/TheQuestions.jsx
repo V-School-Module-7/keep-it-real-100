@@ -63,10 +63,11 @@ export default function TheQuestions({ gameCatagory }) {
 			style={{
 				backgroundColor: index === currQuestion ? '#ffffff30' : '',
 				borderBottom: '.5px solid #4f4f4f',
+				fontSize: '1.3rem',
 				fontWeight: '700',
 		}}
 		>
-			<Typography >
+			<Typography className={classes.qText}>
 				<ListItemText primary={q}  className={classes.root} />
 			</Typography>
 			<Divider />
