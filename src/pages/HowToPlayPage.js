@@ -55,7 +55,7 @@ export default function HowToPlay() {
 							question out loud, then each participant will answer the same
 							question, until every participant has answered. Then, the next
 							person is to choose the next question, and so on. You will see a
-							previous and next button – designed so you can go backwards and
+							previous and next button - designed so you can go backwards and
 							forwards, to choose the question you wish to reflect on and
 							discuss. If you would like to see all of the questions at once,
 							and choose from the full list, please click on LIST of Questions,

@@ -9,6 +9,7 @@ import profileLaney from "../images/profile_laney.jpg";
 import profileXavier from "../images/profile_xavier.jpeg";
 import profileEmily from "../images/profile_emily.png";
 import profileCatherine from "../images/catherine_profile_img.jpg"
+import profileRixio from "../images/rixio_profile_img.png"
 
 export const bioFiller = () => {
     return (
@@ -98,15 +99,25 @@ export const bioKevin = () => {
     )
 }
 
+export const bioLaney = () => {
+    return (
+        <>
+            {<p>
+                Laney Kawaguchi is the Director if Outcomes at V School, a Web Development and UX/UI Design school that helps people to break into the technology field. 
+                She is passionate about helping others pursue their dreams and passionate about connection with others through open conversations. 
+            </p>}
+        </>
+    )
+}
+
 
 export const bioEmily = () => {
     return (
         <>
             {<p>
                 Emily is an unassuming rockstar.  Driven to seek out and overcome challenges that others would simply not try.
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                It waspopularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                As a developer Emily has discovered a sweet spot that combines her ability to communicate and her love for generating ideas and solutions so that she can make an impact for others! 
+                Emily wants to be a part of molding the way we use, design and focus on technologies in the interest of a better future for people and our planet. 
             </p>}
         </>
     )
@@ -122,6 +133,22 @@ export const bioCatherine = () => {
                 been enriched by the many places she has called home: Manila, Southern California, Vancouver, New York/Brooklyn, and Toronto. 
                 Great design is essential in a world that's evermore connected. GREAT DESIGN IS BORDERLESS.
             </p>}
+        </>
+    )
+}
+
+export const bioRixio = () => {
+    return (
+        <>
+            {
+                <>
+                    <span>
+                        Diplomat turned Software Engineer, driven by the desire to change everything.
+                        Let's collaborate on a project or two. Feel free to look at my portfolio for more about me 
+                    </span>
+                    <a href='https://www.rixiobarrios.com'> www.rixiobarrios.com</a>           
+                </>
+            }
         </>
     )
 }
@@ -173,29 +200,29 @@ export const creatorProfiles = [
     },
     {
         profileImg: profileLaney,
-        personName: "Laney",
+        personName: "Laney Kawaguchi",
         proTitle: "Professional Title",
-        bio: bioFiller(),
+        bio: bioLaney(),
         id:7
     },
     {
         profileImg: profileEmily,
-        personName: "Emily",
+        personName: "Emily Parker",
         proTitle: "Web Developer",
         bio: bioEmily(),
         id:8
     },
     {
-        profileImg: profilePic,
-        personName: "Rixio",
-        proTitle: "Professional Title",
-        bio: bioFiller(),
+        profileImg: profileRixio,
+        personName: "Rixio Barrios",
+        proTitle: "Software Engineer | Full Stack Web Developer",
+        bio: bioRixio(),
         id:9
     },
     {
         profileImg: profileXavier,
-        personName: "Xavier",
-        proTitle: "Web Developer",
+        personName: "Xavier Bradley",
+        proTitle: "Professional Title",
         bio: bioFiller(),
         id:10
     },

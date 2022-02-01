@@ -29,6 +29,7 @@ export default function QuestionModal(props) {
 				style={{
 					textAlign: 'center',
 					lineHeight: '150%',
+					fontSize: '2rem',
 					fontWeight: '400',
 				}}
 			>
