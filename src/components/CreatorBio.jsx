@@ -41,8 +41,9 @@ export default function CreatorBio({ profileImg, personName, proTitle, bio }) {
 								sx={{
 									m: 'auto',
 									mb: 2,
-									width: 150,
-									height: 150,
+									width: 300,
+									height: 300,
+									// objectFit: 'cover',
 								}}
 							/>
 							<Typography

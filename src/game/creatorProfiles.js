@@ -158,21 +158,21 @@ export const creatorProfiles = [
     {
         profileImg: profileLeslie,
         personName: "Leslie Robinson",
-        proTitle: "Professional Title",
+        proTitle: "",
         bio: bioLeslie(),
         id:1
     },
     {
         profileImg: profileCelia,
         personName: "Celia Brown",
-        proTitle: "Professional Title",
+        proTitle: "",
         bio: bioCelia(),
         id:2
     },
     {
         profileImg: profileJordan,
         personName: "Jordan Mayo",
-        proTitle: "Professional Title",
+        proTitle: "",
         bio: bioJordan(),
         id:3
 
@@ -180,28 +180,28 @@ export const creatorProfiles = [
     {
         profileImg: profileAshley,
         personName: "Ashley Halsey",
-        proTitle: "Professional Title",
+        proTitle: "",
         bio: bioAshley(),
         id:4
     },
     {
         profileImg: profileJabran,
         personName: "Jabran Brown",
-        proTitle: "Professional Title",
+        proTitle: "",
         bio: bioJabran(),
         id:5
     },
     {
         profileImg: profileKevin,
         personName: "Kevin Waller",
-        proTitle: "Professional Title",
+        proTitle: "",
         bio: bioKevin(),
         id:6
     },
     {
         profileImg: profileLaney,
         personName: "Laney Kawaguchi",
-        proTitle: "Professional Title",
+        proTitle: "Director of Outcomes at VSchool",
         bio: bioLaney(),
         id:7
     },
@@ -222,7 +222,7 @@ export const creatorProfiles = [
     {
         profileImg: profileXavier,
         personName: "Xavier Bradley",
-        proTitle: "Professional Title",
+        proTitle: "Web Developer",
         bio: bioFiller(),
         id:10
     },

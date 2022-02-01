@@ -69,10 +69,10 @@ export default function Footer() {
                         varient="p"
                         color="textPrimary"
                     >
-                        Although these games have therapeutic qualities, 
-                        they are not meant to be a substitute for professional therapy. 
-                        They are meant to be a vehicle through which you can have enjoyable healing conversations and dialogue. 
-                        If you are feeling overwhelmed by the ongoing pandemic or any life situation, please seek immediate professional assistance.
+                        Although this game has therapeutic qualities, 
+                        it is not meant to be a substitute for professional therapy. 
+                        Keep It Real 100 is meant to be a vehicle through which you can have enjoyable, transformative and healing conversations and dialogue. 
+                        If you are feeling overwhelmed by any life situation, please seek immediate professional assistance.
                     </Typography>
                 </Toolbar>
             </AppBar>

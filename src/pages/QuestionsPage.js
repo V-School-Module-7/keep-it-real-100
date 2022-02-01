@@ -55,7 +55,6 @@ export default function QuestionsPage(props) {
 				</div>
 			</div>
 			<TheQuestions gameCatagory={gameCatagory[0]} />
-			<Footer />
 		</div>
 	)
 }
