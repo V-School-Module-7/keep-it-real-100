@@ -21,18 +21,18 @@ const useStyles = makeStyles((theme) => ({
 	textRed: {
 		color: '#D2282A',
 		fontSize: '2.4rem',
-		fontWeight: '600'
-	},
-	textPurple: {
-		color:'#7030a0',
-		fontSize: '2.4rem',
-		fontWeight: '600'
+		fontWeight: '600',
 	},
 	titleRed: {
 		color: '#D2282A',
 		fontWeight: '600',
 		fontSize: '2.4rem',
 		textAlign: 'center',
+	},
+	textPurple: {
+		color:'#7030a0',
+		fontSize: '2.4rem',
+		fontWeight: '600'
 	},
 	iconWrap: {
 		position: 'relative'
@@ -77,7 +77,7 @@ export default function HowToPlay() {
 			>
 				<Box
 					sx={{
-						mt: 5,
+						mt: 16,
 						typography: 'h2',
 						fontWeight: 700,
 					}}
@@ -91,7 +91,7 @@ export default function HowToPlay() {
 						p: 5,
 						border: '1px solid black',
 						borderRadius: '10px',
-						backgroundColor: '#747EE8',
+						backgroundColor: '#fff',
 					}}
 				>
 					<Typography variant="body1" className={classes.boldBodyText}>
@@ -113,7 +113,7 @@ export default function HowToPlay() {
 				<Box component="div"
 						sx={{
 							m: 5,
-							p: 5,
+							p: 10,
 							pb: 0,
 							mt: 0,
 							mb: 0
@@ -184,7 +184,7 @@ export default function HowToPlay() {
 								</ListItemText>
 						</ListItem>
 						
-					</List>
+					</List><strong></strong>
 				</Box>
 				<Box component="span"
 						sx={{
@@ -225,23 +225,23 @@ export default function HowToPlay() {
 					<List>
 						<ListItem className={classes.listItem}>
 							<ListItemText className={classes.numListText}>
-								1. Please <strong>ENTER Keep It Real 100!</strong>
+								<strong>1.</strong> Please <strong>ENTER Keep It Real 100!</strong>
 							</ListItemText>
 						</ListItem>
 						<ListItem className={classes.listItem}>
 							<ListItemText className={classes.numListText}>
-								2.  The FACILITATOR manages the game for all players.
+								<strong>2.</strong>  The FACILITATOR manages the game for all players.
 							</ListItemText>
 						</ListItem>
 						<ListItem className={classes.listItem}>
 							<ListItemText className={classes.numListText}>
-								3. Each player, in turn, is to choose ONE of the Categories they wish to engage in. The FACILITATOR
+								<strong>3.</strong> Each player, in turn, is to choose ONE of the Categories they wish to engage in. The FACILITATOR
 								will then click on the chosen Category, and a question or interaction will pop up.
 							</ListItemText>
 						</ListItem>
 						<ListItem className={classes.listItem}>
 							<ListItemText className={classes.numListText}>
-								4. When it is your turn to go first, you are the Leader for that round. Choose a player to go
+								<strong>4.</strong> When it is your turn to go first, you are the Leader for that round. Choose a player to go
 								first. Choose your Category. Once in that CATEGORY, you will see a large box on the right
 								containing one question or interaction. If you like this question or interaction, read it out loud,
 								answer it first, and then all other players, in turn, will answer the SAME question or engage in
@@ -251,23 +251,154 @@ export default function HowToPlay() {
 						</ListItem>
 						<ListItem className={classes.listItem}>
 							<ListItemText className={classes.numListText}>
-								5. Then, each player, in turn, choose the CATEGORY you would like to engage in, and have the
+								<strong>5.</strong> Then, each player, in turn, choose the CATEGORY you would like to engage in, and have the
 								FACILITATOR click on that CATEGORY and follow the same instructions above.
 							</ListItemText>
 						</ListItem>
 						<ListItem className={classes.listItem}>
 							<ListItemText className={classes.numListText}>
-								6. When you are the Leader of your turn, and you do not like the question or interaction in the
+								<strong>6.</strong> When you are the Leader of your turn, and you do not like the question or interaction in the
 								large box on the right, you will see a previous and next button - designed so you can go
 								backwards and forwards, to choose the question or interaction you wish to engage in. If you do
 								not like your question, ask the FACILITATOR to go to the next question, or to scroll through the
 								questions or interactions list on the left, and choose a question or interaction to your liking from
 								there.
 							</ListItemText>
-						</ListItem>
-						
+						</ListItem>	
 					</List>
 				</Box>
+
+				<Box component="span"
+						sx={{
+							m: 5,
+							p: 10,
+							pb: 0,
+							mb: 0
+						}}>
+					<Typography className={classes.boldBodyText}>
+					<Typography className={classes.titleRed}>INTERACTIVE / DISCUSSION CATEGORY INSTRUCTIONS</Typography>
+						<p>There are <strong>FOUR</strong> Interactive / Discussion CATEGORIES in Keep It Real 100.</p>
+					</Typography>
+					<List>
+						<ListItem className={classes.listItem}>
+							<ListItemText className={classes.numListText}>
+								<strong>1.</strong> <span className={classes.boldTitleText}>Group Interactions</span> - As the Leader, you will read the Interaction you have chosen
+								out loud, and then all players will engage together in this Interaction.
+							</ListItemText>
+						</ListItem>
+						<ListItem className={classes.listItem}>
+							<ListItemText className={classes.numListText}>
+								<strong>2.</strong>  <span className={classes.boldTitleText}>Love Explorations</span> - As the Leader, you will read the Quote you have chosen about
+								Love out loud, share your thoughts and / or feelings on this Quote, and then all other
+								players will share their thoughts on the SAME Quote.
+							</ListItemText>
+						</ListItem>
+						<ListItem className={classes.listItem}>
+							<ListItemText className={classes.numListText}>
+								<strong>3.</strong> <span className={classes.boldTitleText}>Musical Encounters</span> - As the Leader, you will read the verse or rap you have chosen
+								out loud, share your thoughts and / or feelings on this verse or rap, and then all other
+								players will share their thoughts on the SAME verse or rap.
+							</ListItemText>
+						</ListItem>
+						<ListItem className={classes.listItem}>
+							<ListItemText className={classes.numListText}>
+								<strong>4.</strong> <span className={classes.boldTitleText}>Soul Expressions</span> - Most of these are drawing. You do NOT need to be an artist! Just
+								allow yourself to draw anything that comes up for you according to the prompt. As the
+								Leader, you will read the Soul Expression you have chosen out loud, give everyone time
+								to complete their drawing, and then share yours first. After sharing your drawing, please
+								have the other players all share theirs, in turn.
+							</ListItemText>
+						</ListItem>
+					</List>
+				</Box>
+
+				<Box component="span"
+						sx={{
+							m: 5,
+							p: 5,
+							// pb: 0,
+							// mt: 0,
+							// mb: 0
+						}}>
+					<Typography className={classes.boldBodyText}>
+						<p><span className={classes.textRed}>I APPRECIATE YOU MOMENTS:</span> If at any time you strongly relate to, or appreciate
+						something someone has said or shared, please clap your hands, or some other agreed
+						upon expression, to shower this person with <span className={classes.textRed}>APPRECIATION!!!!!</span> </p>
+					</Typography>
+				</Box>
+
+				<Box component="span"
+					sx={{
+						m: 5,
+						p: 5,
+						// pb: 0,
+						// mt: 0,
+						// mb: 0
+					}}>
+					<Typography className={classes.boldBodyText}>
+					<span className={classes.textRed}>Determining the WINNER</span> - The win is within! When we come together to play Keep It Real 100, we are all WINNERS!!!
+					</Typography>
+
+				</Box>
+				
+				<Box component="span"
+					sx={{
+						m: 5,
+						p: 5,
+						// pb: 0,
+						// mt: 0,
+						// mb: 0
+					}}>
+					<Typography className={classes.boldBodyText}>
+					<span className={classes.titleRed}>THE END</span>: When you have all agreed to end the game, everyone clap for one another for taking
+					an active part in this healing experience. You may want to say a Group Prayer. Any player may
+					choose their own Prayer to end with, or any player may begin with their own first sentence, and
+					have each person in the group add a sentence until the prayer feels complete.
+					</Typography>
+				</Box>
+					
+				<Box component="span"
+					sx={{
+						m: 5,
+						p: 5,
+						// pb: 0,
+					}}>
+					<Typography className={classes.titleRed}>BEFORE WE START - A FEW IMPORTANT MEMOS:</Typography>
+
+					<Typography className={classes.boldBodyText}>
+						<p>If a question or interaction does not appeal to you, feel free to pass on it, but please remain
+						actively engaged.</p>
+						<p>This is designed to be a conflict-free zone. If a question becomes stressful, please feel free to
+						immediately move on to another question, or Interaction.</p>
+						<p>Keep It Real 100 game play can last for as short or as long, as you would like to play.</p>
+					</Typography>
+				</Box>
+
+				<Box component="span"
+					sx={{
+						m: 5,
+						p: 5,
+						// pb: 0,
+					}}>
+					<Typography className={classes.boldBodyText}>
+					<Typography className={classes.titleRed}>THERE ARE NO RIGHT OR WRONG ANSWERS</Typography>
+						<p>Everyone will be sharing their own unique experiences. We are here to open our hearts and
+						minds to one another, as we uplift our spirits. No judgments allowed. Please speak only to your
+						comfort level, and express as much, or as little as you are comfortable with. Again, it is
+						important that everyone agrees there will be no repercussions when one speaks their truth.</p>
+					</Typography>
+					</Box>
+				<Box component="span"
+					sx={{
+						m: 5,
+						p: 5,
+						// pb: 0,
+					}}>
+					<Typography className={classes.boldBodyText}>
+					<Typography className={classes.textPurple}>BLESSINGS AND HEALING TO ALL</Typography>
+						<h1 style={{color:'#D2282A'}}>ENJOY!!</h1>
+					</Typography>
+					</Box>
 
 				<Footer />
 			</Grid>
