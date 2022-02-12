@@ -143,8 +143,10 @@ export const bioRixio = () => {
             {
                 <>
                     <span>
-                        Diplomat turned Software Engineer, driven by the desire to change everything.
-                        Let's collaborate on a project or two. Feel free to look at my portfolio for more about me 
+                    Rixio is a diplomat turned software engineer, poised to change everything and disrupt the current system. 
+                    His experience taught him that there is no end to human ingenuity and there is no final frontier for technology. 
+                    "I believe we must change the current paradigm of misused technologies that currently serve the wrong purpose. 
+                    This is why I am driven to become a software engineer for good".  Feel free to look at my portfolio for more about me 
                     </span>
                     <a href='https://www.rixiobarrios.com'> www.rixiobarrios.com</a>           
                 </>

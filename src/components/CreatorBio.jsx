@@ -57,7 +57,7 @@ export default function CreatorBio({ profileImg, personName, proTitle, bio }) {
 						<Grid item xs={12} md={8} mt={2}>
 							<Typography
 								variant="body1"
-								style={{ fontWeight: 500, fontSize:'1.3rem' }}
+								style={{ fontWeight: 500, fontSize:'1.3rem'}}
 							>
 								{bio}
 							</Typography>
