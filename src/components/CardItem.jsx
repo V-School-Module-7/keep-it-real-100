@@ -69,6 +69,7 @@ export default function CardItem({ title, logo, id }) {
 						variant="h5"
 						component="h2"
 						style={{
+							color: '#fff',
 							fontWeight: '600',
 							fontSize: '2rem',
 							lineHeight: '1.334',

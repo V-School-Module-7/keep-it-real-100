@@ -137,7 +137,7 @@ export default function HowToPlay() {
 								<CircleIcon sx={{ position:'absolute', fontSize:'small',  color:'black'}}/>
 							</ListItemIcon>
 								<ListItemText className={classes.listText}>
-									<strong>RESPECT </strong>- When people do not feel respected, they shut down. This is the opposite of the
+									<strong>RESPECT </strong> - When people do not feel respected, they shut down. This is the opposite of the
 									mission of Keep It Real 100. It is important that everyone listens to one another with Respect
 									(with a Capital R).  
 								</ListItemText>

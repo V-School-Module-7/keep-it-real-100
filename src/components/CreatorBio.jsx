@@ -24,13 +24,13 @@ export default function CreatorBio({ profileImg, personName, proTitle, bio }) {
 					component="span"
 					sx={{
 						mb: 2,
-						mt: 5,
+						mt: 10,
 						ml: 5,
 						mr: 5,
 						p: 5,
 						border: '1px solid black',
 						borderRadius: '10px',
-						backgroundColor: '#747EE8',
+						backgroundColor: '#fff',
 					}}
 				>
 					<Grid container columnSpacing={2}>
