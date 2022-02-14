@@ -1,14 +1,13 @@
 import React from 'react'
 import {
-	Box,
 	Container,
 	CssBaseline,
 	makeStyles,
-	Paper,
 	Typography,
 	Grid,
 	Link,
 } from '@material-ui/core'
+import Box from '@mui/material/Box'
 import { grey, indigo } from '@material-ui/core/colors'
 import Social from '../components/Social'
 
@@ -27,7 +26,24 @@ const useStyles = makeStyles({
 		fontSize: 'large',
 		textAlign: 'center',
 	},
+	grid: {
+		marginTop: '10rem',
+	},
+	emailLink: {
+		color: '#D2282A',
+		fontSize: '1.8rem',
+		fontWeight: '600',
+		"&:hover" : {
+			textDecoration: 'none'
+		}
+	},
+	subText: {
+		fontWeight: '400',
+		fontSize: '1.8rem',
+		textAlign: 'center',
+	}
 })
+
 
 export default function ContactPage() {
 	const classes = useStyles()
@@ -40,40 +56,59 @@ export default function ContactPage() {
 				className={classes.container}
 			>
 				<Social />
+				<Grid 
+					className={classes.grid}
+					container 
+					spacing={2} 
+					direction="column"
+					justifyContent="center"
+					alignItems="center"
+					height="100vh"
+				>
 				<Typography
 					variant="h1"
 					style={{
 						display: 'flex',
+						textAlign: 'center',
 						justifyContent: 'center',
 						padding: '16px',
-						margin: '16 0 16 0',
 						fontSize: '4rem',
 						fontWeight: '500'
 					}}
 				>
-					Contact Page
+					Contact Transformation Games
 				</Typography>
 				
-				<Grid container spacing={2} container
-					direction="column"
-					justifyContent="center"
-					alignItems="center"
-					height="100vh">
-						<Grid item xs={4}>
-							<Link href="#" underline="hover" target="_blank">
-								{'LINK ONE'}
-							</Link>
-						</Grid>
-						<Grid item xs={4}>
-							<Link href="#" underline="hover" target="_blank">
-								{'LINK TWO'}
-							</Link>
-						</Grid>
-						<Grid item xs={4}>
-							<Link href="#" underline="hover" target="_blank">
-								{'LINK THREE'}
-							</Link>
-						</Grid>
+				<Box
+					component="span"
+					className={classes.emailLink}
+					sx={{
+						mb: 0,
+						mt: 10,
+						mr: 15,
+						ml: 15,
+						p: 5,
+						border: '1px solid black',
+						borderRadius: '10px',
+						backgroundColor: '#fff',
+						"&:hover": {
+							backgroundColor: '#FFF9A3',
+						}
+					}}
+				>
+					<Link href= 'mailto:RobinsonL3@aol.com' underline="hover" target="_blank" className={classes.emailLink}>Email Us!</Link>
+				</Box>
+
+				<Box component="span"
+						sx={{
+							m: 5,
+							p: 5,
+						}}>
+					<Typography >
+						<p className={classes.subText}>Please take the time to reach out for any reason, thank you!</p>
+					</Typography>
+				</Box>
+
 				</Grid>
 			</Container>
 		</div>
