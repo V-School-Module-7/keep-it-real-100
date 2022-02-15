@@ -8,12 +8,12 @@ import Box from '@mui/material/Box'
 const useStyles = makeStyles((theme) => ({
 	boldBodyText: {
 		fontWeight: '500',
-		fontSize: 'large',
+		fontSize: '2rem',
 		textAlign: 'left',
 	},
 	title: {
 		fontWeight: '700',
-		fontSize: '1.8rem',
+		fontSize: '2.4rem',
 		textAlign: 'left',
 		marginBottom: '2rem'
 	},

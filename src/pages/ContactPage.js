@@ -50,12 +50,12 @@ export default function ContactPage() {
 	return (
 		<div>
 			<CssBaseline />
+			<Social />
 			<Container
 				maxWidth="xl"
 				disableGutters="true"
 				className={classes.container}
 			>
-				<Social />
 				<Grid 
 					className={classes.grid}
 					container 
@@ -76,7 +76,7 @@ export default function ContactPage() {
 						fontWeight: '500'
 					}}
 				>
-					Contact Transformation Games
+					Contact Trance4mation Games
 				</Typography>
 				
 				<Box
