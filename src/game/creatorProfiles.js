@@ -155,6 +155,20 @@ export const bioRixio = () => {
     )
 }
 
+export const bioXavier = () => {
+    return (
+        <>
+            {
+                <>
+                    <span>
+                    Xavier enjoys the details of his crafts, and the planning involved for a smooth product launch. Getting familiar with users’ problems, finding key metrics that lead the way in aligning business strategy to product use, which then is turned into harnessing the power of data for ROI... gives him goosebumps of excitement just thinking about it!
+                    </span>
+                </>
+            }
+        </>
+    )
+}
+
 export const creatorProfiles = [
     
     {
@@ -225,7 +239,7 @@ export const creatorProfiles = [
         profileImg: profileXavier,
         personName: "Xavier Bradley",
         proTitle: "Web Developer",
-        bio: bioFiller(),
+        bio: bioXavier(),
         id:10
     },
     {
