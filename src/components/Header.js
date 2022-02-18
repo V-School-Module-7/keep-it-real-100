@@ -96,6 +96,8 @@ export default function Header() {
 					component="span"
 					sx={{
 						mt: '8rem',
+						mr: '10rem',
+						ml: '10rem',
 						h: '300px',
 						p: 5,
 						border: '1px solid black',
@@ -112,7 +114,8 @@ export default function Header() {
 							feedback, comments and suggestions to make the final version of Keep It Real 100 
 							as impactful and awesome as possible. We are excited to hear from you!
 							<br/>
-						<Link href='mailto:RobinsonL3@aol.com' underline="hover" target="_blank"  style={{ color: 'black', fontWeight: 'bold', fontSize: '1rem', textAlign: 'center' }}>RobinsonL3@aol.com</Link>
+							
+							<span style={{color:'#3F51B5', fontWeight: 'bold', fontSize: '1.2rem'}}>Email us at: </span><Link href='mailto:RobinsonL3@aol.com' underline="hover" target="_blank"  style={{ color: 'black', fontWeight: 'bold', fontSize: '1.2rem', textAlign: 'center' }}>RobinsonL3@aol.com</Link>
 						</Typography>
 					</Box>
 					<img
@@ -124,7 +127,7 @@ export default function Header() {
 						className={classes.title}
 						style={{
 							fontWeight: 'Bold 700 ',
-							fontSize: '4rem',
+							fontSize: '6rem',
 							lineHeight: '1.43',
 							letterSpacing: '0.01041em',
 						}}

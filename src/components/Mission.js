@@ -28,51 +28,7 @@ export default function Mission() {
 	return (
 		<div className={classes.root}>
 			<Toolbar className={classes.toolbar}>
-				{/* <Typography
-					component="div"
-					className={classes.title}
-					style={{
-						paddingBottom: '1rem',
-						fontSize: '5.7rem',
-						textAlign: 'center',
-						display: 'grid',
-						placeItems: 'center',
-						gridTemplateRows: '10vw 1vw 10vw',
-					}}
-				>
-					<h1
-						style={{
-							fontWeight: '800',
-							fontSize: '10rem',
-							width: '90vw',
-							marginTop: '122px',
-							color: '#757DE8',
-						}}
-					>
-						{`Welcome`}
-					</h1>
-					<h3
-						style={{
-							margin: '0px',
-							fontSize: '40px',
-							fontWeight: '400',
-							paddingTop: '75px'
-						}}
-					>{`to`}</h3>
-
-					<Typography variant="div" style={{ placeItems: 'baseline' }}>
-						<b
-							style={{
-								fontSize: '2rem',
-								lineHeight: '1em',
-								fontWeight: '300',
-								placeItems: 'self-start',
-								placeSelf: 'center',
-								alignSelf: 'self-end',
-							}}
-						>{`Keep It Real 100 for BIPOC Youth, Adults & Allies.`}</b>
-					</Typography>
-				</Typography> */}
+			
 				<Box>
 					<Typography
 						color="textPrimary"
