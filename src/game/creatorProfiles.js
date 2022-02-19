@@ -103,8 +103,8 @@ export const bioLaney = () => {
     return (
         <>
             {<p>
-                Laney Kawaguchi is the Director if Outcomes at V School, a Web Development and UX/UI Design school that helps people to break into the technology field. 
-                She is passionate about helping others pursue their dreams and passionate about connection with others through open conversations. 
+                Laney Kawaguchi is the Director of Outcomes at VSchool, a Web Development and UX/UI Design school that helps people to break into the technology field. 
+                She is passionate about helping others pursue their dreams and is passionate about connection with others through open conversations. 
             </p>}
         </>
     )

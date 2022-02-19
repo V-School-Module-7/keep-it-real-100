@@ -109,10 +109,11 @@ export default function Header() {
 							color="textPrimary"
 							style={{ paddingTop: 0, fontWeight: 'bold', fontSize: '2rem', textAlign: 'center' }}
 						>
-							WELCOME to our <span style={{ color: "#D2282A" }}>TIME LIMITED FREE Beta Launch! </span>PLEASE let us know what you 
-							like / love, what could be improved upon, what works or doesn't work for you. We need your 
-							feedback, comments and suggestions to make the final version of Keep It Real 100 
-							as impactful and awesome as possible. We are excited to hear from you!
+							WELCOME to our <span style={{ color: "#D2282A" }}>TIME LIMITED FREE Beta Launch! </span> PLEASE let us know what you 
+							like / love, what could be improved upon, what works or doesn’t work for you. We need your 
+							feedback to make the final version of Keep It Real 100 as impactful and awesome as possible. 
+							We would LOVE for you to show us love by sharing and posting about Keep It Real 100 on your
+							social media by using #keepitreal100game. We are excited to hear from you!
 							<br/>
 							
 							<span style={{color:'#3F51B5', fontWeight: 'bold', fontSize: '1.2rem'}}>Email us at: </span><Link href='mailto:RobinsonL3@aol.com' underline="hover" target="_blank"  style={{ color: 'black', fontWeight: 'bold', fontSize: '1.2rem', textAlign: 'center' }}>RobinsonL3@aol.com</Link>

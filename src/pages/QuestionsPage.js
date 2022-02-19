@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import TheQuestions from '../game/TheQuestions'
 import gameCatagories from '../game/GameCatagories'
 import { makeStyles } from '@material-ui/core/styles'
@@ -6,7 +7,7 @@ import { useParams } from 'react-router-dom'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Social from '../components/Social'
 import { CardMedia, Typography } from '@material-ui/core'
-import Footer from '../components/Footer'
+import { faBlackberry } from '@fortawesome/free-brands-svg-icons'
 
 const useStyles = makeStyles((theme) => ({
 	media: {
@@ -20,6 +21,14 @@ const useStyles = makeStyles((theme) => ({
 	titleContainer: {
 		margin: '4rem',
 	},
+	link: {
+		textDecoration: 'none',
+		color: 'black',
+		fontSize: '1.2rem',
+		"&:hover": {
+			color: '#D2282A',
+		  },
+	}
 }))
 
 export default function QuestionsPage(props) {
@@ -52,6 +61,9 @@ export default function QuestionsPage(props) {
 					>
 						{gameCatagory[0].title}
 					</Typography>
+					<Link to="/" className={classes.link}>
+                            BACK TO CATEGORIES
+					</Link>
 				</div>
 			</div>
 			<TheQuestions gameCatagory={gameCatagory[0]} />

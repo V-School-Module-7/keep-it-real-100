@@ -27,7 +27,7 @@ const gameCatagories = [
            'What changes are you personally going through at this time, due to the long overdue recognition of racism in America?', 
            'Frederick Douglass wrote, “Power concedes nothing without a demand. It never did and it never will.” Please respond to these words.', 
            'Do you feel you have been impacted by generational trauma? Please share to your comfort level.', 
-           'As racism is spreading in our country, what would you do to heal your community? How would you heal yourself from thetrauma of racism? Why?  Please share your thoughts on this. ',
+           'As racism is spreading in our country, what would you do to heal your community? How would you heal yourself from the trauma of racism? Why?  Please share your thoughts on this. ',
            'How often do you feel scared or stressed while just walking on the streets of your city, town, etc.?',
            'Throughout your life, do you feel your rights and liberties as a U.S. citizen have been protected?',
            'How do you respond to the saying, “Justice delayed is Justice denied?”',
