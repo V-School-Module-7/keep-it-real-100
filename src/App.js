@@ -11,6 +11,7 @@ import ContactPage from './pages/ContactPage'
 import CreatorsPage from './pages/CreatorsPage'
 import Footer from './components/Footer';
 import FaqPage from './pages/FaqPage';
+import DedicationsPage from './pages/DedicationsPage';
 
 const themeLight = createMuiTheme({
     palette: {
@@ -57,6 +58,9 @@ const App = () => {
                     </Route>
                     <Route path="/faqPage">
                         <FaqPage />
+                    </Route>
+                    <Route path="/dedicationsPage">
+                        <DedicationsPage />
                     </Route>
                 </Switch>
             </BrowserRouter>

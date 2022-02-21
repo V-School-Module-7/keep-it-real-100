@@ -108,6 +108,9 @@ export default function Social() {
                     <Link to="/contactPage" className={classes.link}>
                         CONTACT US
                     </Link>
+                    <Link to="/dedicationsPage" className={classes.link}>
+                        DEDICATIONS
+                    </Link>
                     {location.pathname !== '/' && 
                         <Link to="/" className={classes.link}>
                             HOME
