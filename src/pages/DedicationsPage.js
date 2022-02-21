@@ -106,7 +106,7 @@ export default function DedicationsPage() {
                         }}
                     >
                         <Typography className={classes.boldBodyText}>
-                            &emsp; The Keep it Real 100 game is dedicated to Gloria Wise for her self-less devotion to children. 
+                            The Keep it Real 100 game is dedicated to Gloria Wise for her self-less devotion to children. 
                             This includes her contributions to positive youth programs in the community in the North East Bronx; 
                             her tireless work with troubled youth at a former Juvenile Detention Center, and her limitless affection 
                             for the young members of her loving family. Gloria, bore footprints along her path. Her passion for spreading 
@@ -118,7 +118,7 @@ export default function DedicationsPage() {
                         </Typography>
                         <br/>
                         <Typography className={classes.boldBodyText}>
-                            &emsp; The world knows Aunt Gloria for her notable journey which began in the backdrop of South
+                            The world knows Aunt Gloria for her notable journey which began in the backdrop of South
                             Carolina back in 1960, as one of the first black women to demonstrate. At the time, she was the
                             student government president at Bennett College, and made strides to make a difference in the
                             midst of the Civil Rights Movement. She joined forces with four male students to protest the
