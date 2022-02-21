@@ -70,9 +70,6 @@ const useStyles = makeStyles((theme) => ({
             width: 150,
             height: 150,
 		},
-		// [theme.breakpoints.up('md')]: {
-		// 	// top: '-75px'
-		// },
 		[theme.breakpoints.up('lg')]: {
 			width: 250,
 			height: 250,

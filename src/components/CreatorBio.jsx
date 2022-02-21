@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
 	},
 }))
 
-// export default function CreatorBio({profileImg, bio, proTitle, personName}) {
 export default function CreatorBio({ profileImg, personName, proTitle, bio }) {
 	const classes = useStyles()
 
@@ -43,7 +42,6 @@ export default function CreatorBio({ profileImg, personName, proTitle, bio }) {
 									mb: 2,
 									width: 300,
 									height: 300,
-									// objectFit: 'cover',
 								}}
 							/>
 							<Typography
