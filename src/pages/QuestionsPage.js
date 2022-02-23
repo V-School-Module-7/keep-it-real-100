@@ -24,7 +24,10 @@ const useStyles = makeStyles((theme) => ({
 	link: {
 		textDecoration: 'none',
 		color: 'black',
-		fontSize: '1.2rem',
+		fontWeight: 'bold',
+		padding: '1rem',
+		border: '1px solid black',
+		fontSize: '1.3rem',
 		"&:hover": {
 			color: '#D2282A',
 		  },
@@ -57,7 +60,7 @@ export default function QuestionsPage(props) {
 				<div className={classes.titleContainer}>
 					<Typography
 						variant="h1"
-						style={{fontSize: '4rem', fontWeight: '700'}}
+						style={{fontSize: '4rem', fontWeight: '700', marginBottom: '4rem'}}
 					>
 						{gameCatagory[0].title}
 					</Typography>
