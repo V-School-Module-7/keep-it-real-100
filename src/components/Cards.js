@@ -6,7 +6,7 @@ import gameCatagories from '../game/GameCatagories';
 
 
 export default function Cards() {
-    console.log('gameCatagories: ', gameCatagories)
+    console.log('gameCatagoriesQs: ', gameCatagories.questions)
 
 
     return (
@@ -23,6 +23,7 @@ export default function Cards() {
         >
             
         {gameCatagories.map((item, index) => (
+            
             <Grid item >
                 <CardItem 
                     item

@@ -13,7 +13,6 @@ export default function CardItem({ title, logo, id }) {
 			flexGrow: 1,
 			maxWidth: 450,
 			minWidth: 450,
-			// margin: '30px 15px',
 			maxHeight: 650
 		},
 		media: {
@@ -38,9 +37,6 @@ export default function CardItem({ title, logo, id }) {
 				color: '#D2282A',
 			},
 			display: 'grid',
-			// justifyContent: 'center',
-			// alignContent: 'center',
-			// alignItems: 'baseline',
 			position: 'relative',
 			top: '150px',
 		},

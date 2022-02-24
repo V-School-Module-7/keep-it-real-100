@@ -111,7 +111,7 @@ export default function Header() {
 						>
 							WELCOME to our <span style={{ color: "#D2282A" }}>TIME LIMITED FREE Beta Launch! </span> PLEASE let us know what you 
 						like / love, what could be improved upon, what works or doesn’t work for you. We need your 
-						feedback to make the final version of Keep It Real 100 as impactful and awesome as possible. 
+						feedback to make the final version of @Keepitreal_100game as impactful and awesome as possible. 
 						We would LOVE for you to show us love by sharing and posting about Keep It Real 100 on your
 						social media by using #keepitreal100game. We are excited to hear from you!
 							<br/>

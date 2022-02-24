@@ -23,7 +23,7 @@ const gameCatagories = [
         title: "FOR THE LOVE OF JUSTICE", 
         editor: "Written by Leslie & Edited by Celia",
         questions: [
-           `Do you feel the conscience of this nation is being shaken up? Please share your thoughts and feelings on this.`, 
+           'Do you feel the conscience of this nation is being shaken up? Please share your thoughts and feelings on this.', 
            'What changes are you personally going through at this time, due to the long overdue recognition of racism in America?', 
            'Frederick Douglass wrote, “Power concedes nothing without a demand. It never did and it never will.” Please respond to these words.', 
            'Do you feel you have been impacted by generational trauma? Please share to your comfort level.', 
@@ -252,23 +252,74 @@ const gameCatagories = [
         logo: musicalEncounters,
         title: "MUSICAL ENCOUNTERS", 
         editor: "Written by Jabran & Kevin",
-        questions: [
-            '1. “Don\'t let the struggle make your heart harder Sip the truth, spit the truth That\'s the smart water”  - Daniels Bloom by Mick Jenkins',
-            '2. “Cause it makes me that much stronger Makes me work a little bit harderMakes me that much wiserSo thanks for making me a fighterMade me learn a little bit fasterMade my skin a little bit thickerMakes me that much smarterSo thanks for making me a fighter”  - Fighter by Christina Aguilera',
-            '3. “Don\'t lose who you are In the blur of the stars Seeing is deceiving Dreaming is believing It\'s okay not to be oka Sometimes it\'s hard To follow your heart But tears don\'t mean your losing Everybody\'s bruising There\'s nothing wrong with who you are” - Who You Are by Jessie J',
-            '4. “I know it\'s crazy to think of this daily Imagine no one needing guns all at once, impossible maybe But we\'ve never tried itThe whole world in silence Respecting each other our Gods and our brothers Killing with kindness”   - One Love by Elle Varner',
-            '5. “Don\'t keep it all in your head The only place that you know nobody ever can seeYou\'re running low on regretNo tears, that\'s keeping you wet I think you gettin\' it now”    - Once a day by Mac Miller',
-            '6. “(Still I feel my) Eyes heavy when the day goes Nothing help when my head doze (But I ain\'t sleep) Awake in another state Living in a new space (Still I feel my) Mind running at a steady pace God help me so I\'ll win the race”  - Sky Might Fall by Kid Cudi',
-            '7. “Run from the dark Into the light You know, you know you\'re gonna find your way out Run from the dark Into the light Oh-whoa, you know you\'re gonna find your way Just run to the sunlight Just run to the sunlight”  -Sunlight by Mac Miller feat. Iman Omari',
-            '8. "Don\'t push me cause I\'m close to the edge I\'m trying not to lose my head It\'s like a jungle. Sometimes it makes me wonder How I keep from goin\' under."   - Grandmaster Flash & the Furious Five',
-            '9. “I had anxiety that I didn\'t know was anxiety. I had panic attacks that I didn\'t know were panic attacks. Any time I felt something I considered abnormal, I just reached for the bottle.”  - DMC',
-            '10. “It could be all so simple But you\'d rather make it Hard, Loving you is like a battle And we both end up with scars.” - Lauryn Hill',
-            '11. “Spoke some things into the universe and they appeared I say it\'s worth it, I won\'t say it\'s fair Find your purpose or you wastin\' air...” - Nipsey Hussle',
-            '12. “You see I\'m trapped in my mind And I know it\'s crazy Hey it\'s not that bad at all When you think of the world I know it\'s crazy Hey I\'m not that bad at all” - Trapped in My Mind by Kid Cudi',
-            '13. “Love is stronger than pride But also love is a muscle You gotta build from inside And amidst the hustle and bustle Amidst the roll of the thunder I play the role of a Russell Westbrook or Simmons”  - Daniel\'s Bloom by Mick Jenkins',
-            '14. “Cause I, I\'m in love With my future Can\'t wait to meet her And I, I\'m in love But not with anybody else Just wanna get to know myself” - Future by Billie Eilish',
-            '15. “Everybody\'s somebody\'s everything I know you right Nobody\'s nothing That\'s right"   -Everybody\'s Something by Chance the Rapper'
+        questions: 
+        [
+            <div>
+                "Don't let the struggle make your heart harder Sip the truth, spit the truth <br/> That's the smart water” <br/> &emsp; - Daniels Bloom by Mick Jenkins
+            </div>,
+            <div>
+                “Cause it makes me that much stronger <br/> Makes me work a little bit harder <br/> Makes me that much wiser <br/> So thanks for making me a fighter <br/> Made me learn a little bit faster <br/> Made my skin a little bit thicker <br/> Makes me that much smarter <br/> So thanks for making me a fighter” <br/> &emsp; - Fighter by Christina Aguilera
+            </div>,
+            <div>
+                "Don't lose who you are <br/> In the blur of the stars <br/> Seeing is deceiving <br/> Dreaming is believing <br/> It's okay not to be ok <br/> Sometimes it's hard <br/> To follow your heart <br/> But tears don't mean your losing <br/> Everybody's bruising <br/> There's nothing wrong with who you are” <br/> &emsp; - Who You Are by Jessie J
+            </div>,
+            <div>
+                “I know it's crazy to think of this daily <br/> Imagine no one needing guns all at once, impossible maybe <br/> But we've never tried it <br/> The whole world in silence <br/> Respecting each other our Gods and our brothers <br/> Killing with kindness” <br/> &emsp;  - One Love by Elle Varner
+            </div>,
+            <div>
+                “Don't keep it all in your head <br/> The only place that you know nobody ever can see <br/> You're running low on regret <br/> No tears, that's keeping you wet <br/> I think you gettin' it now”  <br/> &emsp;  - Once a day by Mac Miller
+            </div>,
+            <div>
+                “(Still I feel my) Eyes heavy when the day goes <br/> Nothing help when my head doze <br/> (But I ain't sleep) Awake in another state <br/> Living in a new space <br/> (Still I feel my) Mind running at a steady pace <br/> God help me so I'll win the race” <br/> &emsp; - Sky Might Fall by Kid Cudi
+            </div>,
+            <div>
+                “Run from the dark <br/> Into the light <br/> You know, you know you\'re gonna find your way out <br/> Run from the dark <br/> Into the light <br/> Oh-whoa, you know you're gonna find your way <br/> Just run to the sunlight <br/> Just run to the sunlight” <br/> &emsp; -Sunlight by Mac Miller feat. Iman Omari
+            </div>,
+            <div>
+                "Don't push me cause I'm close to the edge <br/> I'm trying not to lose my head <br/> It's like a jungle. Sometimes it makes me wonder <br/> How I keep from goin' under." <br/> &emsp;  - Grandmaster Flash & the Furious Five
+            </div>,
+            <div>
+                “I had anxiety that I didn't know was anxiety. I had <br/> panic attacks that I didn't know were panic attacks. <br/> Any time I felt something I considered abnormal, I <br/> just reached for the bottle.” <br/> &emsp; - DMC
+            </div>,
+            <div>
+                “It could be all so simple <br/> But you'd rather make it <br/> Hard, Loving you is like a battle <br/> And we both end up with scars.” <br/> &emsp; - Lauryn Hill
+            </div>,
+            <div>
+                “Spoke some things into the universe and they appeared <br/> I say it's worth it, I won't say it's fair <br/> Find your purpose or you wastin' air...” <br/> &emsp; - Nipsey Hussle
+            </div>,
+            <div>
+                “You see I'm trapped in my mind <br/> And I know it's crazy <br/> Hey it's not that bad at all <br/> When you think of the world <br/> I know it's crazy <br/> Hey I'm not that bad at all” <br/> &emsp; - Trapped in My Mind by Kid Cudi
+            </div>,
+            <div>
+                “Love is stronger than pride <br/> But also love is a muscle <br/> You gotta build from inside <br/> And amidst the hustle and bustle <br/> Amidst the roll of the thunder <br/> I play the role of a Russell Westbrook or Simmons” <br/> &emsp; - Daniel's Bloom by Mick Jenkins
+            </div>,
+            <div>
+                “Cause I, I'm in love <br/> With my future <br/> Can't wait to meet her <br/> And I, I'm in love <br/> But not with anybody else <br/> Just wanna get to know myself” <br/> &emsp; - Future by Billie Eilish
+            </div>,
+            <div>
+                “Everybody's somebody's everything <br/> I know you right <br/>  Nobody's nothing <br/> That's right" <br/> &emsp; -Everybody's Something by Chance the Rapper
+            </div>
+    
         ],
+        
+        
+        // [
+        //     '“Don't let the struggle make your heart harder Sip the truth, spit the truth That's the smart water”  - Daniels Bloom by Mick Jenkins',
+        //     '“Cause it makes me that much stronger Makes me work a little bit harderMakes me that much wiserSo thanks for making me a fighterMade me learn a little bit fasterMade my skin a little bit thickerMakes me that much smarterSo thanks for making me a fighter”  - Fighter by Christina Aguilera',
+        //     '“Don't lose who you are In the blur of the stars Seeing is deceiving Dreaming is believing It's okay not to be oka Sometimes it's hard To follow your heart But tears don't mean your losing Everybody's bruising There's nothing wrong with who you are” - Who You Are by Jessie J',
+        //     '“I know it\'s crazy to think of this daily Imagine no one needing guns all at once, impossible maybe But we\'ve never tried itThe whole world in silence Respecting each other our Gods and our brothers Killing with kindness”   - One Love by Elle Varner',
+        //     '“Don\'t keep it all in your head The only place that you know nobody ever can seeYou\'re running low on regretNo tears, that\'s keeping you wet I think you gettin\' it now”    - Once a day by Mac Miller',
+        //     '“(Still I feel my) Eyes heavy when the day goes Nothing help when my head doze (But I ain\'t sleep) Awake in another state Living in a new space (Still I feel my) Mind running at a steady pace God help me so I\'ll win the race”  - Sky Might Fall by Kid Cudi',
+        //     '“Run from the dark Into the light You know, you know you\'re gonna find your way out Run from the dark Into the light Oh-whoa, you know you\'re gonna find your way Just run to the sunlight Just run to the sunlight”  -Sunlight by Mac Miller feat. Iman Omari',
+        //     '"Don\'t push me cause I\'m close to the edge I\'m trying not to lose my head It\'s like a jungle. Sometimes it makes me wonder How I keep from goin\' under."   - Grandmaster Flash & the Furious Five',
+        //     '“I had anxiety that I didn\'t know was anxiety. I had panic attacks that I didn\'t know were panic attacks. Any time I felt something I considered abnormal, I just reached for the bottle.”  - DMC',
+        //     '“It could be all so simple But you\'d rather make it Hard, Loving you is like a battle And we both end up with scars.” - Lauryn Hill',
+        //     '“Spoke some things into the universe and they appeared I say it\'s worth it, I won\'t say it\'s fair Find your purpose or you wastin\' air...” - Nipsey Hussle',
+        //     '“You see I\'m trapped in my mind And I know it\'s crazy Hey it\'s not that bad at all When you think of the world I know it\'s crazy Hey I\'m not that bad at all” - Trapped in My Mind by Kid Cudi',
+        //     '“Love is stronger than pride But also love is a muscle You gotta build from inside And amidst the hustle and bustle Amidst the roll of the thunder I play the role of a Russell Westbrook or Simmons”  - Daniel\'s Bloom by Mick Jenkins',
+        //     '“Cause I, I\'m in love With my future Can\'t wait to meet her And I, I\'m in love But not with anybody else Just wanna get to know myself” - Future by Billie Eilish',
+        //     '“Everybody\'s somebody\'s everything I know you right Nobody\'s nothing That\'s right"   -Everybody\'s Something by Chance the Rapper'
+        // ],
         id: 11
     },
     {   
